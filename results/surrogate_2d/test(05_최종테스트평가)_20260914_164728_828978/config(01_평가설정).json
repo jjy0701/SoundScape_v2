@@ -1,0 +1,33 @@
+{
+  "script": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\evaluate_test(05_최종테스트평가).py",
+  "script_sha256": "9c3e7ce9c3e45de4135796b11fabfdc40fe3cb00b703efa1c83c7d101fb80592",
+  "baseline_result": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\baseline(04_기초모델학습)_20260907_162314_538043",
+  "checkpoint_best_epoch": 204,
+  "checkpoint_validation_rmse_db": 0.9933447122573853,
+  "features": [
+    "speaker_x",
+    "speaker_y",
+    "obstacle_x",
+    "obstacle_y",
+    "obstacle_w",
+    "obstacle_l",
+    "receiver_x",
+    "receiver_y",
+    "log10_distance",
+    "log10_min_scene_distance"
+  ],
+  "device": "cpu",
+  "test_count": 15,
+  "test_targets_loaded_for_evaluation_only": true,
+  "model_selection_split": "validation (04번에서 완료)",
+  "test_split_used_for": [
+    "최종 오차 계산",
+    "예측 저장",
+    "heatmap 시각화"
+  ],
+  "test_split_not_used_for": [
+    "학습",
+    "정규화 통계 계산",
+    "hyperparameter/model 선택"
+  ]
+}

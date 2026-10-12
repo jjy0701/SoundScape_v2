@@ -1,0 +1,91 @@
+{
+  "conditions": {
+    "sample_rate_hz": 48000,
+    "band_hz": [
+      250,
+      4000
+    ],
+    "absorption": 0.2,
+    "max_order": 32,
+    "gains": [
+      1,
+      1
+    ],
+    "extra_delay_samples": 0,
+    "coordinates": {
+      "P01": [
+        3.75,
+        2.5,
+        0.706
+      ],
+      "P02": [
+        3.75,
+        5.0,
+        0.706
+      ],
+      "P03": [
+        3.75,
+        7.5,
+        0.706
+      ]
+    },
+    "reference_core_samples": [
+      288000,
+      672000
+    ]
+  },
+  "rows": [
+    {
+      "point": "P01",
+      "09_db": -24.098576126481912,
+      "09_repeat_spread_db": 0.0,
+      "11_db": 31.745610379394726,
+      "13_baseline_db": 31.745610379394726,
+      "p02_interaction_db": -0.9725045110049573,
+      "09_relative_db": 0.5408912273497961,
+      "11_relative_db": 0.5352542249733325,
+      "13_relative_db": 0.5352542249733325,
+      "09_vs_11_difference_db": 0.005637002376463585
+    },
+    {
+      "point": "P02",
+      "09_db": -24.63946735383171,
+      "09_repeat_spread_db": 3.552713678800501e-15,
+      "11_db": 31.210356154421394,
+      "13_baseline_db": 31.210356154421394,
+      "p02_interaction_db": -1.1842945478579616,
+      "09_relative_db": 0.0,
+      "11_relative_db": 0.0,
+      "13_relative_db": 0.0,
+      "09_vs_11_difference_db": 0.0
+    },
+    {
+      "point": "P03",
+      "09_db": -25.26488503938595,
+      "09_repeat_spread_db": 3.552713678800501e-15,
+      "11_db": 30.581647159186296,
+      "13_baseline_db": 30.581647159186296,
+      "p02_interaction_db": -0.9689314054871457,
+      "09_relative_db": -0.6254176855542397,
+      "11_relative_db": -0.6287089952350975,
+      "13_relative_db": -0.6287089952350975,
+      "09_vs_11_difference_db": 0.003291309680857779
+    }
+  ],
+  "p02_interaction_comparison": {
+    "exact_coordinate_db": -1.1842945478579616,
+    "old_interpolated_db": 1.041060954862688,
+    "difference_db": -2.2253555027206495,
+    "metric_note": "This is coherent two-speaker interaction relative to incoherent left+right energy; it is not the P02-normalized relative level, whose value is 0 dB by definition."
+  },
+  "methods": {
+    "09": "Full reference convolved with each RIR, sum waveforms, sosfiltfilt on full sum, then 8 s windows at 6-14/21-29/36-44 s; mean-square -> 10log10.",
+    "11_13": "Core 6-14 s spectrum, Butterworth response magnitude^4 (forward-backward power), Parseval weighted RIR transfer energy; coherent sum before energy; P02 both-speaker energy normalization."
+  },
+  "diagnosis": {
+    "same_rir": true,
+    "coordinates_exact": true,
+    "interpolation_used": false,
+    "likely_difference": "09 includes finite-window convolution/filter edge and the full reference timing; 11/13 use steady-state frequency-domain energy and omit finite-window transient/tail effects. Filter definitions are otherwise the same 4th-order Butterworth bandpass, but 11/13 apply its idealized |H|^4 weighting."
+  }
+}

@@ -1,0 +1,1183 @@
+{
+  "dataset": {
+    "npy_count": 100,
+    "shape": [
+      20,
+      20
+    ],
+    "array_order": "y,x",
+    "offset_m": 0.5,
+    "metadata_sha256": "69df4d84f01fa3e432cbdcd72c4e29c34b2adde339cded1d60487d5c2a6aed68",
+    "split_manifest_sha256": "da90b6be74da24f5ef2f74347a162004a26c8f95dde315ba45aa86cc1fb7fe86",
+    "split_sizes": {
+      "test": 15,
+      "train": 70,
+      "validation": 15
+    }
+  },
+  "preprocessing": {
+    "train_cell_mean_imputation": true,
+    "standardization": false,
+    "preserve_original_nan_masks": true,
+    "learnable_cells": 400,
+    "excluded_unseen_cells": 0,
+    "evaluation_excludes_original_nan_and_unlearnable": true,
+    "bias_note": "train-mean imputation is a biased baseline; NaN obstacle cells are not treated as 0 dB"
+  },
+  "svd": {
+    "rank": 69,
+    "singular_values_count": 70,
+    "explained_variance_basis": "filled, centered train matrix"
+  },
+  "results": [
+    {
+      "k": 0,
+      "train": {
+        "scene_mae_mean_db": 4.354222174991991,
+        "scene_rmse_mean_db": 5.494290648597251,
+        "scene_rmse_median_db": 4.991831179817378,
+        "pooled_rmse_db": 5.977629949164117,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 4.216407272750772,
+        "scene_rmse_mean_db": 5.274196201043064,
+        "scene_rmse_median_db": 5.253709232686552,
+        "pooled_rmse_db": 5.406412157771695,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.0,
+      "coefficient_count": 0,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 2.7384517215640183,
+          "rmse_db": 4.080781327083775,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 4.6637761816666226,
+          "rmse_db": 5.954296545207482,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 4.086256953820014,
+          "rmse_db": 5.325286741583512,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 2.587402482269041,
+          "rmse_db": 4.228438301487983,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 6.193674084864045,
+          "rmse_db": 6.9729476525080845,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 2.702405405431078,
+          "rmse_db": 3.8508368838239813,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 4.775954557311264,
+          "rmse_db": 5.253709232686552,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 4.024805228931471,
+          "rmse_db": 5.074045898796527,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 4.489584041262813,
+          "rmse_db": 5.852863890133498,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 5.735295701642073,
+          "rmse_db": 6.3907821571078225,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 7.529988053962234,
+          "rmse_db": 8.12254834347616,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 2.469922230582973,
+          "rmse_db": 3.7145754257808052,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 4.315286314193211,
+          "rmse_db": 5.098777329363852,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 4.063822893797636,
+          "rmse_db": 5.4233896125987595,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 2.869483239963087,
+          "rmse_db": 3.7696636740071576,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "train": {
+        "scene_mae_mean_db": 2.8386165672005625,
+        "scene_rmse_mean_db": 3.8919668245618384,
+        "scene_rmse_median_db": 3.899719330796926,
+        "pooled_rmse_db": 3.91738473580913,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 2.768439494920324,
+        "scene_rmse_mean_db": 3.7983956116975537,
+        "scene_rmse_median_db": 3.7877995973348626,
+        "pooled_rmse_db": 3.817320300265671,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.5566011337828283,
+      "coefficient_count": 1,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 2.769629920132403,
+          "rmse_db": 3.8445831619210677,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 3.1768693997963533,
+          "rmse_db": 4.306029253715046,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 2.69693593111542,
+          "rmse_db": 3.6287804465475255,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 2.3628750968751278,
+          "rmse_db": 3.357297909405149,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 2.1273553750570846,
+          "rmse_db": 3.2322839152274416,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 2.807102388732415,
+          "rmse_db": 3.817732788786539,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 2.837817192933253,
+          "rmse_db": 3.7877995973348626,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 2.184161884181289,
+          "rmse_db": 3.3094150246174596,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 2.870356160723547,
+          "rmse_db": 3.9605040139114736,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 3.335538914088453,
+          "rmse_db": 4.278299440099493,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 2.3846783728631538,
+          "rmse_db": 3.4689001127783516,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 2.570516417680814,
+          "rmse_db": 3.6134997108349567,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 2.680589290313451,
+          "rmse_db": 3.9624986929421215,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 3.8595492207187054,
+          "rmse_db": 4.638698093423922,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 2.8626168585934013,
+          "rmse_db": 3.769612013917897,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "train": {
+        "scene_mae_mean_db": 2.023048949789045,
+        "scene_rmse_mean_db": 2.950290111552015,
+        "scene_rmse_median_db": 2.96240844703326,
+        "pooled_rmse_db": 2.990780238011886,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 1.8711417522889557,
+        "scene_rmse_mean_db": 2.8359164898526066,
+        "scene_rmse_median_db": 2.6795320573165085,
+        "pooled_rmse_db": 2.861600695078977,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.7342553781017289,
+      "coefficient_count": 2,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 1.7850592659048197,
+          "rmse_db": 2.594556332304528,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 2.6184669244597454,
+          "rmse_db": 3.319028233042455,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 2.3877038462484657,
+          "rmse_db": 3.4133617117293324,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 1.5202150685050881,
+          "rmse_db": 2.6788579394453076,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 1.7266647924718797,
+          "rmse_db": 2.9007574858864067,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 1.6676656545133473,
+          "rmse_db": 2.4126630194357275,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 1.820956392229462,
+          "rmse_db": 2.91889799200238,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 2.129273219728268,
+          "rmse_db": 3.2696442785451727,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 1.758692412750036,
+          "rmse_db": 2.538999187456848,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 1.39840979455745,
+          "rmse_db": 2.1764263890756474,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 1.6392401367638476,
+          "rmse_db": 2.5501607802709003,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 2.1291323652161713,
+          "rmse_db": 3.1508536289737696,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 2.3595484542773333,
+          "rmse_db": 3.4593865165305298,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 1.600059313437473,
+          "rmse_db": 2.6795320573165085,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 1.5260386432709465,
+          "rmse_db": 2.475621795773584,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 5,
+      "train": {
+        "scene_mae_mean_db": 1.2299244535910192,
+        "scene_rmse_mean_db": 1.9271784519262765,
+        "scene_rmse_median_db": 1.8950333379182975,
+        "pooled_rmse_db": 1.9501226422644946,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 1.263673808073441,
+        "scene_rmse_mean_db": 2.043533086089886,
+        "scene_rmse_median_db": 1.944931245749305,
+        "pooled_rmse_db": 2.0771884677597994,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.8799006251314476,
+      "coefficient_count": 5,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 1.1667913764944122,
+          "rmse_db": 1.9111451077092483,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 1.2258203405603776,
+          "rmse_db": 1.669292727986117,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 1.2389241010294356,
+          "rmse_db": 1.9014923662193428,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 1.2186196963129328,
+          "rmse_db": 2.0219839505053026,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 1.4471705485273614,
+          "rmse_db": 2.562354048600369,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.9448451482415228,
+          "rmse_db": 1.622235892906319,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 1.288795270537337,
+          "rmse_db": 2.230599058067995,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 1.2947442151274924,
+          "rmse_db": 1.944931245749305,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.9022704576274516,
+          "rmse_db": 1.476518382010529,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 1.0209043195159615,
+          "rmse_db": 1.6513918711725926,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 1.6462146806561773,
+          "rmse_db": 2.5644308218051015,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 1.448018167370412,
+          "rmse_db": 2.276220383018466,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 1.4713800392829828,
+          "rmse_db": 2.4675200128720687,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 1.6024403825498383,
+          "rmse_db": 2.671667022546601,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 1.0381683772679229,
+          "rmse_db": 1.681213400178935,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 10,
+      "train": {
+        "scene_mae_mean_db": 0.870795297773286,
+        "scene_rmse_mean_db": 1.3895152630970846,
+        "scene_rmse_median_db": 1.384036008990762,
+        "pooled_rmse_db": 1.4102193850435851,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 0.9643705444266942,
+        "scene_rmse_mean_db": 1.5990950448074994,
+        "scene_rmse_median_db": 1.562673500294227,
+        "pooled_rmse_db": 1.623690633664964,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.9366353902250034,
+      "coefficient_count": 10,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 0.9475352780751158,
+          "rmse_db": 1.651964366120134,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 0.83263186395726,
+          "rmse_db": 1.2825568709137694,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 0.8488089028337577,
+          "rmse_db": 1.2472936315205212,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 0.9713130967266626,
+          "rmse_db": 1.6441129060624,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 1.054112534485487,
+          "rmse_db": 1.484109192609376,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.8469053521123465,
+          "rmse_db": 1.4938550312323056,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 1.068465525358279,
+          "rmse_db": 1.7636915912760711,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 0.853055311755914,
+          "rmse_db": 1.356150697480746,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.6704357198262039,
+          "rmse_db": 1.197941414658135,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 0.945429927428409,
+          "rmse_db": 1.562673500294227,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 1.3548125084051814,
+          "rmse_db": 2.1133895667319753,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 1.0659629052083528,
+          "rmse_db": 1.7999840991360214,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 1.0370135617279836,
+          "rmse_db": 1.9248559271292969,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 1.242578793053262,
+          "rmse_db": 2.1078834701188143,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 0.7264968854461973,
+          "rmse_db": 1.3559634068287,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 15,
+      "train": {
+        "scene_mae_mean_db": 0.7073391620873697,
+        "scene_rmse_mean_db": 1.1094975841695682,
+        "scene_rmse_median_db": 1.0915450543015088,
+        "pooled_rmse_db": 1.1226717622155926,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 0.8653626339861676,
+        "scene_rmse_mean_db": 1.428983367631963,
+        "scene_rmse_median_db": 1.386652536115997,
+        "pooled_rmse_db": 1.4532838597843918,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.9603663215161115,
+      "coefficient_count": 15,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 0.7898686018004087,
+          "rmse_db": 1.4362221093691983,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 0.8427209257265735,
+          "rmse_db": 1.2618819120074187,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 0.7424533796552758,
+          "rmse_db": 1.0999809145456692,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 0.842867536328525,
+          "rmse_db": 1.4435376088010385,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 0.9641589816077919,
+          "rmse_db": 1.386652536115997,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.7366890830381202,
+          "rmse_db": 1.3789031900134798,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 0.7931267966734149,
+          "rmse_db": 1.2674188514490519,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 0.7897555417966112,
+          "rmse_db": 1.1420453595245554,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.6416660994479569,
+          "rmse_db": 1.1591457518566075,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 0.8946309366082645,
+          "rmse_db": 1.4466621294057092,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 1.2474475797597955,
+          "rmse_db": 2.025354861592149,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 0.9480850385532107,
+          "rmse_db": 1.5268954345078767,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 0.9511137302557604,
+          "rmse_db": 1.7516605401293206,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 1.1185955162964065,
+          "rmse_db": 1.919050869706855,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 0.6772597622443969,
+          "rmse_db": 1.1893384454545162,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 20,
+      "train": {
+        "scene_mae_mean_db": 0.5927377884411571,
+        "scene_rmse_mean_db": 0.92667770883815,
+        "scene_rmse_median_db": 0.9401152935695385,
+        "pooled_rmse_db": 0.9370238974645971,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 0.7902896278249206,
+        "scene_rmse_mean_db": 1.3265199944955628,
+        "scene_rmse_median_db": 1.3206745157444246,
+        "pooled_rmse_db": 1.3587489028978141,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.9727082998114548,
+      "coefficient_count": 20,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 0.7388709509393273,
+          "rmse_db": 1.3646677448913647,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 0.6941081061973577,
+          "rmse_db": 1.0332780357408238,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 0.5858948238204619,
+          "rmse_db": 0.8553530007829193,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 0.8498963224436441,
+          "rmse_db": 1.3786095095930864,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 0.8959521791017695,
+          "rmse_db": 1.3206745157444246,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.7076905708100983,
+          "rmse_db": 1.3150690421718745,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 0.7571791643876459,
+          "rmse_db": 1.1947901959342067,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 0.6468105379995013,
+          "rmse_db": 0.9559240678386974,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.6246001013328901,
+          "rmse_db": 1.137269477490984,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 0.7870364518965723,
+          "rmse_db": 1.3791918052214955,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 1.1139481715082047,
+          "rmse_db": 1.9255147928393115,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 0.8985372734329081,
+          "rmse_db": 1.4535214246644985,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 0.8536218945740209,
+          "rmse_db": 1.6639461869348722,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 1.0874015575861142,
+          "rmse_db": 1.8473850969390508,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 0.6127963113432963,
+          "rmse_db": 1.0726050206458333,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 30,
+      "train": {
+        "scene_mae_mean_db": 0.4328232447413191,
+        "scene_rmse_mean_db": 0.6600527506064783,
+        "scene_rmse_median_db": 0.6887256766188248,
+        "pooled_rmse_db": 0.673815010443343,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 0.7109607622866202,
+        "scene_rmse_mean_db": 1.1835326197127527,
+        "scene_rmse_median_db": 1.2074095273090903,
+        "pooled_rmse_db": 1.2180373237596351,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.9861238906600389,
+      "coefficient_count": 30,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 0.6308958028458296,
+          "rmse_db": 1.2040942049784567,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 0.6505626333171367,
+          "rmse_db": 0.9264848099804044,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 0.5577856830527254,
+          "rmse_db": 0.803355578155775,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 0.815379394784761,
+          "rmse_db": 1.2854775374191887,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 0.80994236533459,
+          "rmse_db": 1.2285290223833967,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.6682565941975724,
+          "rmse_db": 1.2074095273090903,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 0.7106541861736912,
+          "rmse_db": 1.065588494255881,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 0.45715934656747054,
+          "rmse_db": 0.6527297753079387,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.5632260784517574,
+          "rmse_db": 1.0283742068007657,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 0.7082499292587674,
+          "rmse_db": 1.2416160681378967,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 1.0407170882091645,
+          "rmse_db": 1.8337873870242551,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 0.7949970460175605,
+          "rmse_db": 1.3080799800696623,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 0.8033869459537523,
+          "rmse_db": 1.603302209259433,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 0.8967707488095089,
+          "rmse_db": 1.4238619476203256,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 0.5564275913250176,
+          "rmse_db": 0.9402985469888216,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 40,
+      "train": {
+        "scene_mae_mean_db": 0.3221044032952424,
+        "scene_rmse_mean_db": 0.46991137409343375,
+        "scene_rmse_median_db": 0.49062268362502437,
+        "pooled_rmse_db": 0.4834338684329746,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 0.6612629310195388,
+        "scene_rmse_mean_db": 1.082532002989594,
+        "scene_rmse_median_db": 1.1064880920931754,
+        "pooled_rmse_db": 1.1218793285511937,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.9929741427027223,
+      "coefficient_count": 40,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 0.5823753178279828,
+          "rmse_db": 1.1307306846933094,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 0.5301822925244432,
+          "rmse_db": 0.7318578215452712,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 0.4652491401372371,
+          "rmse_db": 0.6519448659705197,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 0.7477530211064556,
+          "rmse_db": 1.1014567461175606,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 0.7632623832982962,
+          "rmse_db": 1.1411288583296637,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.617136019165551,
+          "rmse_db": 1.1064880920931754,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 0.6903588090622964,
+          "rmse_db": 1.036926156669834,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 0.40275552225746086,
+          "rmse_db": 0.58476583313612,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.525235162890329,
+          "rmse_db": 0.9289574708305407,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 0.6948693226006021,
+          "rmse_db": 1.1876483775127307,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 0.9999692150967133,
+          "rmse_db": 1.6777442672001528,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 0.7116255201313635,
+          "rmse_db": 1.2130676550743225,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 0.8099605129479538,
+          "rmse_db": 1.5613951311623466,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 0.8696474220673529,
+          "rmse_db": 1.3526732084288682,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 0.5085643041790442,
+          "rmse_db": 0.8311948760794956,
+          "valid_cells": 388
+        }
+      ]
+    },
+    {
+      "k": 50,
+      "train": {
+        "scene_mae_mean_db": 0.21300262576108386,
+        "scene_rmse_mean_db": 0.3027047356419129,
+        "scene_rmse_median_db": 0.3038116886444888,
+        "pooled_rmse_db": 0.3230605299534552,
+        "scene_count": 70,
+        "valid_cell_count": 27104
+      },
+      "validation": {
+        "scene_mae_mean_db": 0.6260764207944027,
+        "scene_rmse_mean_db": 1.0190655723112663,
+        "scene_rmse_median_db": 1.0361376000154743,
+        "pooled_rmse_db": 1.0607297955587738,
+        "scene_count": 15,
+        "valid_cell_count": 5809
+      },
+      "cumulative_explained_variance": 0.9968739292773493,
+      "coefficient_count": 50,
+      "original_output_count": 400,
+      "validation_scene_details": [
+        {
+          "sample_id": "sample_0003",
+          "mae_db": 0.5731814621843647,
+          "rmse_db": 1.1067898523107689,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0025",
+          "mae_db": 0.4543608781953891,
+          "rmse_db": 0.6263154639828091,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0029",
+          "mae_db": 0.43634771734146266,
+          "rmse_db": 0.6184984675373788,
+          "valid_cells": 386
+        },
+        {
+          "sample_id": "sample_0034",
+          "mae_db": 0.7263097782474921,
+          "rmse_db": 1.0546310250216573,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0035",
+          "mae_db": 0.7032688353539989,
+          "rmse_db": 1.0361376000154743,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0045",
+          "mae_db": 0.5488819128803754,
+          "rmse_db": 1.0291371727767877,
+          "valid_cells": 396
+        },
+        {
+          "sample_id": "sample_0052",
+          "mae_db": 0.6205339794799896,
+          "rmse_db": 0.9697766558210239,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0057",
+          "mae_db": 0.38204278761005817,
+          "rmse_db": 0.5343285533442371,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0064",
+          "mae_db": 0.4484372815909147,
+          "rmse_db": 0.8166501551456419,
+          "valid_cells": 390
+        },
+        {
+          "sample_id": "sample_0069",
+          "mae_db": 0.7103375873171817,
+          "rmse_db": 1.1031347478814422,
+          "valid_cells": 385
+        },
+        {
+          "sample_id": "sample_0071",
+          "mae_db": 0.9242198714220855,
+          "rmse_db": 1.5522067997307545,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0081",
+          "mae_db": 0.6741986514079257,
+          "rmse_db": 1.168445565375348,
+          "valid_cells": 392
+        },
+        {
+          "sample_id": "sample_0082",
+          "mae_db": 0.8349989891757315,
+          "rmse_db": 1.5444622103238148,
+          "valid_cells": 382
+        },
+        {
+          "sample_id": "sample_0089",
+          "mae_db": 0.8567416679292864,
+          "rmse_db": 1.3238286883085106,
+          "valid_cells": 388
+        },
+        {
+          "sample_id": "sample_0091",
+          "mae_db": 0.4972849117797839,
+          "rmse_db": 0.8016406270933434,
+          "valid_cells": 388
+        }
+      ]
+    }
+  ],
+  "test_evaluated": false,
+  "thresholds": {
+    "mean_scene_rmse_le_0.5_db": null,
+    "mean_scene_rmse_le_1.0_db": null
+  },
+  "limitations": [
+    "Explained variance is for the imputed train matrix, not field or AI accuracy.",
+    "No test evaluation or component selection used test data."
+  ]
+}

@@ -1,0 +1,7 @@
+﻿case,receiver,rir_length,energy,energy_ratio_to_empty,visible_paths,rir_origin
+empty,blocked_probe,269,0.06116144263984163,1.0,1,pra_compute_rir
+empty,clear_probe,176,0.24646544779622065,1.0,1,pra_compute_rir
+blocked,blocked_probe,1,0.0,0.0,0,zero_response_from_no_visible_paths
+blocked,clear_probe,176,0.24646544779622065,1.0,1,pra_compute_rir
+moved,blocked_probe,269,0.06116144263984163,1.0,1,pra_compute_rir
+moved,clear_probe,176,0.24646544779622065,1.0,1,pra_compute_rir

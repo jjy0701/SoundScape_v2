@@ -1,0 +1,58 @@
+{
+  "stage": 12,
+  "version": "1.0",
+  "source_stage11_directory": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\classroom_3d\\classroom_heatmap(11_강의실예측분포)_20260921_175629_049135",
+  "source_npz": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\classroom_3d\\classroom_heatmap(11_강의실예측분포)_20260921_175629_049135\\heatmap(01_상대레벨원시배열).npz",
+  "selection_rule": {
+    "cross_section_y_m": 5.0,
+    "left_and_right_candidates": "minimum modelled interaction on each side",
+    "center_clearance_m": 0.6,
+    "wall_clearance_m": 0.75
+  },
+  "display_range_db": [
+    -5.5,
+    4.5
+  ],
+  "points": [
+    {
+      "id": "P02",
+      "purpose_ko": "기존 중앙 기준점; 왼쪽만·오른쪽만·둘 다 측정",
+      "x_m": 3.75,
+      "y_m": 5.0,
+      "z_m": 0.706,
+      "predicted_interaction_db": 1.041060954862688,
+      "predicted_relative_db": [
+        -1.4855045233634665,
+        -2.195491285225174,
+        0.0
+      ]
+    },
+    {
+      "id": "QL",
+      "purpose_ko": "중앙 왼쪽의 모델상 상쇄 후보",
+      "x_m": 0.9868421052631579,
+      "y_m": 5.0,
+      "z_m": 0.706,
+      "predicted_interaction_db": -0.280270327358548,
+      "predicted_relative_db": [
+        -1.0344561487715,
+        -2.004230625829244,
+        1.2443675770419698
+      ]
+    },
+    {
+      "id": "QR",
+      "purpose_ko": "중앙 오른쪽의 모델상 상쇄 후보",
+      "x_m": 4.671052631578947,
+      "y_m": 5.0,
+      "z_m": 0.706,
+      "predicted_interaction_db": -0.704218243377077,
+      "predicted_relative_db": [
+        -2.2622112399806578,
+        -1.8242947023629807,
+        0.2702351622667952
+      ]
+    }
+  ],
+  "interpretation_limit_ko": "QL과 QR은 실측 결과가 아니라 현재 동일 신호·동일 출력·추가 지연 0 모델에서 좌우 패턴을 구분하기 위한 후보입니다. 현장 접근 가능성을 확인한 뒤 사용합니다."
+}

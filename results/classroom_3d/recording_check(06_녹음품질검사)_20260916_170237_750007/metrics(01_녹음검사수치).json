@@ -1,0 +1,167 @@
+{
+  "version": "1.0",
+  "created_at": "2026-09-16T17:02:37.879080+09:00",
+  "script_sha256": "f9f34df7168bb65e6c3ff8e0524cb4064993aa1da4a7e74c685c6cffd8aafd16",
+  "amplitude_reference": "digital PCM full scale=1; not pressure in pascals",
+  "preprocessing": "no gain change, no denoising, no resampling of recordings; reference only resampled for correlation",
+  "reference": {
+    "file_name": "test_signal(06_예비녹음_50초).wav",
+    "sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "pcm_bits": 16,
+    "frames": 2400000,
+    "duration_s": 50.0,
+    "channel_metrics": [
+      {
+        "channel": 1,
+        "peak_dbfs": -13.016404208284113,
+        "whole_file_rms_dbfs": -28.276210709998658,
+        "dc_mean": 4.84466552734375e-09,
+        "full_scale_code_samples": 0,
+        "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+      },
+      {
+        "channel": 2,
+        "peak_dbfs": -13.016404208284113,
+        "whole_file_rms_dbfs": -28.276210709998658,
+        "dc_mean": 4.84466552734375e-09,
+        "full_scale_code_samples": 0,
+        "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+      }
+    ],
+    "analysis_channel": 1,
+    "template_start_s": 5.0,
+    "template_end_s": 15.0,
+    "template_duration_s": 10.0,
+    "non_silent_runs_s": [
+      [
+        5.0,
+        15.0
+      ],
+      [
+        20.0,
+        30.0
+      ],
+      [
+        35.0,
+        45.0
+      ]
+    ],
+    "other_runs_identical_to_first": [
+      true,
+      true
+    ],
+    "stereo_channels_identical": true,
+    "note": "채널1을 기준으로 사용. 음원 상관은 신호 대응 후보이며 스피커 수를 나타내지 않음"
+  },
+  "recordings": [
+    {
+      "file_name": "20260908-124448.wav",
+      "sha256": "6eb1d86f84bf61b4f94c05fc518c50b68cf65c207ced9ed1fefb0f7e6c302bc8",
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "frames": 825600,
+      "duration_s": 17.2,
+      "channel_metrics": [
+        {
+          "channel": 1,
+          "peak_dbfs": -4.595152662112603,
+          "whole_file_rms_dbfs": -20.801712634122854,
+          "dc_mean": 7.13666280110677e-07,
+          "full_scale_code_samples": 0,
+          "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+        }
+      ],
+      "analysis_channel": 1,
+      "reference_comparison": {
+        "status": "no_confident_match",
+        "threshold_abs_correlation": 0.1,
+        "best_abs_correlation": 0.015425629067575993,
+        "candidates": [],
+        "start_intervals_s": [],
+        "level_spread_db": null,
+        "note": "상관값은 음질 점수 아님. 지연은 녹음 시작 시차 포함. 앞 구간이 배경소음인지 수동 확인 필요. AGC 유무 판정 불가"
+      },
+      "plot_file": "recording_01(파형과구간).png"
+    },
+    {
+      "file_name": "실험.wav",
+      "sha256": "6ec73a5dde496e35a5c3131924f1fea3f5cd3aa2e073edd60ea06326a75923ad",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "frames": 1154880,
+      "duration_s": 72.18,
+      "channel_metrics": [
+        {
+          "channel": 1,
+          "peak_dbfs": -4.958993511329046,
+          "whole_file_rms_dbfs": -41.44367998738416,
+          "dc_mean": 9.565810544169091e-08,
+          "full_scale_code_samples": 0,
+          "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+        }
+      ],
+      "analysis_channel": 1,
+      "reference_comparison": {
+        "status": "candidates_found",
+        "threshold_abs_correlation": 0.1,
+        "best_abs_correlation": 0.194691151101644,
+        "candidates": [
+          {
+            "candidate": 1,
+            "start_s": 17.73525,
+            "end_s": 27.73525,
+            "signed_normalized_correlation": -0.19405688185073888,
+            "absolute_normalized_correlation": 0.19405688185073888,
+            "core_start_s": 18.73525,
+            "core_end_s": 26.73525,
+            "core_rms_dbfs": -38.60500756995406,
+            "preceding_window_start_s": 14.73525,
+            "preceding_window_end_s": 16.73525,
+            "preceding_window_rms_dbfs": -61.06364283576586,
+            "signal_plus_background_minus_preceding_level_db": 22.4586352658118
+          },
+          {
+            "candidate": 2,
+            "start_s": 32.7358125,
+            "end_s": 42.7358125,
+            "signed_normalized_correlation": -0.194691151101644,
+            "absolute_normalized_correlation": 0.194691151101644,
+            "core_start_s": 33.7358125,
+            "core_end_s": 41.7358125,
+            "core_rms_dbfs": -38.57150694404301,
+            "preceding_window_start_s": 29.7358125,
+            "preceding_window_end_s": 31.7358125,
+            "preceding_window_rms_dbfs": -61.32036457179172,
+            "signal_plus_background_minus_preceding_level_db": 22.748857627748713
+          },
+          {
+            "candidate": 3,
+            "start_s": 47.736375,
+            "end_s": 57.736375,
+            "signed_normalized_correlation": -0.19360694425714045,
+            "absolute_normalized_correlation": 0.19360694425714045,
+            "core_start_s": 48.736375,
+            "core_end_s": 56.736375,
+            "core_rms_dbfs": -38.593433689682016,
+            "preceding_window_start_s": 44.736375,
+            "preceding_window_end_s": 46.736375,
+            "preceding_window_rms_dbfs": -61.695246150321964,
+            "signal_plus_background_minus_preceding_level_db": 23.101812460639948
+          }
+        ],
+        "start_intervals_s": [
+          15.000562500000001,
+          15.000562500000001
+        ],
+        "level_spread_db": 0.03350062591105285,
+        "note": "상관값은 음질 점수 아님. 지연은 녹음 시작 시차 포함. 앞 구간이 배경소음인지 수동 확인 필요. AGC 유무 판정 불가"
+      },
+      "plot_file": "recording_02(파형과구간).png"
+    }
+  ],
+  "files_failed": 0
+}

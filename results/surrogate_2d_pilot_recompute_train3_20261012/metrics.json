@@ -1,0 +1,95 @@
+{
+  "selected_train_ids": [
+    "sample_0000",
+    "sample_0002",
+    "sample_0005"
+  ],
+  "selection_basis": "sorted existing manifest train IDs; validation/test unused",
+  "settings": {
+    "room_m": [
+      8.0,
+      10.0
+    ],
+    "grid_shape": [
+      20,
+      20
+    ],
+    "grid_axis_order": "y,x",
+    "grid_coordinates": "0.5..7.5 and 0.5..9.5",
+    "fs_hz": 16000,
+    "max_order": 8,
+    "wall_absorption": 0.2,
+    "obstacle_absorption": 0.1,
+    "energy": "sum(rir**2)",
+    "floor": 1e-12,
+    "normalization": "10log10(max(floor(energy),1e-12)) then subtract scene maximum"
+  },
+  "environment": {
+    "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pyroomacoustics": "0.10.1",
+    "generator_sha256": "67852db631933e2b062cfcda6b6d01b8f9f2b102cdfaaa3bedf974b69da37daa",
+    "manifest_sha256": "da90b6be74da24f5ef2f74347a162004a26c8f95dde315ba45aa86cc1fb7fe86"
+  },
+  "scenes": [
+    {
+      "sample_id": "sample_0000",
+      "grid_shape_match": true,
+      "axis_order": "y,x",
+      "valid_mask_match": true,
+      "valid_receiver_count": 388,
+      "invalid_obstacle_cells": 12,
+      "empty_rir_count": 0,
+      "zero_energy_count": 0,
+      "zero_or_empty_locations": [],
+      "floor_count": 0,
+      "max_pre_normalization_db": 15.415642852249487,
+      "mae_db": 3.023245938038599e-07,
+      "rmse_db": 7.477017902601801e-07,
+      "max_abs_db": 1.9073486328125e-06
+    },
+    {
+      "sample_id": "sample_0002",
+      "grid_shape_match": true,
+      "axis_order": "y,x",
+      "valid_mask_match": true,
+      "valid_receiver_count": 392,
+      "invalid_obstacle_cells": 8,
+      "empty_rir_count": 0,
+      "zero_energy_count": 0,
+      "zero_or_empty_locations": [],
+      "floor_count": 0,
+      "max_pre_normalization_db": 14.410664393822394,
+      "mae_db": 3.4565371720418625e-07,
+      "rmse_db": 8.060106893026386e-07,
+      "max_abs_db": 1.9073486328125e-06
+    },
+    {
+      "sample_id": "sample_0005",
+      "grid_shape_match": true,
+      "axis_order": "y,x",
+      "valid_mask_match": true,
+      "valid_receiver_count": 379,
+      "invalid_obstacle_cells": 21,
+      "empty_rir_count": 0,
+      "zero_energy_count": 0,
+      "zero_or_empty_locations": [],
+      "floor_count": 0,
+      "max_pre_normalization_db": 12.282523163999766,
+      "mae_db": 3.183108105986321e-07,
+      "rmse_db": 7.687207812523411e-07,
+      "max_abs_db": 1.9073486328125e-06
+    }
+  ],
+  "elapsed_s": 19.715168800001265,
+  "model_shape_check": {
+    "existing_training_model_input_per_receiver": "(400, 10)",
+    "existing_training_model_output_per_scene": "(400)",
+    "evidence": "train_baseline(04_기초모델학습).py lines 59-61, 75-80, 111; AcousticDataset docstring"
+  },
+  "distance_baseline": {
+    "formula": "-20*log10(distance/dmin)",
+    "status": "existing distance reference only; not asserted physically equivalent to 2D simulator"
+  }
+}

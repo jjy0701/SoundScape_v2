@@ -1,0 +1,743 @@
+{
+  "orders": [
+    2,
+    7
+  ],
+  "microphone_order": [
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "models": {
+    "2": {
+      "A": {
+        "old_single_mic_seconds": 0.04261789994779974,
+        "new_multimic_seconds": 0.010528499959036708,
+        "new_image_source_seconds": 0.00011020002420991659,
+        "new_rir_seconds": 0.009989799931645393,
+        "microphone_order": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "registered_microphone_count": 3,
+        "registered_microphone_coordinates_m": [
+          [
+            3.75,
+            2.5,
+            0.706
+          ],
+          [
+            3.75,
+            5.0,
+            0.706
+          ],
+          [
+            3.75,
+            7.5,
+            0.706
+          ]
+        ],
+        "rir_index_mapping": {
+          "rir[0]": "P01",
+          "rir[1]": "P02",
+          "rir[2]": "P03"
+        },
+        "rir": [
+          {
+            "receiver": "P01",
+            "source_index": 0,
+            "old_length": 3080,
+            "new_length": 3080,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P01",
+            "source_index": 1,
+            "old_length": 3072,
+            "new_length": 3072,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 0,
+            "old_length": 3260,
+            "new_length": 3260,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 1,
+            "old_length": 3252,
+            "new_length": 3252,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 0,
+            "old_length": 3605,
+            "new_length": 3605,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 1,
+            "old_length": 3598,
+            "new_length": 3598,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          }
+        ],
+        "levels": [
+          {
+            "receiver": "P01",
+            "old_band_level_db": -28.635258922912186,
+            "new_band_level_db": -28.635258922912186,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.6861887726128302,
+            "new_relative_db": 0.6861887726128302,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P02",
+            "old_band_level_db": -29.321447695525016,
+            "new_band_level_db": -29.321447695525016,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.0,
+            "new_relative_db": 0.0,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P03",
+            "old_band_level_db": -31.559466157310414,
+            "new_band_level_db": -31.559466157310414,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": -2.2380184617853978,
+            "new_relative_db": -2.2380184617853978,
+            "relative_difference_db": 0.0
+          }
+        ],
+        "pass": true
+      },
+      "B": {
+        "old_single_mic_seconds": 0.047152900020591915,
+        "new_multimic_seconds": 0.012589000049047172,
+        "new_image_source_seconds": 0.0002202000468969345,
+        "new_rir_seconds": 0.011866600019857287,
+        "microphone_order": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "registered_microphone_count": 3,
+        "registered_microphone_coordinates_m": [
+          [
+            3.75,
+            2.5,
+            0.706
+          ],
+          [
+            3.75,
+            5.0,
+            0.706
+          ],
+          [
+            3.75,
+            7.5,
+            0.706
+          ]
+        ],
+        "rir_index_mapping": {
+          "rir[0]": "P01",
+          "rir[1]": "P02",
+          "rir[2]": "P03"
+        },
+        "rir": [
+          {
+            "receiver": "P01",
+            "source_index": 0,
+            "old_length": 3080,
+            "new_length": 3080,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P01",
+            "source_index": 1,
+            "old_length": 3072,
+            "new_length": 3072,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 0,
+            "old_length": 3260,
+            "new_length": 3260,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 1,
+            "old_length": 3252,
+            "new_length": 3252,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 0,
+            "old_length": 3605,
+            "new_length": 3605,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 1,
+            "old_length": 3598,
+            "new_length": 3598,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          }
+        ],
+        "levels": [
+          {
+            "receiver": "P01",
+            "old_band_level_db": -28.81490858374333,
+            "new_band_level_db": -28.81490858374333,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.7288688470484779,
+            "new_relative_db": 0.7288688470484779,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P02",
+            "old_band_level_db": -29.543777430791806,
+            "new_band_level_db": -29.543777430791806,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.0,
+            "new_relative_db": 0.0,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P03",
+            "old_band_level_db": -31.55083964216507,
+            "new_band_level_db": -31.55083964216507,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": -2.0070622113732632,
+            "new_relative_db": -2.0070622113732632,
+            "relative_difference_db": 0.0
+          }
+        ],
+        "pass": true
+      },
+      "C": {
+        "old_single_mic_seconds": 0.06923389993607998,
+        "new_multimic_seconds": 0.03789899998810142,
+        "new_image_source_seconds": 0.0030350000597536564,
+        "new_rir_seconds": 0.02229649992659688,
+        "microphone_order": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "registered_microphone_count": 3,
+        "registered_microphone_coordinates_m": [
+          [
+            3.75,
+            2.5,
+            0.706
+          ],
+          [
+            3.75,
+            5.0,
+            0.706
+          ],
+          [
+            3.75,
+            7.5,
+            0.706
+          ]
+        ],
+        "rir_index_mapping": {
+          "rir[0]": "P01",
+          "rir[1]": "P02",
+          "rir[2]": "P03"
+        },
+        "rir": [
+          {
+            "receiver": "P01",
+            "source_index": 0,
+            "old_length": 3080,
+            "new_length": 3080,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P01",
+            "source_index": 1,
+            "old_length": 3072,
+            "new_length": 3072,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 0,
+            "old_length": 3260,
+            "new_length": 3260,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 1,
+            "old_length": 3252,
+            "new_length": 3252,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 0,
+            "old_length": 3605,
+            "new_length": 3605,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 1,
+            "old_length": 3598,
+            "new_length": 3598,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          }
+        ],
+        "levels": [
+          {
+            "receiver": "P01",
+            "old_band_level_db": -28.107629269004416,
+            "new_band_level_db": -28.107629269004416,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.46526438790202107,
+            "new_relative_db": 0.46526438790202107,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P02",
+            "old_band_level_db": -28.572893656906437,
+            "new_band_level_db": -28.572893656906437,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.0,
+            "new_relative_db": 0.0,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P03",
+            "old_band_level_db": -30.6044886873034,
+            "new_band_level_db": -30.6044886873034,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": -2.0315950303969643,
+            "new_relative_db": -2.0315950303969643,
+            "relative_difference_db": 0.0
+          }
+        ],
+        "pass": true
+      }
+    },
+    "7": {
+      "A": {
+        "old_single_mic_seconds": 0.038627699948847294,
+        "new_multimic_seconds": 0.012189000030048192,
+        "new_image_source_seconds": 0.00033930002246052027,
+        "new_rir_seconds": 0.01140700001269579,
+        "microphone_order": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "registered_microphone_count": 3,
+        "registered_microphone_coordinates_m": [
+          [
+            3.75,
+            2.5,
+            0.706
+          ],
+          [
+            3.75,
+            5.0,
+            0.706
+          ],
+          [
+            3.75,
+            7.5,
+            0.706
+          ]
+        ],
+        "rir_index_mapping": {
+          "rir[0]": "P01",
+          "rir[1]": "P02",
+          "rir[2]": "P03"
+        },
+        "rir": [
+          {
+            "receiver": "P01",
+            "source_index": 0,
+            "old_length": 10787,
+            "new_length": 10787,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P01",
+            "source_index": 1,
+            "old_length": 10784,
+            "new_length": 10784,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 0,
+            "old_length": 10437,
+            "new_length": 10437,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 1,
+            "old_length": 10435,
+            "new_length": 10435,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 0,
+            "old_length": 10186,
+            "new_length": 10186,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 1,
+            "old_length": 10183,
+            "new_length": 10183,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          }
+        ],
+        "levels": [
+          {
+            "receiver": "P01",
+            "old_band_level_db": -25.20689158808245,
+            "new_band_level_db": -25.20689158808245,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.7418287139505395,
+            "new_relative_db": 0.7418287139505395,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P02",
+            "old_band_level_db": -25.94872030203299,
+            "new_band_level_db": -25.94872030203299,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.0,
+            "new_relative_db": 0.0,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P03",
+            "old_band_level_db": -26.796822812113334,
+            "new_band_level_db": -26.796822812113334,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": -0.848102510080345,
+            "new_relative_db": -0.848102510080345,
+            "relative_difference_db": 0.0
+          }
+        ],
+        "pass": true
+      },
+      "B": {
+        "old_single_mic_seconds": 0.042596700019203126,
+        "new_multimic_seconds": 0.011771299992688,
+        "new_image_source_seconds": 0.0005181999877095222,
+        "new_rir_seconds": 0.010886400006711483,
+        "microphone_order": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "registered_microphone_count": 3,
+        "registered_microphone_coordinates_m": [
+          [
+            3.75,
+            2.5,
+            0.706
+          ],
+          [
+            3.75,
+            5.0,
+            0.706
+          ],
+          [
+            3.75,
+            7.5,
+            0.706
+          ]
+        ],
+        "rir_index_mapping": {
+          "rir[0]": "P01",
+          "rir[1]": "P02",
+          "rir[2]": "P03"
+        },
+        "rir": [
+          {
+            "receiver": "P01",
+            "source_index": 0,
+            "old_length": 10787,
+            "new_length": 10787,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P01",
+            "source_index": 1,
+            "old_length": 10784,
+            "new_length": 10784,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 0,
+            "old_length": 10437,
+            "new_length": 10437,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 1,
+            "old_length": 10435,
+            "new_length": 10435,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 0,
+            "old_length": 10186,
+            "new_length": 10186,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 1,
+            "old_length": 10183,
+            "new_length": 10183,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          }
+        ],
+        "levels": [
+          {
+            "receiver": "P01",
+            "old_band_level_db": -25.522826490265356,
+            "new_band_level_db": -25.522826490265356,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.8626355800662289,
+            "new_relative_db": 0.8626355800662289,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P02",
+            "old_band_level_db": -26.385462070331585,
+            "new_band_level_db": -26.385462070331585,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.0,
+            "new_relative_db": 0.0,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P03",
+            "old_band_level_db": -27.09141657138636,
+            "new_band_level_db": -27.09141657138636,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": -0.7059545010547765,
+            "new_relative_db": -0.7059545010547765,
+            "relative_difference_db": 0.0
+          }
+        ],
+        "pass": true
+      },
+      "C": {
+        "old_single_mic_seconds": 73.89094620000105,
+        "new_multimic_seconds": 128.46754940005485,
+        "new_image_source_seconds": 128.4333083999809,
+        "new_rir_seconds": 0.02246430004015565,
+        "microphone_order": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "registered_microphone_count": 3,
+        "registered_microphone_coordinates_m": [
+          [
+            3.75,
+            2.5,
+            0.706
+          ],
+          [
+            3.75,
+            5.0,
+            0.706
+          ],
+          [
+            3.75,
+            7.5,
+            0.706
+          ]
+        ],
+        "rir_index_mapping": {
+          "rir[0]": "P01",
+          "rir[1]": "P02",
+          "rir[2]": "P03"
+        },
+        "rir": [
+          {
+            "receiver": "P01",
+            "source_index": 0,
+            "old_length": 10787,
+            "new_length": 10787,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P01",
+            "source_index": 1,
+            "old_length": 10784,
+            "new_length": 10784,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 0,
+            "old_length": 10437,
+            "new_length": 10437,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P02",
+            "source_index": 1,
+            "old_length": 10435,
+            "new_length": 10435,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 0,
+            "old_length": 10186,
+            "new_length": 10186,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          },
+          {
+            "receiver": "P03",
+            "source_index": 1,
+            "old_length": 10183,
+            "new_length": 10183,
+            "max_abs": 0.0,
+            "rms": 0.0,
+            "relative_rms": 0.0
+          }
+        ],
+        "levels": [
+          {
+            "receiver": "P01",
+            "old_band_level_db": -25.397681508437966,
+            "new_band_level_db": -25.397681508437966,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.3276545847018717,
+            "new_relative_db": 0.3276545847018717,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P02",
+            "old_band_level_db": -25.725336093139838,
+            "new_band_level_db": -25.725336093139838,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": 0.0,
+            "new_relative_db": 0.0,
+            "relative_difference_db": 0.0
+          },
+          {
+            "receiver": "P03",
+            "old_band_level_db": -26.552623055531868,
+            "new_band_level_db": -26.552623055531868,
+            "band_level_difference_db": 0.0,
+            "old_relative_db": -0.82728696239203,
+            "new_relative_db": -0.82728696239203,
+            "relative_difference_db": 0.0
+          }
+        ],
+        "pass": true
+      }
+    }
+  },
+  "criterion_db": 0.001,
+  "notes": [
+    "Order 8 is intentionally not executed.",
+    "No reusable full RIR arrays were found in the existing metrics JSON; waveform validation uses fresh preserved-method vs multi-microphone calculations.",
+    "All RIR comparisons are t=0 aligned and right-zero-padded only."
+  ]
+}

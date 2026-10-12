@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "units": "m",
+  "coordinate_system_ko": "x: 왼쪽 벽에서의 거리, y: 칠판 쪽 앞벽에서의 거리, z: 바닥에서의 높이",
+  "room": {
+    "width_m": 7.5,
+    "length_m": 10.25,
+    "height_m": 2.63,
+    "status": "provisional",
+    "note_ko": "이전에 보낸 치수 메모를 옮긴 값입니다. 세로와 천장 높이 등을 현장에서 재확인했는지는 미확인입니다."
+  },
+  "sources": [
+    {
+      "id": "S_L",
+      "label_ko": "왼쪽 스피커",
+      "side_wall": "left",
+      "side_wall_distance_m": 0.52,
+      "front_wall_distance_m": 3.1,
+      "height_m": 2.5,
+      "active": true,
+      "position_status": "user_reported",
+      "note_ko": "스피커 중앙·유닛 중심·외곽 중 어느 점에서 잰 거리인지는 미확인입니다."
+    },
+    {
+      "id": "S_R",
+      "label_ko": "오른쪽 스피커",
+      "side_wall": "right",
+      "side_wall_distance_m": 0.95,
+      "front_wall_distance_m": 3.1,
+      "height_m": 2.5,
+      "active": true,
+      "position_status": "user_reported",
+      "note_ko": "x는 방 가로 - 오른쪽 벽에서의 거리로 계산합니다. 측정 기준점은 미확인입니다."
+    }
+  ],
+  "receivers": [
+    {
+      "id": "P01",
+      "label_ko": "앞쪽 예정 지점",
+      "position_m": [3.75, 2.5, 0.706],
+      "measurement_status": "planned",
+      "recording_file": null,
+      "note_ko": "아직 녹음하지 않은 제안 위치입니다. 현장에서 실제 사용한 좌표로 수정합니다."
+    },
+    {
+      "id": "P02",
+      "label_ko": "중간 녹음 지점",
+      "position_m": [3.75, 5.0, 0.706],
+      "measurement_status": "recorded",
+      "recording_file": "테스트 녹음 2.wav",
+      "recording_sha256": "0b4fe7221359b86f6aa7ffbad74be140894223c9ce0312b817f281d6a3ded7ab",
+      "note_ko": "x/y는 타일로 맞춘 약값이며 줄눈 간격이 포함되지 않았습니다. 높이 70.6 cm는 사용자 보고값입니다. 녹음과의 대응은 대화에 근거합니다."
+    },
+    {
+      "id": "P03",
+      "label_ko": "뒤쪽 예정 지점",
+      "position_m": [3.75, 7.5, 0.706],
+      "measurement_status": "planned",
+      "recording_file": null,
+      "note_ko": "아직 녹음하지 않은 제안 위치입니다. 현장에서 실제 사용한 좌표로 수정합니다."
+    }
+  ],
+  "display_plane_receiver_id": "P02",
+  "measurement_conditions": {
+    "phone": "Samsung Galaxy S24",
+    "recorder": "Super Recorder",
+    "phone_placement_ko": "안내한 기준: 화면 위, 충전 단자 쪽은 앞벽, 휴대폰 위쪽은 뒷벽. 현장 배치 사진은 미제공입니다.",
+    "sample_rate_hz": 48000,
+    "recording_channels": 1,
+    "recording_pcm_bits": 16,
+    "playback_reference_file": "test_signal(06_예비녹음_50초).wav",
+    "windows_volume_in_photo": 100,
+    "output_device_in_photo": "스피커(2- Realtek(R) Audio)",
+    "player_volume": null,
+    "amplifier_model": "e STATION SOUND JPM-PA200",
+    "amplifier_settings_ko": "AUX/MASTER/TONE 사진 기록을 사용합니다. 정확한 수치와 PC 연결 AUX 번호, 녹음 이후 설정 변경 여부는 미확인입니다.",
+    "microphone_selection": null,
+    "agc_status": "unknown",
+    "room_occupancy": null,
+    "hvac_state": null,
+    "doors_windows_state": null
+  },
+  "acoustic_parameters": {
+    "wall_absorption": null,
+    "floor_absorption": null,
+    "ceiling_absorption": null,
+    "source_relative_gains": null,
+    "source_relative_delays_s": null,
+    "source_directivity": null,
+    "note_ko": "미확인 값입니다. 07번에서는 임의의 흡음률이나 음량을 넣어 SPL을 계산하지 않습니다."
+  },
+  "furniture": {
+    "status": "not_measured",
+    "objects": [],
+    "note_ko": "배치도에서 책상·의자·교탁은 생략했습니다. 실제 방이 비어 있다는 뜻은 아닙니다."
+  }
+}

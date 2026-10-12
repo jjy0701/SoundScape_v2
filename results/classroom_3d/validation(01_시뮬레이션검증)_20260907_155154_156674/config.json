@@ -1,0 +1,85 @@
+{
+  "pyroomacoustics_version": "0.10.1",
+  "fs": 16000,
+  "max_order": 0,
+  "ray_tracing": false,
+  "source": [
+    2.0,
+    5.0
+  ],
+  "receivers": [
+    [
+      6.0,
+      5.0
+    ],
+    [
+      2.0,
+      7.0
+    ]
+  ],
+  "receiver_names": [
+    "blocked_probe",
+    "clear_probe"
+  ],
+  "outer": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      8.0,
+      0.0
+    ],
+    [
+      8.0,
+      10.0
+    ],
+    [
+      0.0,
+      10.0
+    ]
+  ],
+  "cases": {
+    "empty": null,
+    "blocked": [
+      [
+        3.5,
+        4.0
+      ],
+      [
+        3.5,
+        6.0
+      ],
+      [
+        4.5,
+        6.0
+      ],
+      [
+        4.5,
+        4.0
+      ]
+    ],
+    "moved": [
+      [
+        3.5,
+        1.0
+      ],
+      [
+        3.5,
+        3.0
+      ],
+      [
+        4.5,
+        3.0
+      ],
+      [
+        4.5,
+        1.0
+      ]
+    ]
+  },
+  "wall_alpha": 0.2,
+  "obstacle_alpha": 0.1,
+  "energy_floor_applied": false,
+  "scope": "direct-path smoke test, not full acoustic validation"
+}

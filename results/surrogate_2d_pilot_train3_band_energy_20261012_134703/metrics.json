@@ -1,0 +1,98 @@
+{
+  "input_folder": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\surrogate_2d_pilot_recompute_train3_20261012",
+  "settings": {
+    "fs_hz": 16000,
+    "bands_hz": [
+      [
+        250,
+        500
+      ],
+      [
+        500,
+        1000
+      ],
+      [
+        1000,
+        2000
+      ],
+      [
+        2000,
+        4000
+      ]
+    ],
+    "boundary": "[low,high)",
+    "n_fft": "next power of two >= max actual RIR length",
+    "one_sided_parseval": "sum(weight*abs(rfft)^2)/n_fft; DC/Nyquist weight 1, other bins 2",
+    "floor": 1e-12,
+    "no_rir_recompute": true
+  },
+  "scenes": [
+    {
+      "sample_id": "sample_0000",
+      "n_fft": 4096,
+      "n_fft_double": 8192,
+      "valid_cells": 388,
+      "energy_share": [
+        0.03177089890057183,
+        0.06265396888758587,
+        0.12691314303535434,
+        0.2527640655679038
+      ],
+      "checks": {
+        "parseval_max_relative_error": 5.120478445052027e-16,
+        "four_band_vs_250_4000_max_relative_error": 4.308741643967466e-16,
+        "nfft2_band_max_relative_change": 0.0011257020072467734,
+        "nfft2_relative_map_max_change_db": 0.12138521318239981,
+        "stored_map_max_abs_error_db": 1.9073486328125e-06,
+        "mask_match": true,
+        "nonfinite_valid": 0
+      }
+    },
+    {
+      "sample_id": "sample_0002",
+      "n_fft": 4096,
+      "n_fft_double": 8192,
+      "valid_cells": 392,
+      "energy_share": [
+        0.03173916291272865,
+        0.06278029345726163,
+        0.1262928356195706,
+        0.253599330216421
+      ],
+      "checks": {
+        "parseval_max_relative_error": 4.265001269595863e-16,
+        "four_band_vs_250_4000_max_relative_error": 2.74395762869704e-16,
+        "nfft2_band_max_relative_change": 0.0015926800895364006,
+        "nfft2_relative_map_max_change_db": 0.11079168644112158,
+        "stored_map_max_abs_error_db": 1.9073486328125e-06,
+        "mask_match": true,
+        "nonfinite_valid": 0
+      }
+    },
+    {
+      "sample_id": "sample_0005",
+      "n_fft": 4096,
+      "n_fft_double": 8192,
+      "valid_cells": 379,
+      "energy_share": [
+        0.03148280347527579,
+        0.06244551782941683,
+        0.12738221267335606,
+        0.2539080703382277
+      ],
+      "checks": {
+        "parseval_max_relative_error": 4.396615841137344e-16,
+        "four_band_vs_250_4000_max_relative_error": 3.999869689232666e-16,
+        "nfft2_band_max_relative_change": 0.001282865375685435,
+        "nfft2_relative_map_max_change_db": 0.0855923232355984,
+        "stored_map_max_abs_error_db": 1.9073486328125e-06,
+        "mask_match": true,
+        "nonfinite_valid": 0
+      }
+    }
+  ],
+  "limitations": [
+    "FFT-bin integration, not Butterworth filtering.",
+    "Raw dB is relative simulator energy, not absolute SPL or measured pressure."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "best_epoch": 204,
+  "train_mlp": {
+    "all": {
+      "n": 70,
+      "mae_db": 0.4274036875792912,
+      "mean_scene_rmse_db": 0.6489489184958595
+    },
+    "near": {
+      "n": 13,
+      "mae_db": 0.4850949530418103,
+      "mean_scene_rmse_db": 0.72149108006404
+    },
+    "non_near": {
+      "n": 57,
+      "mae_db": 0.41424603054397985,
+      "mean_scene_rmse_db": 0.6324042149803095
+    }
+  },
+  "validation": {
+    "distance": {
+      "all": {
+        "n": 15,
+        "mae_db": 4.069841225941976,
+        "mean_scene_rmse_db": 4.54666527112325
+      },
+      "near": {
+        "n": 3,
+        "mae_db": 4.316590944925944,
+        "mean_scene_rmse_db": 4.7537608941396075
+      },
+      "non_near": {
+        "n": 12,
+        "mae_db": 4.008153796195984,
+        "mean_scene_rmse_db": 4.494891365369161
+      }
+    },
+    "ridge": {
+      "all": {
+        "n": 15,
+        "mae_db": 0.8733964174887472,
+        "mean_scene_rmse_db": 1.223645614325042
+      },
+      "near": {
+        "n": 3,
+        "mae_db": 0.7531868689453817,
+        "mean_scene_rmse_db": 1.044209086289281
+      },
+      "non_near": {
+        "n": 12,
+        "mae_db": 0.9034488046245884,
+        "mean_scene_rmse_db": 1.2685047463339825
+      }
+    },
+    "mlp": {
+      "all": {
+        "n": 15,
+        "mae_db": 0.7074323872725169,
+        "mean_scene_rmse_db": 0.9933447122573853
+      },
+      "near": {
+        "n": 3,
+        "mae_db": 0.8935074607531229,
+        "mean_scene_rmse_db": 1.1047682762145996
+      },
+      "non_near": {
+        "n": 12,
+        "mae_db": 0.6609136189023653,
+        "mean_scene_rmse_db": 0.9654888212680817
+      }
+    }
+  },
+  "ridge_candidates": [
+    {
+      "alpha": 1e-06,
+      "validation_mean_scene_rmse_db": 1.2312324788255495
+    },
+    {
+      "alpha": 0.0001,
+      "validation_mean_scene_rmse_db": 1.23113403870125
+    },
+    {
+      "alpha": 0.01,
+      "validation_mean_scene_rmse_db": 1.223645614325042
+    },
+    {
+      "alpha": 1.0,
+      "validation_mean_scene_rmse_db": 3.1187461550205344
+    }
+  ],
+  "test_evaluated": false,
+  "plot_scale": {
+    "level_vmin": -40.469322204589844,
+    "level_vmax": 0,
+    "error_abs_max": 4.885005950927734,
+    "selection": "first 3 validation IDs; raw predictions not clipped/renormalized"
+  }
+}

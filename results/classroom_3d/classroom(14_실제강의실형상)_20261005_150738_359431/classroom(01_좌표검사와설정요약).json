@@ -1,0 +1,77 @@
+{
+  "config": "configs\\classroom\\classroom_config(14_실제강의실형상).json",
+  "checks": [
+    {
+      "id": "S_L",
+      "kind": "source",
+      "position_m": [
+        0.52,
+        3.1,
+        2.5
+      ],
+      "inside_room": true,
+      "inside_wall_connected_protrusion": false,
+      "status": "PASS"
+    },
+    {
+      "id": "S_R",
+      "kind": "source",
+      "position_m": [
+        6.55,
+        3.1,
+        2.5
+      ],
+      "inside_room": true,
+      "inside_wall_connected_protrusion": false,
+      "status": "PASS"
+    },
+    {
+      "id": "P01",
+      "kind": "receiver",
+      "position_m": [
+        3.75,
+        2.5,
+        0.706
+      ],
+      "inside_room": true,
+      "inside_wall_connected_protrusion": false,
+      "status": "PASS"
+    },
+    {
+      "id": "P02",
+      "kind": "receiver",
+      "position_m": [
+        3.75,
+        5.0,
+        0.706
+      ],
+      "inside_room": true,
+      "inside_wall_connected_protrusion": false,
+      "status": "PASS"
+    },
+    {
+      "id": "P03",
+      "kind": "receiver",
+      "position_m": [
+        3.75,
+        7.5,
+        0.706
+      ],
+      "inside_room": true,
+      "inside_wall_connected_protrusion": false,
+      "status": "PASS"
+    }
+  ],
+  "changes": [
+    "height 2.63m -> 2.67m",
+    "four wall-connected protrusions added",
+    "tops/sills represented with explicit uncertainty",
+    "window glass segments not invented"
+  ],
+  "not_in_scope": [
+    "acoustic calculation",
+    "absorption correction",
+    "new recording",
+    "measurement validation"
+  ]
+}

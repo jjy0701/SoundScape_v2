@@ -1,0 +1,110 @@
+{
+  "stage": 11,
+  "version": "1.0",
+  "status": "uncalibrated_simulation_prediction",
+  "description": "3D ShoeBox model band-weighted relative energy heatmap; not absolute SPL",
+  "grid": {
+    "size": [
+      20,
+      20
+    ],
+    "receiver_count": 400,
+    "height_m": 0.706,
+    "wall_margin_m": 0.25
+  },
+  "analysis": {
+    "band_hz": [
+      250.0,
+      4000.0
+    ],
+    "reference_core": {
+      "start_s": 6.0,
+      "stop_s": 14.0,
+      "duration_s": 8.0
+    },
+    "fft_size": 524288,
+    "filter": "4th-order Butterworth band-pass; squared-magnitude filtfilt steady-state approximation",
+    "energy_rule": "source-spectrum-weighted RIR transfer energy",
+    "combination_rule": "complex transfer functions summed before energy for both_coherent"
+  },
+  "normalization": {
+    "anchor": "P02",
+    "anchor_condition": "both_coherent",
+    "anchor_relative_db_by_condition": {
+      "left_only": -1.4855045233634665,
+      "right_only": -2.195491285225174,
+      "both_coherent": 0.0
+    },
+    "raw_predictions_clipped_or_renormalized": false
+  },
+  "range_db": {
+    "left_only": {
+      "min": -4.314418925861018,
+      "max": 0.3952862489055917
+    },
+    "right_only": {
+      "min": -4.242540216070535,
+      "max": 0.5103358366766535
+    },
+    "both_coherent": {
+      "min": -1.15645196906356,
+      "max": 3.4161473893182577
+    }
+  },
+  "interference_db": {
+    "definition": "10log10(E_both_coherent / (E_left + E_right))",
+    "min": -1.276623312562886,
+    "max": 1.6346159171916574,
+    "mean": 0.007580082434198843
+  },
+  "inputs": {
+    "config": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\configs\\classroom\\classroom_config(07_강의실측정조건).json",
+      "sha256": "d5d18f11d582768020f2b7c79b34cf349de3c11d06eba34e474389a436b7a183"
+    },
+    "settings": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\configs\\simulation\\simulation_settings(08_음향가정).json",
+      "sha256": "8f5aea1ccbeb723c1edb1e21fd8168ca7bda40c7a6a8c54eb62338c946aeba6f"
+    },
+    "reference": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\reference\\test_signal(06_예비녹음_50초).wav",
+      "filename": "test_signal(06_예비녹음_50초).wav",
+      "sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "duration_s": 50.0
+    }
+  },
+  "model_assumptions": {
+    "dimensions_m": [
+      7.5,
+      10.25,
+      2.63
+    ],
+    "max_order": 32,
+    "absorption": {
+      "walls": 0.2,
+      "floor": 0.2,
+      "ceiling": 0.2
+    },
+    "source_ids": [
+      "S_L",
+      "S_R"
+    ],
+    "same_signal_and_coherent_sum": true,
+    "omitted": [
+      "furniture",
+      "measured directivity",
+      "air absorption",
+      "phone processing",
+      "measurement calibration"
+    ]
+  },
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pyroomacoustics": "0.10.1"
+  },
+  "runtime_seconds": 22.933644200034905
+}

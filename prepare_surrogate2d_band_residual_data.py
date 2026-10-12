@@ -1,0 +1,36 @@
+from pathlib import Path
+import csv,json,hashlib,platform,sys,time,importlib.metadata as md
+import numpy as np
+import pyroomacoustics as pra
+
+ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'/'surrogate_2d'/'dataset'; GEN=ROOT/'src'/'surrogate_2d'/'dataset'/'heatmap_obstacle.py'; PILOT=ROOT/'results'/'surrogate_2d_pilot_recompute_train3_20261012'; OUT=ROOT/'results'/'surrogate_2d_band_residual_data_20261012'; FS=16000; ROOM_X=8.; ROOM_Y=10.; ORDER=8; GRID=20; NFFT=16384; FLOOR=1e-12; BANDS=[(250,500),(500,1000),(1000,2000),(2000,4000)]
+def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def wall(p1,p2,a,name): return pra.wall_factory(np.array([p1,p2],dtype=np.float32).T,np.array([a],dtype=np.float32),np.array([0.],dtype=np.float32),name)
+def be(x,lo,hi):
+ z=np.zeros(NFFT); z[:len(x)]=x; X=np.fft.rfft(z); f=np.fft.rfftfreq(NFFT,1/FS); w=np.full(len(X),2.); w[0]=1.; w[-1]=1.; q=(f>=lo)&(f<hi); return float(np.sum(w[q]*abs(X[q])**2)/NFFT)
+def compute(row):
+ sx,sy,ox,oy,ow,ol=[float(row[k]) for k in ('speaker_x','speaker_y','obstacle_x','obstacle_y','obstacle_w','obstacle_l')]; x=np.linspace(.5,ROOM_X-.5,GRID); y=np.linspace(.5,ROOM_Y-.5,GRID); X,Y=np.meshgrid(x,y); invalid=(X>=ox)&(X<=ox+ow)&(Y>=oy)&(Y<=oy+ol); valid=~invalid; pos=[]; ij=[]
+ for i in range(GRID):
+  for j in range(GRID):
+   if valid[i,j]: pos.append([X[i,j],Y[i,j]]); ij.append([i,j])
+ outer=[[0,0],[ROOM_X,0],[ROOM_X,ROOM_Y],[0,ROOM_Y]]; ob=[[ox,oy],[ox,oy+ol],[ox+ow,oy+ol],[ox+ow,oy]]; walls=[wall(outer[i],outer[(i+1)%4],.2,f'outer_{i}') for i in range(4)]+[wall(ob[i],ob[(i+1)%4],.1,f'obstacle_{i}') for i in range(4)]
+ room=pra.Room(walls,fs=FS,max_order=ORDER); room.add_source(np.array([sx,sy],dtype=np.float32)); room.add_microphone_array(pra.MicrophoneArray(np.asarray(pos,dtype=np.float32).T,FS)); room.compute_rir(); raw=[np.asarray(room.rir[k][0],dtype=float) for k in range(len(pos))]; lengths=np.array([len(x) for x in raw],dtype=np.int64); rir=np.zeros((len(raw),int(lengths.max()))); [rir.__setitem__((k,slice(0,len(x))),x) for k,x in enumerate(raw)]; return rir,lengths,np.asarray(pos),np.asarray(ij),valid,invalid
+def process(sid,row,source='recomputed'):
+ dst=OUT/f'{sid}.npz'
+ if dst.exists(): return {'sample_id':sid,'status':'existing_skipped'}
+ if sid in ('sample_0000','sample_0002','sample_0005'):
+  z=np.load(PILOT/f'{sid}_raw.npz'); rir=z['rir']; lengths=z['rir_lengths']; pos=z['receiver_positions']; ij=z['receiver_indices']; valid=z['valid_mask']; invalid=z['obstacle_mask']; source='pilot_cache_reused'
+ else:
+  rir,lengths,pos,ij,valid,invalid=compute(row)
+ if int(lengths.max())>NFFT: raise ValueError(f'{sid}: actual RIR length {int(lengths.max())} exceeds n_fft={NFFT}; no truncation performed')
+ orig=np.load(DATA/'npy'/f'{sid}.npy',allow_pickle=False); rawE=np.array([np.sum(rir[k,:int(lengths[k])]**2) for k in range(len(lengths))]); broad_db=10*np.log10(np.maximum(rawE,FLOOR)); broad_max=float(broad_db.max()); broad_rel=broad_db-broad_max; bandE=np.array([[be(rir[k,:int(lengths[k])],lo,hi) for k in range(len(lengths))] for lo,hi in BANDS]); band_db=10*np.log10(np.maximum(bandE,FLOOR)); band_max=band_db.max(axis=1); band_rel=band_db-band_max[:,None]; broad_map=np.full((GRID,GRID),np.nan); broad_map[valid]=broad_rel; rec_broad=np.full((GRID,GRID),np.nan); rec_broad[valid]=broad_rel; diff=rec_broad-orig; np.savez_compressed(dst,sample_id=sid,source=source,rir=rir,rir_lengths=lengths,receiver_positions=pos,receiver_indices=ij,valid_mask=valid,obstacle_mask=invalid,raw_energy=rawE,raw_energy_floor_applied=rawE<FLOOR,wideband_pre_db=broad_db,wideband_max_db=broad_max,wideband_relative_db=broad_rel,band_edges_hz=np.asarray(BANDS),band_energy=bandE,band_pre_db=band_db,band_max_db=band_max,band_relative_db=band_rel,original_wideband_map=orig,wideband_recomputed_map=rec_broad,recomputed_minus_original=diff,n_fft=NFFT)
+ return {'sample_id':sid,'status':'processed','source':source,'valid_cells':int(valid.sum()),'mask_match':bool(np.array_equal(np.isnan(orig),invalid)),'wideband_mae_db':float(np.mean(abs(diff[valid]))),'wideband_rmse_db':float(np.sqrt(np.mean(diff[valid]**2))),'wideband_max_abs_db':float(np.max(abs(diff[valid]))),'nonfinite_valid':int(np.sum(~np.isfinite(orig[valid]))),'zero_energy':int(np.sum(rawE==0)),'max_rir_length':int(lengths.max()),'nfft_exceeded':bool(lengths.max()>NFFT)}
+def main():
+ t=time.perf_counter(); OUT.mkdir(parents=True,exist_ok=True); manifest=json.loads((DATA/'splits/split_manifest.json').read_text(encoding='utf-8')); ids=manifest['splits']['train']+manifest['splits']['validation']; selected=ids
+ with (DATA/'metadata.csv').open(encoding='utf-8-sig',newline='') as f: meta={r['sample_id']:r for r in csv.DictReader(f)}
+ reports=[]; plan={'comparison_design':{'split':'existing train 70 / validation 15 / test 15; test excluded from preparation/training/selection','input':'existing 10 per-receiver features','target':'four independently 0 dB maximum-normalized band maps; obstacle cells excluded','A':'features -> four band relative levels','B':'features -> wideband relative level and four residuals; residual target=band truth-wideband truth; inference uses predicted wideband plus predicted residual only','future_controls':['similar total parameter counts','same data/seed/tuning budget','report B full training/inference cost','report per-band mean-scene RMSE and four-band mean','no truth-based renormalization/clipping'],'status':'data preparation only; AI training not run'},'settings':{'room_m':[ROOM_X,ROOM_Y],'fs_hz':FS,'max_order':ORDER,'wall_absorption':.2,'obstacle_absorption':.1,'grid_shape':[20,20],'axis_order':'y,x','n_fft':NFFT,'actual_rir_must_not_be_truncated':True,'bands_hz':BANDS,'boundary':'[low,high)','energy':'one-sided rFFT Parseval weighting','floor':FLOOR,'previous_fft_max_map_change_db':.0599,'previous_temporary_threshold_db':.05},'environment':{'python':sys.version,'platform':platform.platform(),'numpy':np.__version__,'pyroomacoustics':md.version('pyroomacoustics'),'generator_sha256':sha(GEN),'split_manifest_sha256':sha(DATA/'splits/split_manifest.json')},'selected_ids':selected,'completed':[]}
+ (OUT/'experiment_plan.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2),encoding='utf-8')
+ for sid in selected:
+  r=process(sid,meta[sid]); reports.append(r); plan['completed']=reports; (OUT/'progress.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2),encoding='utf-8'); print(sid,r.get('status'),flush=True)
+ plan['completed']=reports; plan['elapsed_s']=time.perf_counter()-t; (OUT/'metrics.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2),encoding='utf-8'); (OUT/'README.md').write_text('# Surrogate 2D band direct-vs-residual data preparation\n\n기존 train 70개와 validation 15개만 사용해 대역별 직접 예측(A)과 광대역+대역 잔여 예측(B)을 비교하기 위한 입력 자료를 준비했습니다. test 15개는 사용하지 않았고 AI 학습은 실행하지 않았습니다. pilot 3개는 기존 raw RIR 캐시를 재사용하고, 나머지는 metadata 형상으로 재계산했습니다. 장면별 NPZ에는 RIR, 실제 길이, 수음점 대응, 마스크, 광대역·대역별 에너지와 정규화 기준, 기존 NPY 비교값이 있습니다.\n\nRIR 길이가 n_fft=16384를 넘으면 저장은 중단해야 하는 조건으로 검사하며, 실제 이번 처리에서 초과 장면이 있으면 metrics에 표시합니다. 이전 FFT 2N→4N 최대 지도 변화 0.0599 dB와 0.05 dB 잠정 기준 미달 사실을 설계 기록에 보존했습니다.\n',encoding='utf-8'); print(json.dumps({'output':str(OUT),'scenes':len(selected),'elapsed_s':plan['elapsed_s']},ensure_ascii=False))
+if __name__=='__main__': main()

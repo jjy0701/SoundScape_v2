@@ -1,0 +1,252 @@
+{
+  "analysis": "P02 three speaker conditions; model B 2.67 m ShoeBox order 32",
+  "band_hz": [
+    250,
+    4000
+  ],
+  "reference_level": "두 스피커 재생 = 0 dB separately for measured and model",
+  "no_per_file_volume_normalization": true,
+  "alignment": "correlation to original first 10 s burst; central 8 s cropped from each of three repeats",
+  "repeat_windows_reference_s": [
+    [
+      6,
+      14
+    ],
+    [
+      21,
+      29
+    ],
+    [
+      36,
+      44
+    ]
+  ],
+  "assumptions": {
+    "absorption": 0.2,
+    "speed_of_sound_m_s": 343,
+    "source_gains": {
+      "S_L": {
+        "relative_gain": 1.0,
+        "extra_delay_samples": 0
+      },
+      "S_R": {
+        "relative_gain": 1.0,
+        "extra_delay_samples": 0
+      }
+    },
+    "receiver": "P02"
+  },
+  "recordings": {
+    "왼쪽 한쪽만": {
+      "sha256": "c6fc9fb95bb02d3ef1e904a7ef1aca06a0cd3f81f243dec1c6fad3968ec4a75b",
+      "duration_s": 66.56,
+      "matched_starts_s": [
+        14.352083333333333,
+        29.3526875,
+        44.353208333333335
+      ],
+      "correlation_scores": [
+        0.1595725562649283,
+        0.15133824870081466,
+        0.15546695637943156
+      ]
+    },
+    "오른쪽 스피커": {
+      "sha256": "8a433af21218581f55d1a3982be81ae2267367fd57f9df1d8e8d438d3a25effc",
+      "duration_s": 62.4,
+      "matched_starts_s": [
+        12.412083333333333,
+        27.427,
+        42.4275625
+      ],
+      "correlation_scores": [
+        0.14742386078733224,
+        0.14588716580222508,
+        0.14735049223091665
+      ]
+    },
+    "두 스피커": {
+      "sha256": "22bc8a698f8d04728f27e744983b546e80c48594bf3c57331b958cc8109f7ab7",
+      "duration_s": 58.56,
+      "matched_starts_s": [
+        13.211416666666667,
+        28.211979166666666,
+        43.212520833333336
+      ],
+      "correlation_scores": [
+        0.16327096208721517,
+        0.1652216853841622,
+        0.16520424121657698
+      ]
+    }
+  },
+  "measured": {
+    "왼쪽 한쪽만": {
+      "per_repeat_level_db": [
+        -39.34152960491748,
+        -39.492978402836656,
+        -39.254805136280424
+      ],
+      "pooled_level_db": -39.361991859198355,
+      "repeat_spread_db": 0.23817326655623106,
+      "window_samples": [
+        [
+          736900,
+          1120900
+        ],
+        [
+          1456929,
+          1840929
+        ],
+        [
+          2176954,
+          2560954
+        ]
+      ]
+    },
+    "오른쪽 스피커": {
+      "per_repeat_level_db": [
+        -41.9788469938345,
+        -42.00350088670261,
+        -41.94781407788729
+      ],
+      "pooled_level_db": -41.9766608751669,
+      "repeat_spread_db": 0.05568680881532373,
+      "window_samples": [
+        [
+          643780,
+          1027780
+        ],
+        [
+          1364496,
+          1748496
+        ],
+        [
+          2084523,
+          2468523
+        ]
+      ]
+    },
+    "두 스피커": {
+      "per_repeat_level_db": [
+        -36.17101493318478,
+        -36.168253560503885,
+        -36.21500855580169
+      ],
+      "pooled_level_db": -36.18470625735357,
+      "repeat_spread_db": 0.04675499529780325,
+      "window_samples": [
+        [
+          682148,
+          1066148
+        ],
+        [
+          1402175,
+          1786175
+        ],
+        [
+          2122201,
+          2506201
+        ]
+      ]
+    }
+  },
+  "model": {
+    "왼쪽 한쪽만": {
+      "per_repeat_level_db": [
+        -26.440730129861763,
+        -26.440730129861763,
+        -26.440730129861763
+      ],
+      "pooled_level_db": -26.440730129861763,
+      "repeat_spread_db": 0.0,
+      "window_samples": [
+        [
+          288000,
+          672000
+        ],
+        [
+          1008000,
+          1392000
+        ],
+        [
+          1728000,
+          2112000
+        ]
+      ]
+    },
+    "오른쪽 스피커": {
+      "per_repeat_level_db": [
+        -27.153779525071112,
+        -27.153779525071112,
+        -27.153779525071112
+      ],
+      "pooled_level_db": -27.153779525071112,
+      "repeat_spread_db": 0.0,
+      "window_samples": [
+        [
+          288000,
+          672000
+        ],
+        [
+          1008000,
+          1392000
+        ],
+        [
+          1728000,
+          2112000
+        ]
+      ]
+    },
+    "두 스피커": {
+      "per_repeat_level_db": [
+        -25.037412406382185,
+        -25.037412406382185,
+        -25.03741240638218
+      ],
+      "pooled_level_db": -25.037412406382185,
+      "repeat_spread_db": 3.552713678800501e-15,
+      "window_samples": [
+        [
+          288000,
+          672000
+        ],
+        [
+          1008000,
+          1392000
+        ],
+        [
+          1728000,
+          2112000
+        ]
+      ]
+    }
+  },
+  "comparison_table": [
+    {
+      "condition": "왼쪽 한쪽만",
+      "measured_relative_db": -3.177285601844787,
+      "model_relative_db": -1.403317723479578,
+      "measured_left_right_difference_db": -3.177285601844787,
+      "model_left_right_difference_db": -1.403317723479578
+    },
+    {
+      "condition": "오른쪽 스피커",
+      "measured_relative_db": -5.791954617813332,
+      "model_relative_db": -2.1163671186889275,
+      "measured_left_right_difference_db": 5.791954617813332,
+      "model_left_right_difference_db": 2.1163671186889275
+    },
+    {
+      "condition": "두 스피커",
+      "measured_relative_db": 0.0,
+      "model_relative_db": 0.0,
+      "measured_left_right_difference_db": 0.0,
+      "model_left_right_difference_db": 0.0
+    }
+  ],
+  "notes": [
+    "Left/right means as viewed while facing the board with back to it.",
+    "No adjustment to absorption, output, delay, C model, or high-order retry."
+  ]
+}

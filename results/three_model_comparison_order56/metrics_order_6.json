@@ -1,0 +1,990 @@
+{
+  "pyroomacoustics": "0.10.1",
+  "orders_completed": [
+    6
+  ],
+  "geometry": "current acoustic polygon",
+  "rows": [
+    {
+      "order": 6,
+      "model": "A",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.565649127820155,
+      "seconds": 0.39409929991234094,
+      "rir_samples_first_source": 8788,
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "synthesized_samples": 2408787,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 708,
+          "peak_abs": 0.2731054829700069,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.28746532654255347,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.7962509724940112
+    },
+    {
+      "order": 6,
+      "model": "A",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.361900100314166,
+      "seconds": 0.38337870000395924,
+      "rir_samples_first_source": 8970,
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "synthesized_samples": 2408969,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 754,
+          "peak_abs": 0.24020075525709408,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.25798202226052847,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0
+    },
+    {
+      "order": 6,
+      "model": "A",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.222661545382117,
+      "seconds": 0.4443483999930322,
+      "rir_samples_first_source": 9319,
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "synthesized_samples": 2409318,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 945,
+          "peak_abs": 0.23629060360437176,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.17271120618943714,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.8607614450679506
+    },
+    {
+      "order": 6,
+      "model": "B",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.86245334508027,
+      "seconds": 0.39801380003336817,
+      "rir_samples_first_source": 8788,
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "synthesized_samples": 2408787,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 564,
+          "peak_abs": 0.2523254135547076,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.2870500428464931,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.7713949326915994
+    },
+    {
+      "order": 6,
+      "model": "B",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.633848277771868,
+      "seconds": 0.34459710004739463,
+      "rir_samples_first_source": 8970,
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "synthesized_samples": 2408969,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 621,
+          "peak_abs": 0.17816891017177852,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.2578601039519873,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0
+    },
+    {
+      "order": 6,
+      "model": "B",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.445019249783968,
+      "seconds": 0.32541809999383986,
+      "rir_samples_first_source": 9319,
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "synthesized_samples": 2409318,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 844,
+          "peak_abs": 0.1725442476525587,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.17153856195121836,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.8111709720120999
+    },
+    {
+      "order": 6,
+      "model": "C",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.704586316399535,
+      "seconds": 2.994259800063446,
+      "rir_samples_first_source": 8788,
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "synthesized_samples": 2408787,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 588,
+          "peak_abs": 0.42650097156645733,
+          "image_order_counts": {
+            "0": 1,
+            "1": 5,
+            "2": 14,
+            "3": 31,
+            "4": 55,
+            "5": 84,
+            "6": 119
+          },
+          "visible_path_count": 309,
+          "orders_head": [
+            0,
+            1,
+            2,
+            6,
+            6,
+            3,
+            4,
+            5,
+            3,
+            4,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            5,
+            4,
+            6,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.28718384842198996,
+          "image_order_counts": {
+            "0": 1,
+            "1": 5,
+            "2": 15,
+            "3": 34,
+            "4": 59,
+            "5": 88,
+            "6": 126
+          },
+          "visible_path_count": 328,
+          "orders_head": [
+            0,
+            1,
+            5,
+            6,
+            6,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            5,
+            6,
+            5,
+            3,
+            4,
+            4,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.40872927165840167
+    },
+    {
+      "order": 6,
+      "model": "C",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.113315588057937,
+      "seconds": 2.8101964000379667,
+      "rir_samples_first_source": 8970,
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "synthesized_samples": 2408969,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 643,
+          "peak_abs": 0.28153190691437324,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 36,
+            "4": 54,
+            "5": 74,
+            "6": 105
+          },
+          "visible_path_count": 294,
+          "orders_head": [
+            0,
+            1,
+            2,
+            6,
+            5,
+            6,
+            3,
+            3,
+            4,
+            6,
+            5,
+            6,
+            3,
+            4,
+            2,
+            3,
+            6,
+            6,
+            4,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.2577425769006656,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 34,
+            "4": 55,
+            "5": 86,
+            "6": 122
+          },
+          "visible_path_count": 322,
+          "orders_head": [
+            0,
+            1,
+            5,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            4,
+            5,
+            5,
+            6,
+            3,
+            4,
+            6,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0
+    },
+    {
+      "order": 6,
+      "model": "C",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.9228240226848,
+      "seconds": 2.8522895999485627,
+      "rir_samples_first_source": 9319,
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "synthesized_samples": 2409318,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 860,
+          "peak_abs": 0.294521961294089,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 17,
+            "3": 35,
+            "4": 61,
+            "5": 98,
+            "6": 145
+          },
+          "visible_path_count": 363,
+          "orders_head": [
+            0,
+            1,
+            3,
+            5,
+            5,
+            6,
+            6,
+            4,
+            5,
+            6,
+            4,
+            6,
+            5,
+            3,
+            4,
+            6,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.1714657213976171,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 17,
+            "3": 36,
+            "4": 63,
+            "5": 96,
+            "6": 139
+          },
+          "visible_path_count": 358,
+          "orders_head": [
+            0,
+            1,
+            5,
+            6,
+            3,
+            4,
+            5,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            4,
+            5,
+            4,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.8095084346268635
+    }
+  ]
+}

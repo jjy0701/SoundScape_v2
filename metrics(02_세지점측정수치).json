@@ -1,0 +1,350 @@
+{
+  "analysis_date": "2026-09-19",
+  "status": "recording_QC_complete; cross_position_physical_comparison_pending_conditions",
+  "reference": {
+    "file_name": "test_signal(06_예비녹음_50초).wav",
+    "sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "pcm_bits": 16,
+    "frames": 2400000,
+    "duration_s": 50.0,
+    "channel_metrics": [
+      {
+        "channel": 1,
+        "peak_dbfs": -13.016404208284113,
+        "whole_file_rms_dbfs": -28.276210709998658,
+        "dc_mean": 4.84466552734375e-09,
+        "full_scale_code_samples": 0,
+        "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+      },
+      {
+        "channel": 2,
+        "peak_dbfs": -13.016404208284113,
+        "whole_file_rms_dbfs": -28.276210709998658,
+        "dc_mean": 4.84466552734375e-09,
+        "full_scale_code_samples": 0,
+        "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+      }
+    ],
+    "analysis_channel": 1,
+    "template_start_s": 5.0,
+    "template_end_s": 15.0,
+    "template_duration_s": 10.0,
+    "non_silent_runs_s": [
+      [
+        5.0,
+        15.0
+      ],
+      [
+        20.0,
+        30.0
+      ],
+      [
+        35.0,
+        45.0
+      ]
+    ],
+    "other_runs_identical_to_first": [
+      true,
+      true
+    ],
+    "stereo_channels_identical": true,
+    "note": "채널1을 기준으로 사용. 음원 상관은 신호 대응 후보이며 스피커 수를 나타내지 않음"
+  },
+  "method": {
+    "description": "Unchanged step-06 code; PCM full scale=1, channel 1, no gain/denoise/DC removal/bandpass applied to RMS",
+    "matching": "Absolute normalized correlation against first 10 s reference burst; heuristic threshold 0.10, then visual review",
+    "level": "For each burst, trim 1 s at each end; compute 8 s raw RMS. Combine three equal-length cores by mean squared samples, not arithmetic mean dB.",
+    "interpretation": "Digital dBFS including background; not calibrated SPL. Cross-session gain, coordinates and processing are not yet confirmed.",
+    "script_sha256": "f9f34df7168bb65e6c3ff8e0524cb4064993aa1da4a7e74c685c6cffd8aafd16",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "recordings": [
+    {
+      "file_name": "앞쪽 2.5m.wav",
+      "sha256": "ebe77bdac27b0636e30dac694563f324a4d8b49aba350a7fa0cf51fe00a0993c",
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "frames": 3041280,
+      "duration_s": 63.36,
+      "channel_metrics": [
+        {
+          "channel": 1,
+          "peak_dbfs": -8.544858936503658,
+          "whole_file_rms_dbfs": -37.098261733135566,
+          "dc_mean": 2.4339566728482746e-07,
+          "full_scale_code_samples": 0,
+          "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+        }
+      ],
+      "analysis_channel": 1,
+      "reference_comparison": {
+        "status": "candidates_found",
+        "threshold_abs_correlation": 0.1,
+        "best_abs_correlation": 0.22358527842000922,
+        "candidates": [
+          {
+            "candidate": 1,
+            "start_s": 7.588791666666666,
+            "end_s": 17.588791666666665,
+            "signed_normalized_correlation": -0.22358527842000922,
+            "absolute_normalized_correlation": 0.22358527842000922,
+            "core_start_s": 8.588791666666667,
+            "core_end_s": 16.588791666666665,
+            "core_rms_dbfs": -34.013919910961555,
+            "preceding_window_start_s": 4.588791666666666,
+            "preceding_window_end_s": 6.588791666666666,
+            "preceding_window_rms_dbfs": -58.93833616225831,
+            "signal_plus_background_minus_preceding_level_db": 24.924416251296755
+          },
+          {
+            "candidate": 2,
+            "start_s": 22.589375,
+            "end_s": 32.589375,
+            "signed_normalized_correlation": -0.2232805439867056,
+            "absolute_normalized_correlation": 0.2232805439867056,
+            "core_start_s": 23.589375,
+            "core_end_s": 31.589375,
+            "core_rms_dbfs": -33.996388704565426,
+            "preceding_window_start_s": 19.589375,
+            "preceding_window_end_s": 21.589375,
+            "preceding_window_rms_dbfs": -58.857772287592496,
+            "signal_plus_background_minus_preceding_level_db": 24.86138358302707
+          },
+          {
+            "candidate": 3,
+            "start_s": 37.589958333333335,
+            "end_s": 47.589958333333335,
+            "signed_normalized_correlation": -0.22333810908606405,
+            "absolute_normalized_correlation": 0.22333810908606405,
+            "core_start_s": 38.589958333333335,
+            "core_end_s": 46.589958333333335,
+            "core_rms_dbfs": -34.0095556473372,
+            "preceding_window_start_s": 34.589958333333335,
+            "preceding_window_end_s": 36.589958333333335,
+            "preceding_window_rms_dbfs": -59.60248845247943,
+            "signal_plus_background_minus_preceding_level_db": 25.592932805142226
+          }
+        ],
+        "start_intervals_s": [
+          15.000583333333335,
+          15.000583333333335
+        ],
+        "level_spread_db": 0.017531206396128596,
+        "note": "상관값은 음질 점수 아님. 지연은 녹음 시작 시차 포함. 앞 구간이 배경소음인지 수동 확인 필요. AGC 유무 판정 불가"
+      },
+      "plot_file": "P01(파형과구간).png",
+      "measurement_id": "P01",
+      "front_wall_distance_m": 2.5,
+      "position_status": "y from new filename/user report; x/z not reconfirmed",
+      "previous_planned_x_m": 3.75,
+      "previous_planned_z_m": 0.706,
+      "new_session_x_confirmed": null,
+      "new_session_z_confirmed": null,
+      "speaker_count": null,
+      "speaker_count_basis": "not confirmed for this recording",
+      "same_playback_gain_as_P02": null,
+      "same_phone_orientation_as_P02": null,
+      "same_app_processing_as_P02": null,
+      "pooled_three_core_rms_dbfs": -34.00661502604184,
+      "peak_time_s": 60.088854166666664,
+      "peak_outside_detected_bursts": true,
+      "qc_result": "Readable PCM; 3 reference burst candidates supported by waveform/spectrogram; no digital rail hits"
+    },
+    {
+      "file_name": "테스트 녹음 2.wav",
+      "sha256": "0b4fe7221359b86f6aa7ffbad74be140894223c9ce0312b817f281d6a3ded7ab",
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "frames": 3221760,
+      "duration_s": 67.12,
+      "channel_metrics": [
+        {
+          "channel": 1,
+          "peak_dbfs": -8.592488028779496,
+          "whole_file_rms_dbfs": -39.36468875613749,
+          "dc_mean": -7.529177265978068e-07,
+          "full_scale_code_samples": 0,
+          "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+        }
+      ],
+      "analysis_channel": 1,
+      "reference_comparison": {
+        "status": "candidates_found",
+        "threshold_abs_correlation": 0.1,
+        "best_abs_correlation": 0.2156182427933277,
+        "candidates": [
+          {
+            "candidate": 1,
+            "start_s": 12.739708333333333,
+            "end_s": 22.739708333333333,
+            "signed_normalized_correlation": -0.2156182427933277,
+            "absolute_normalized_correlation": 0.2156182427933277,
+            "core_start_s": 13.739708333333333,
+            "core_end_s": 21.739708333333333,
+            "core_rms_dbfs": -36.48398262124886,
+            "preceding_window_start_s": 9.739708333333333,
+            "preceding_window_end_s": 11.739708333333333,
+            "preceding_window_rms_dbfs": -53.546661262925255,
+            "signal_plus_background_minus_preceding_level_db": 17.062678641676392
+          },
+          {
+            "candidate": 2,
+            "start_s": 27.740270833333334,
+            "end_s": 37.740270833333334,
+            "signed_normalized_correlation": -0.21223804407575098,
+            "absolute_normalized_correlation": 0.21223804407575098,
+            "core_start_s": 28.740270833333334,
+            "core_end_s": 36.740270833333334,
+            "core_rms_dbfs": -36.42489165388951,
+            "preceding_window_start_s": 24.740270833333334,
+            "preceding_window_end_s": 26.740270833333334,
+            "preceding_window_rms_dbfs": -47.28513241515171,
+            "signal_plus_background_minus_preceding_level_db": 10.860240761262197
+          },
+          {
+            "candidate": 3,
+            "start_s": 42.740833333333335,
+            "end_s": 52.740833333333335,
+            "signed_normalized_correlation": -0.21539978745012764,
+            "absolute_normalized_correlation": 0.21539978745012764,
+            "core_start_s": 43.740833333333335,
+            "core_end_s": 51.740833333333335,
+            "core_rms_dbfs": -36.50811281998773,
+            "preceding_window_start_s": 39.740833333333335,
+            "preceding_window_end_s": 41.740833333333335,
+            "preceding_window_rms_dbfs": -52.80139935471878,
+            "signal_plus_background_minus_preceding_level_db": 16.293286534731052
+          }
+        ],
+        "start_intervals_s": [
+          15.000562500000001,
+          15.000562500000001
+        ],
+        "level_spread_db": 0.08322116609821961,
+        "note": "상관값은 음질 점수 아님. 지연은 녹음 시작 시차 포함. 앞 구간이 배경소음인지 수동 확인 필요. AGC 유무 판정 불가"
+      },
+      "plot_file": "P02(파형과구간).png",
+      "measurement_id": "P02",
+      "front_wall_distance_m": 5.0,
+      "position_status": "P02 previous approximate coordinates",
+      "previous_planned_x_m": 3.75,
+      "previous_planned_z_m": 0.706,
+      "new_session_x_confirmed": null,
+      "new_session_z_confirmed": null,
+      "speaker_count": 2,
+      "speaker_count_basis": "previous user report",
+      "same_playback_gain_as_P02": null,
+      "same_phone_orientation_as_P02": null,
+      "same_app_processing_as_P02": null,
+      "pooled_three_core_rms_dbfs": -36.472188147441315,
+      "peak_time_s": 66.424375,
+      "peak_outside_detected_bursts": true,
+      "qc_result": "Readable PCM; 3 reference burst candidates supported by waveform/spectrogram; no digital rail hits"
+    },
+    {
+      "file_name": "앞쪽벽 7.5m.wav",
+      "sha256": "6bc8288676270999dbc9023414b82b49a948ec083118d8bd8a45c4dde6c6b2aa",
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "frames": 3528960,
+      "duration_s": 73.52,
+      "channel_metrics": [
+        {
+          "channel": 1,
+          "peak_dbfs": -22.828703893356128,
+          "whole_file_rms_dbfs": -42.461086227261944,
+          "dc_mean": -1.7461544973589952e-07,
+          "full_scale_code_samples": 0,
+          "near_full_scale_samples_ge_minus_0_1_dbfs": 0
+        }
+      ],
+      "analysis_channel": 1,
+      "reference_comparison": {
+        "status": "candidates_found",
+        "threshold_abs_correlation": 0.1,
+        "best_abs_correlation": 0.2070297908378211,
+        "candidates": [
+          {
+            "candidate": 1,
+            "start_s": 13.351625,
+            "end_s": 23.351625,
+            "signed_normalized_correlation": -0.2049480568732814,
+            "absolute_normalized_correlation": 0.2049480568732814,
+            "core_start_s": 14.351625,
+            "core_end_s": 22.351625,
+            "core_rms_dbfs": -38.54853975766647,
+            "preceding_window_start_s": 10.351625,
+            "preceding_window_end_s": 12.351625,
+            "preceding_window_rms_dbfs": -64.43744390559226,
+            "signal_plus_background_minus_preceding_level_db": 25.888904147925793
+          },
+          {
+            "candidate": 2,
+            "start_s": 28.352208333333333,
+            "end_s": 38.35220833333333,
+            "signed_normalized_correlation": -0.2070297908378211,
+            "absolute_normalized_correlation": 0.2070297908378211,
+            "core_start_s": 29.352208333333333,
+            "core_end_s": 37.35220833333333,
+            "core_rms_dbfs": -38.66478534678029,
+            "preceding_window_start_s": 25.352208333333333,
+            "preceding_window_end_s": 27.352208333333333,
+            "preceding_window_rms_dbfs": -64.87289174165542,
+            "signal_plus_background_minus_preceding_level_db": 26.20810639487513
+          },
+          {
+            "candidate": 3,
+            "start_s": 43.35277083333333,
+            "end_s": 53.35277083333333,
+            "signed_normalized_correlation": -0.20371521763625908,
+            "absolute_normalized_correlation": 0.20371521763625908,
+            "core_start_s": 44.35277083333333,
+            "core_end_s": 52.35277083333333,
+            "core_rms_dbfs": -38.697712692817774,
+            "preceding_window_start_s": 40.35277083333333,
+            "preceding_window_end_s": 42.35277083333333,
+            "preceding_window_rms_dbfs": -64.9109026378437,
+            "signal_plus_background_minus_preceding_level_db": 26.21318994502593
+          }
+        ],
+        "start_intervals_s": [
+          15.000583333333333,
+          15.000562499999997
+        ],
+        "level_spread_db": 0.1491729351513058,
+        "note": "상관값은 음질 점수 아님. 지연은 녹음 시작 시차 포함. 앞 구간이 배경소음인지 수동 확인 필요. AGC 유무 판정 불가"
+      },
+      "plot_file": "P03(파형과구간).png",
+      "measurement_id": "P03",
+      "front_wall_distance_m": 7.5,
+      "position_status": "y from new filename/user report; x/z not reconfirmed",
+      "previous_planned_x_m": 3.75,
+      "previous_planned_z_m": 0.706,
+      "new_session_x_confirmed": null,
+      "new_session_z_confirmed": null,
+      "speaker_count": null,
+      "speaker_count_basis": "not confirmed for this recording",
+      "same_playback_gain_as_P02": null,
+      "same_phone_orientation_as_P02": null,
+      "same_app_processing_as_P02": null,
+      "pooled_three_core_rms_dbfs": -38.636539906109995,
+      "peak_time_s": 60.9334375,
+      "peak_outside_detected_bursts": true,
+      "qc_result": "Readable PCM; 3 reference burst candidates supported by waveform/spectrogram; no digital rail hits"
+    }
+  ],
+  "observed_digital_differences_db": {
+    "P02_minus_P01": -2.4655731213994727,
+    "P03_minus_P01": -4.6299248800681525,
+    "P03_minus_P02": -2.16435175866868,
+    "interpretation": "File-level descriptive differences only. No attribution to spatial attenuation without condition checks."
+  }
+}

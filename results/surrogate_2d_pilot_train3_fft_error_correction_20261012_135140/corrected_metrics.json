@@ -1,0 +1,225 @@
+{
+  "definitions": {
+    "E1": "band_energy(raw_RIR, n_fft)",
+    "E2": "band_energy(raw_RIR, 2*n_fft)",
+    "valid_axis": "RIR receiver index; obstacle cells excluded via receiver_indices/valid_mask",
+    "metric_1": "max over scene, band, receiver of abs(E2-E1)/E1",
+    "metric_2": "for each scene and receiver: sum four band energies, then abs(sum(E2)-sum(E1))/sum(E1); max over scene, receiver",
+    "metric_3": "for each scene and band: sum E over all valid receivers, then abs(sum(E2)-sum(E1))/sum(E1); max over scene, band",
+    "floor": "energy floor 1e-12 is used only for log maps, not these positive-energy relative-error denominators",
+    "correction": "existing nfft2_band_max_relative_change was metric_2, because prior code formed band_sum=sum(four band energies, axis=0) before taking the maximum"
+  },
+  "scenes": {
+    "sample_0000": {
+      "n_fft": 4096,
+      "receiver_count": 388,
+      "valid_cells": 388,
+      "metric_1_max_scene": {
+        "scene": "sample_0000",
+        "band": "250-500 Hz",
+        "receiver_index": 42,
+        "grid_index_yx": [
+          2,
+          2
+        ],
+        "value": 0.028240720123827476,
+        "E1": 0.001401826361487597,
+        "E2": 0.0014414149474245715
+      },
+      "metric_2_max_scene": {
+        "scene": "sample_0000",
+        "receiver_index": 337,
+        "grid_index_yx": [
+          17,
+          9
+        ],
+        "value": 0.0011257020072467734,
+        "E1_sum_four_bands": 0.12396382394818141,
+        "E2_sum_four_bands": 0.12382427762273696
+      },
+      "metric_3_by_band": [
+        {
+          "band": "250-500 Hz",
+          "value": 0.0006116820486947856,
+          "E1_sum_receivers": 5.6054522850241115,
+          "E2_sum_receivers": 5.608881039561676,
+          "valid_receiver_count": 388
+        },
+        {
+          "band": "500-1000 Hz",
+          "value": 0.00021443438785324648,
+          "E1_sum_receivers": 11.054261768477273,
+          "E2_sum_receivers": 11.05189135462178,
+          "valid_receiver_count": 388
+        },
+        {
+          "band": "1000-2000 Hz",
+          "value": 0.00014630208601258202,
+          "E1_sum_receivers": 22.391735589650395,
+          "E2_sum_receivers": 22.388459632024187,
+          "valid_receiver_count": 388
+        },
+        {
+          "band": "2000-4000 Hz",
+          "value": 8.164297221932928e-05,
+          "E1_sum_receivers": 44.59605985161753,
+          "E2_sum_receivers": 44.59970080649309,
+          "valid_receiver_count": 388
+        }
+      ]
+    },
+    "sample_0002": {
+      "n_fft": 4096,
+      "receiver_count": 392,
+      "valid_cells": 392,
+      "metric_1_max_scene": {
+        "scene": "sample_0002",
+        "band": "250-500 Hz",
+        "receiver_index": 51,
+        "grid_index_yx": [
+          2,
+          11
+        ],
+        "value": 0.025408685476079666,
+        "E1": 0.0030888583591511224,
+        "E2": 0.003010374528623292
+      },
+      "metric_2_max_scene": {
+        "scene": "sample_0002",
+        "receiver_index": 266,
+        "grid_index_yx": [
+          13,
+          14
+        ],
+        "value": 0.0015926800895364006,
+        "E1_sum_four_bands": 0.02726699794123653,
+        "E2_sum_four_bands": 0.027223570336514093
+      },
+      "metric_3_by_band": [
+        {
+          "band": "250-500 Hz",
+          "value": 0.00041839725558055145,
+          "E1_sum_receivers": 5.731381117810778,
+          "E2_sum_receivers": 5.7289831236804,
+          "valid_receiver_count": 392
+        },
+        {
+          "band": "500-1000 Hz",
+          "value": 3.0810031362099005e-05,
+          "E1_sum_receivers": 11.336713242278602,
+          "E2_sum_receivers": 11.33706252676914,
+          "valid_receiver_count": 392
+        },
+        {
+          "band": "1000-2000 Hz",
+          "value": 0.00029304280610026117,
+          "E1_sum_receivers": 22.805654181084346,
+          "E2_sum_receivers": 22.812337213980523,
+          "valid_receiver_count": 392
+        },
+        {
+          "band": "2000-4000 Hz",
+          "value": 6.806558714356179e-05,
+          "E1_sum_receivers": 45.794352443647945,
+          "E2_sum_receivers": 45.79123542416101,
+          "valid_receiver_count": 392
+        }
+      ]
+    },
+    "sample_0005": {
+      "n_fft": 4096,
+      "receiver_count": 379,
+      "valid_cells": 379,
+      "metric_1_max_scene": {
+        "scene": "sample_0005",
+        "band": "250-500 Hz",
+        "receiver_index": 96,
+        "grid_index_yx": [
+          4,
+          16
+        ],
+        "value": 0.019400386826161475,
+        "E1": 0.005793301027589195,
+        "E2": 0.0056809087466535655
+      },
+      "metric_2_max_scene": {
+        "scene": "sample_0005",
+        "receiver_index": 312,
+        "grid_index_yx": [
+          15,
+          12
+        ],
+        "value": 0.001282865375685435,
+        "E1_sum_four_bands": 0.13827173380169847,
+        "E2_sum_four_bands": 0.13809434978196827
+      },
+      "metric_3_by_band": [
+        {
+          "band": "250-500 Hz",
+          "value": 0.0003807577573605516,
+          "E1_sum_receivers": 5.186719724981728,
+          "E2_sum_receivers": 5.184744841211186,
+          "valid_receiver_count": 379
+        },
+        {
+          "band": "500-1000 Hz",
+          "value": 0.00012046988835996364,
+          "E1_sum_receivers": 10.287755959118797,
+          "E2_sum_receivers": 10.288995323930667,
+          "valid_receiver_count": 379
+        },
+        {
+          "band": "1000-2000 Hz",
+          "value": 5.091704462820546e-05,
+          "E1_sum_receivers": 20.985927622474087,
+          "E2_sum_receivers": 20.986996163887405,
+          "valid_receiver_count": 379
+        },
+        {
+          "band": "2000-4000 Hz",
+          "value": 3.5085460804098994e-05,
+          "E1_sum_receivers": 41.830772719766415,
+          "E2_sum_receivers": 41.82930506782975,
+          "valid_receiver_count": 379
+        }
+      ]
+    }
+  },
+  "maxima": {
+    "metric_1": {
+      "scene": "sample_0000",
+      "band": "250-500 Hz",
+      "receiver_index": 42,
+      "grid_index_yx": [
+        2,
+        2
+      ],
+      "value": 0.028240720123827476,
+      "E1": 0.001401826361487597,
+      "E2": 0.0014414149474245715,
+      "global_value": 0.028240720123827476
+    },
+    "metric_2": {
+      "scene": "sample_0002",
+      "receiver_index": 266,
+      "grid_index_yx": [
+        13,
+        14
+      ],
+      "value": 0.0015926800895364006,
+      "E1_sum_four_bands": 0.02726699794123653,
+      "E2_sum_four_bands": 0.027223570336514093,
+      "global_value": 0.0015926800895364006
+    },
+    "metric_3": {
+      "scene": "sample_0000",
+      "band": "250-500 Hz",
+      "value": 0.0006116820486947856,
+      "E1_sum_receivers": 5.6054522850241115,
+      "E2_sum_receivers": 5.608881039561676,
+      "valid_receiver_count": 388,
+      "global_value": 0.0006116820486947856
+    }
+  },
+  "conclusion": "0.159% was metric_2, not metric_1. The 2.824% pointwise band error and 0.159% per-receiver four-band-sum error are not contradictory."
+}

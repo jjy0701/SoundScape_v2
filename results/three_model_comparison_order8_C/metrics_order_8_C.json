@@ -1,0 +1,20 @@
+{
+  "pyroomacoustics": "0.10.1",
+  "order": 8,
+  "model": "C",
+  "timeout_seconds": 120.0,
+  "receivers": [
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "orders_completed": [],
+  "rows": [],
+  "status": "timed_out",
+  "started_at": "2026-10-07T16:44:09+0900",
+  "timed_out_receiver": "P01",
+  "stopped_before": [
+    "P02",
+    "P03"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "units": "m",
+  "coordinate_system_ko": "칠판을 등지고 뒤쪽을 보는 기준: x=0 왼쪽 원래 벽면, x=7.50 오른쪽 창문 유리면, y=0 앞벽/칠판, y=10.25 뒷벽, z=0 바닥",
+  "purpose": "geometry_and_layout_only",
+  "status_note_ko": "이번 결과는 실제 강의실 배치도이다. 음압 분포, 음향 계산, 흡음률 보정, 실측 검증 결과가 아니다.",
+  "room": {
+    "width_m": 7.5,
+    "length_m": 10.25,
+    "height_m": 2.67,
+    "height_change_from_previous_m": {"previous": 2.63, "new": 2.67},
+    "measurement_basis": "가로·세로는 기존 측정값이며 오늘 재측정하지 않음",
+    "height_status": "user_decided"
+  },
+  "wall_connected_protrusions": [
+    {"id": "left_front", "x_range_m": [0.0, 0.42], "y_range_m": [2.74, 3.465], "z_range_m": [0.0, 2.67], "status": "measured_geometry"},
+    {"id": "right_front", "x_range_m": [6.80, 7.50], "y_range_m": [2.74, 3.465], "z_range_m": [0.0, 2.67], "status": "measured_geometry"},
+    {"id": "left_back", "x_range_m": [0.0, 0.42], "y_range_m": [9.20, 10.25], "z_range_m": [0.0, 2.67], "status": "derived_from_10.25_minus_1.05", "note_ko": "뒤쪽 앞뒤 폭 약 1.05m, 뒷벽에 바로 연결"},
+    {"id": "right_back", "x_range_m": [6.80, 7.50], "y_range_m": [9.20, 10.25], "z_range_m": [0.0, 2.67], "status": "derived_from_10.25_minus_1.05", "note_ko": "뒤쪽 앞뒤 폭 약 1.05m, 뒷벽에 바로 연결"}
+  ],
+  "window_side": {
+    "wall": "right",
+    "glass_surface_x_m": 7.5,
+    "glass_segments": {"status": "unknown", "note_ko": "유리 구간 시작·끝, 창틀 폭, 유리 하단 높이는 미확인. 오른쪽 벽 전체를 유리로 확정하지 않음."},
+    "sill_top_z_m": 0.77,
+    "sill_top_status": "reported_but_extent_and_thickness_unknown",
+    "middle_horizontal_frame_z_m": 1.37,
+    "middle_frame_basis": "창턱 윗면부터 0.60m",
+    "top_to_middle_frame_m": 1.30,
+    "top_frame_status": "approximately_ceiling_height_observed",
+    "future_measurement_condition": "창문 닫힘; 모든 블라인드 하단을 중간 창틀 높이에 맞춤",
+    "previous_recording_condition": "unknown; 소급 기록하지 않음",
+    "acoustic_properties": "not_specified"
+  },
+  "tops_and_sills": [
+    {"id": "right_front_wood_top", "x_range_m": [7.0, 7.5], "z_top_m": 0.77, "y_range_m": [0.0, 2.74], "depth_m": 0.50, "status": "temporary_extent_assumption", "note_ko": "오른쪽 앞 돌출부(y=2.74~3.465) 앞쪽 창문 아래에 표시하기 위한 임시 y 범위. 정확한 시작·끝, 두께, 하부 구조는 미측정이며 확정하지 않음."},
+    {"id": "front_narrow_sill", "x_range_m": [7.3, 7.5], "z_top_m": 0.77, "y_range_m": [3.465, 9.20], "depth_m": 0.20, "status": "partial_geometry_assumption", "note_ko": "y 범위는 도면 표시를 위한 임시 가정; 하부 미확인 공간을 고체로 확정하지 않음"}
+  ],
+  "sources": {
+    "S_L": {"position_m": [0.52, 3.10, 2.50], "basis": "left original wall; not protrusion face", "dimensions_direction_acoustic_center": "unknown"},
+    "S_R": {"position_m": [6.55, 3.10, 2.50], "basis": "0.95m from right glass surface", "dimensions_direction_acoustic_center": "unknown"}
+  },
+  "receivers": {
+    "P01": {"position_m": [3.75, 2.50, 0.706], "legacy_coordinate_note": "기존 약값 표기 유지", "recording_status": "existing_corresponding_coordinate; no_new_recording"},
+    "P02": {"position_m": [3.75, 5.00, 0.706], "legacy_coordinate_note": "기존 약값 표기 유지", "recording_status": "existing_corresponding_coordinate; no_new_recording"},
+    "P03": {"position_m": [3.75, 7.50, 0.706], "legacy_coordinate_note": "기존 약값 표기 유지", "recording_status": "existing_corresponding_coordinate; no_new_recording"}
+  },
+  "future_measurement": {"new_recording_done": false, "single_speaker_left_right_done": false},
+  "furniture": {"status": "omitted_not_measured", "objects": [], "note_ko": "책상·의자는 아직 치수가 없어 생략"},
+  "acoustic_parameters": {"wall_absorption": null, "floor_absorption": null, "ceiling_absorption": null, "glass_absorption": null, "blind_absorption": null, "note_ko": "흡음률을 아직 확정하지 않음"}
+}

@@ -1,0 +1,194 @@
+{
+  "stage": 13,
+  "version": "1.0",
+  "scope": "model-only sensitivity analysis; no fitting and no new measurement",
+  "baseline": {
+    "absorption": 0.2,
+    "right_gain": 1.0,
+    "relative_delay_samples": 0
+  },
+  "tested": {
+    "absorption": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "right_gain": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "relative_delay_samples": [
+      -5,
+      -2,
+      0,
+      2,
+      5
+    ]
+  },
+  "delay_distance_equivalent_cm": {
+    "-5": -3.5729166666666665,
+    "-2": -1.4291666666666667,
+    "0": 0.0,
+    "2": 1.4291666666666667,
+    "5": 3.5729166666666665
+  },
+  "evaluation": {
+    "band_hz": [
+      250,
+      4000
+    ],
+    "cross_section_y_m": 5.0,
+    "cross_section_z_m": 0.706,
+    "cross_points": 31,
+    "additional_points": [
+      "P01",
+      "P02",
+      "P03"
+    ]
+  },
+  "one_at_a_time_ranking": [
+    {
+      "alpha": 0.2,
+      "right_gain": 1.0,
+      "relative_delay_samples": 5,
+      "relative_delay_ms": 0.10416666666666667,
+      "p01_relative_db": 0.5798274124513579,
+      "p03_relative_db": -0.603559343221999,
+      "p02_interaction_db": -0.900082950988344,
+      "cross_section_rmse_from_baseline_db": 0.3993686258813448,
+      "cross_section_max_abs_change_db": 1.0003261696386732,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "delay=+5"
+    },
+    {
+      "alpha": 0.1,
+      "right_gain": 1.0,
+      "relative_delay_samples": 0,
+      "relative_delay_ms": 0.0,
+      "p01_relative_db": 0.21741223077351773,
+      "p03_relative_db": -0.27123785905172204,
+      "p02_interaction_db": -0.7582948931415636,
+      "cross_section_rmse_from_baseline_db": 0.3981850087694665,
+      "cross_section_max_abs_change_db": 0.6808392344953331,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "α=0.1"
+    },
+    {
+      "alpha": 0.3,
+      "right_gain": 1.0,
+      "relative_delay_samples": 0,
+      "relative_delay_ms": 0.0,
+      "p01_relative_db": 0.7201639255597986,
+      "p03_relative_db": -1.0278677718936902,
+      "p02_interaction_db": -1.43623952272016,
+      "cross_section_rmse_from_baseline_db": 0.23976338528771668,
+      "cross_section_max_abs_change_db": 0.48952690220783324,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "α=0.3"
+    },
+    {
+      "alpha": 0.2,
+      "right_gain": 0.8,
+      "relative_delay_samples": 0,
+      "relative_delay_ms": 0.0,
+      "p01_relative_db": 0.5114120405620297,
+      "p03_relative_db": -0.6507614354747481,
+      "p02_interaction_db": -1.128089952172666,
+      "cross_section_rmse_from_baseline_db": 0.20973848125920644,
+      "cross_section_max_abs_change_db": 0.4207165688482891,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "gain=0.8"
+    },
+    {
+      "alpha": 0.2,
+      "right_gain": 1.0,
+      "relative_delay_samples": -5,
+      "relative_delay_ms": -0.10416666666666667,
+      "p01_relative_db": 0.6114811618929558,
+      "p03_relative_db": -0.43390248001629794,
+      "p02_interaction_db": -1.308792060887202,
+      "cross_section_rmse_from_baseline_db": 0.20102047199729758,
+      "cross_section_max_abs_change_db": 0.4725006959344831,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "delay=-5"
+    },
+    {
+      "alpha": 0.2,
+      "right_gain": 1.2,
+      "relative_delay_samples": 0,
+      "relative_delay_ms": 0.0,
+      "p01_relative_db": 0.5456392968870988,
+      "p03_relative_db": -0.6200150964601981,
+      "p02_interaction_db": -1.1819652185510416,
+      "cross_section_rmse_from_baseline_db": 0.14415700934783302,
+      "cross_section_max_abs_change_db": 0.2910757873699128,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "gain=1.2"
+    },
+    {
+      "alpha": 0.2,
+      "right_gain": 1.0,
+      "relative_delay_samples": 2,
+      "relative_delay_ms": 0.041666666666666664,
+      "p01_relative_db": 0.5462966015267254,
+      "p03_relative_db": -0.6369921988401949,
+      "p02_interaction_db": -1.0886093940624524,
+      "cross_section_rmse_from_baseline_db": 0.13041210605919495,
+      "cross_section_max_abs_change_db": 0.26673836589266786,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "delay=+2"
+    },
+    {
+      "alpha": 0.2,
+      "right_gain": 1.0,
+      "relative_delay_samples": -2,
+      "relative_delay_ms": -0.041666666666666664,
+      "p01_relative_db": 0.5456766665193351,
+      "p03_relative_db": -0.5762933518889316,
+      "p02_interaction_db": -1.2571368590401795,
+      "cross_section_rmse_from_baseline_db": 0.0938226656020211,
+      "cross_section_max_abs_change_db": 0.20909810497218762,
+      "is_one_at_a_time": true,
+      "is_baseline": false,
+      "short_label": "delay=-2"
+    }
+  ],
+  "inputs": {
+    "config": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\configs\\classroom\\classroom_config(07_강의실측정조건).json",
+      "sha256": "d5d18f11d582768020f2b7c79b34cf349de3c11d06eba34e474389a436b7a183"
+    },
+    "settings": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\configs\\simulation\\simulation_settings(08_음향가정).json",
+      "sha256": "8f5aea1ccbeb723c1edb1e21fd8168ca7bda40c7a6a8c54eb62338c946aeba6f"
+    },
+    "reference": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\reference\\test_signal(06_예비녹음_50초).wav",
+      "filename": "test_signal(06_예비녹음_50초).wav",
+      "sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+      "core_start_s": 6.0,
+      "core_stop_s": 14.0
+    }
+  },
+  "fft_sizes": {
+    "0.1": 524288,
+    "0.2": 524288,
+    "0.3": 524288
+  },
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pyroomacoustics": "0.10.1"
+  },
+  "runtime_seconds": 7.8976415999932215,
+  "interpretation_limit_ko": "민감도가 크다는 것은 해당 가정을 실제로 확인할 필요가 크다는 뜻입니다. 그 값이 실제 오차의 원인임을 증명하거나 최적 파라미터를 결정한 결과는 아닙니다."
+}

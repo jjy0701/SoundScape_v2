@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "assumptions_not_measured",
+  "receiver_id": "P02",
+  "sample_rate_hz": 48000,
+  "speed_of_sound_m_s": 343.0,
+  "max_order": 32,
+  "comparison_order": 16,
+  "energy_absorption": {
+    "walls": 0.2,
+    "floor": 0.2,
+    "ceiling": 0.2
+  },
+  "sources": {
+    "S_L": {"relative_gain": 1.0, "extra_delay_samples": 0},
+    "S_R": {"relative_gain": 1.0, "extra_delay_samples": 0}
+  },
+  "note_ko": "흡음률은 주파수에 무관한 임시값입니다. 좌우 스피커는 동일 신호, 같은 극성, 동일 상대 출력, 추가 지연 0으로 가정합니다. 스피커와 수음점은 무지향성입니다. 가구, 회절, 공기 흡음, 배경 소음 및 휴대폰 처리는 포함하지 않습니다. 실제 공간의 검증된 값이 아닙니다."
+}

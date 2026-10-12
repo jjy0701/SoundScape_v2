@@ -1,0 +1,810 @@
+{
+  "analysis": "P02 trial2 frequency-wise L/R exploratory correction; B model order 32",
+  "input_files": {
+    "start_both": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 양쪽 스피커.wav",
+      "sha256": "109d71da71c2b7b72a47932b8b865d701eb1d8764ddcab1b23877da5c9da353e",
+      "format": {
+        "channels": 1,
+        "sample_rate_hz": 48000,
+        "sample_width_bits": 16,
+        "frames": 3321600
+      },
+      "duration_s": 69.2,
+      "clipping_samples": 0,
+      "matched_starts_s": [
+        14.086583333333333,
+        29.087145833333334,
+        44.08772916666667
+      ],
+      "correlation_scores": [
+        0.17422188685510284,
+        0.1769202924087378,
+        0.17553991896788781
+      ],
+      "analysis_windows_s": [
+        [
+          15.086583333333333,
+          23.086583333333333
+        ],
+        [
+          30.087145833333334,
+          38.08714583333333
+        ],
+        [
+          45.08772916666667,
+          53.08772916666667
+        ]
+      ]
+    },
+    "left_only": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 왼쪽 스피커.wav",
+      "sha256": "2cb1dd7e8fba955a4e24abd4bdfe64d7d5aea1b1c756f97e4e401d59d0d55f4f",
+      "format": {
+        "channels": 1,
+        "sample_rate_hz": 48000,
+        "sample_width_bits": 16,
+        "frames": 3440640
+      },
+      "duration_s": 71.68,
+      "clipping_samples": 0,
+      "matched_starts_s": [
+        13.204729166666667,
+        28.2053125,
+        43.205875
+      ],
+      "correlation_scores": [
+        0.1626211404465721,
+        0.1611569157932691,
+        0.1634611465740663
+      ],
+      "analysis_windows_s": [
+        [
+          14.204729166666667,
+          22.204729166666667
+        ],
+        [
+          29.2053125,
+          37.2053125
+        ],
+        [
+          44.205875,
+          52.205875
+        ]
+      ]
+    },
+    "right_only": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 오른쪽.wav",
+      "sha256": "15c036a70c23f5e5d51a802fb058d77b436cef419f895de85d53ae57ae903162",
+      "format": {
+        "channels": 1,
+        "sample_rate_hz": 48000,
+        "sample_width_bits": 16,
+        "frames": 3160320
+      },
+      "duration_s": 65.84,
+      "clipping_samples": 0,
+      "matched_starts_s": [
+        12.728416666666666,
+        27.729,
+        42.72958333333333
+      ],
+      "correlation_scores": [
+        0.1491889648227797,
+        0.15066179326380655,
+        0.14789791821795734
+      ],
+      "analysis_windows_s": [
+        [
+          13.728416666666666,
+          21.728416666666668
+        ],
+        [
+          28.729,
+          36.729
+        ],
+        [
+          43.72958333333333,
+          51.72958333333333
+        ]
+      ]
+    },
+    "end_both": {
+      "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 종료 양쪽스피커.wav",
+      "sha256": "fe0aae58fad093cac806aa1e9280588937549f4987c3d149cfa4403ca5852abc",
+      "format": {
+        "channels": 1,
+        "sample_rate_hz": 48000,
+        "sample_width_bits": 16,
+        "frames": 3321600
+      },
+      "duration_s": 69.2,
+      "clipping_samples": 0,
+      "matched_starts_s": [
+        12.539,
+        27.539583333333333,
+        42.540145833333334
+      ],
+      "correlation_scores": [
+        0.16447269825311403,
+        0.1640474887308367,
+        0.16607393477731083
+      ],
+      "analysis_windows_s": [
+        [
+          13.539,
+          21.539
+        ],
+        [
+          28.539583333333333,
+          36.53958333333333
+        ],
+        [
+          43.540145833333334,
+          51.540145833333334
+        ]
+      ]
+    }
+  },
+  "reference_sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+  "reference_sha256_expected": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+  "analysis_windows": "three matched repeats; each central 8 s (+1 to +9 s from detected start)",
+  "bands_hz": [
+    [
+      250,
+      500
+    ],
+    [
+      500,
+      1000
+    ],
+    [
+      1000,
+      2000
+    ],
+    [
+      2000,
+      4000
+    ],
+    [
+      250,
+      4000
+    ]
+  ],
+  "filter": "4th-order Butterworth sosfiltfilt",
+  "no_file_normalization": true,
+  "no_noise_removal": true,
+  "model": {
+    "dimensions_m": [
+      7.5,
+      10.25,
+      2.67
+    ],
+    "absorption": 0.2,
+    "speed_of_sound_m_s": 343,
+    "source_mapping": {
+      "S_L": {
+        "position_m": [
+          0.52,
+          3.1,
+          2.5
+        ],
+        "gain": 1.0,
+        "delay_samples": 0
+      },
+      "S_R": {
+        "position_m": [
+          6.55,
+          3.1,
+          2.5
+        ],
+        "gain": 1.0,
+        "delay_samples": 0
+      }
+    },
+    "receiver_positions": {
+      "P01": [
+        3.75,
+        2.5,
+        0.706
+      ],
+      "P02": [
+        3.75,
+        5.0,
+        0.706
+      ],
+      "P03": [
+        3.75,
+        7.5,
+        0.706
+      ]
+    },
+    "order": 32,
+    "rir_reused": false,
+    "rir_note": "No matching saved B order-32 RIR file found; recomputed unchanged parameters."
+  },
+  "measured": {
+    "250-500 Hz": {
+      "measured": {
+        "start_both": {
+          "per_repeat_level_db": [
+            -36.525263010848676,
+            -36.54325653503933,
+            -36.553178189525276
+          ],
+          "energy_mean_level_db": -36.54055053794268,
+          "repeat_spread_db": 0.02791517867660076
+        },
+        "left_only": {
+          "per_repeat_level_db": [
+            -41.10080156247164,
+            -40.99493143659693,
+            -41.070917597139065
+          ],
+          "energy_mean_level_db": -41.05532116425444,
+          "repeat_spread_db": 0.10587012587470923
+        },
+        "right_only": {
+          "per_repeat_level_db": [
+            -41.82786609988436,
+            -41.894360821473256,
+            -41.885675796413615
+          ],
+          "energy_mean_level_db": -41.86920047946272,
+          "repeat_spread_db": 0.0664947215888958
+        },
+        "end_both": {
+          "per_repeat_level_db": [
+            -36.550728579637585,
+            -36.69154889650756,
+            -36.56293340726678
+          ],
+          "energy_mean_level_db": -36.60127135930295,
+          "repeat_spread_db": 0.1408203168699771
+        }
+      },
+      "model": {
+        "P01": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -28.7889054170032,
+              -28.7889054170032,
+              -28.788905417003193
+            ],
+            "energy_mean_level_db": -28.7889054170032,
+            "repeat_spread_db": 7.105427357601002e-15,
+            "relative_to_P02_both_db": 1.6519185823108629
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -29.067239455713093,
+              -29.067239455713093,
+              -29.067239455713096
+            ],
+            "energy_mean_level_db": -29.067239455713093,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": 1.7357604253567587
+          }
+        },
+        "P02": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -30.44082399931407,
+              -30.440823999314055,
+              -30.440823999314052
+            ],
+            "energy_mean_level_db": -30.440823999314063,
+            "repeat_spread_db": 1.7763568394002505e-14,
+            "relative_to_P02_both_db": 0.0
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -30.660675296608026,
+              -30.660675296608034,
+              -30.66067529660804
+            ],
+            "energy_mean_level_db": -30.660675296608034,
+            "repeat_spread_db": 1.4210854715202004e-14,
+            "relative_to_P02_both_db": 0.0
+          }
+        },
+        "P03": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -30.623056988957025,
+              -30.623056988957025,
+              -30.623056988957018
+            ],
+            "energy_mean_level_db": -30.62305698895702,
+            "repeat_spread_db": 7.105427357601002e-15,
+            "relative_to_P02_both_db": -0.18223298964295864
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -30.91094943922602,
+              -30.910949439226016,
+              -30.91094943922601
+            ],
+            "energy_mean_level_db": -30.910949439226016,
+            "repeat_spread_db": 1.0658141036401503e-14,
+            "relative_to_P02_both_db": -0.09052562203251568
+          }
+        }
+      },
+      "correction": {
+        "D_meas_db": 0.8138793152082826,
+        "D_model_db": 2.3752969114733276,
+        "delta_db": -1.561417596265045,
+        "right_amplitude_multiplier": 1.1969358634407834,
+        "post_correction_D_model_db": 0.8138793152082826
+      }
+    },
+    "500-1000 Hz": {
+      "measured": {
+        "start_both": {
+          "per_repeat_level_db": [
+            -38.8602260635001,
+            -38.83059638648925,
+            -38.790681811549284
+          ],
+          "energy_mean_level_db": -38.82707457266111,
+          "repeat_spread_db": 0.06954425195081626
+        },
+        "left_only": {
+          "per_repeat_level_db": [
+            -42.530835060802296,
+            -42.51509455364656,
+            -42.482134699052956
+          ],
+          "energy_mean_level_db": -42.50930733600909,
+          "repeat_spread_db": 0.048700361749340004
+        },
+        "right_only": {
+          "per_repeat_level_db": [
+            -43.166910195143586,
+            -43.24391362190507,
+            -43.1969386575951
+          ],
+          "energy_mean_level_db": -43.20247195204566,
+          "repeat_spread_db": 0.07700342676148608
+        },
+        "end_both": {
+          "per_repeat_level_db": [
+            -38.85553410772128,
+            -38.91515555880736,
+            -38.90499626489334
+          ],
+          "energy_mean_level_db": -38.891817124147835,
+          "repeat_spread_db": 0.05962145108608041
+        }
+      },
+      "model": {
+        "P01": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -31.63898043326079,
+              -31.638980433260798,
+              -31.63898043326079
+            ],
+            "energy_mean_level_db": -31.63898043326079,
+            "repeat_spread_db": 7.105427357601002e-15,
+            "relative_to_P02_both_db": -0.005623960317972632
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -31.956768930975848,
+              -31.956768930975848,
+              -31.956768930975848
+            ],
+            "energy_mean_level_db": -31.956768930975848,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.022910955464837457
+          }
+        },
+        "P02": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -31.63335647294282,
+              -31.63335647294282,
+              -31.633356472942822
+            ],
+            "energy_mean_level_db": -31.63335647294282,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": 0.0
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -31.972779448205422,
+              -31.972779448205422,
+              -31.97277944820543
+            ],
+            "energy_mean_level_db": -31.972779448205422,
+            "repeat_spread_db": 7.105427357601002e-15,
+            "relative_to_P02_both_db": 0.0
+          }
+        },
+        "P03": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -33.61484142590467,
+              -33.61484142590467,
+              -33.61484142590467
+            ],
+            "energy_mean_level_db": -33.61484142590467,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": -1.9814849529618535
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -33.91686740339343,
+              -33.91686740339343,
+              -33.91686740339343
+            ],
+            "energy_mean_level_db": -33.91686740339343,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": -1.9302903658721107
+          }
+        }
+      },
+      "correction": {
+        "D_meas_db": 0.6931646160365759,
+        "D_model_db": -0.21286631556378666,
+        "delta_db": 0.9060309316003625,
+        "right_amplitude_multiplier": 0.9009453609884894,
+        "post_correction_D_model_db": 0.6931646160365759
+      }
+    },
+    "1000-2000 Hz": {
+      "measured": {
+        "start_both": {
+          "per_repeat_level_db": [
+            -43.821093201511715,
+            -44.02463156391243,
+            -44.02046045985658
+          ],
+          "energy_mean_level_db": -43.95435116528847,
+          "repeat_spread_db": 0.20353836240071388
+        },
+        "left_only": {
+          "per_repeat_level_db": [
+            -46.081397905865046,
+            -45.8867953806983,
+            -45.96227233167318
+          ],
+          "energy_mean_level_db": -45.97608426839563,
+          "repeat_spread_db": 0.1946025251667436
+        },
+        "right_only": {
+          "per_repeat_level_db": [
+            -49.89489518209447,
+            -49.868022026214796,
+            -49.75446695362735
+          ],
+          "energy_mean_level_db": -49.83870040742669,
+          "repeat_spread_db": 0.14042822846712255
+        },
+        "end_both": {
+          "per_repeat_level_db": [
+            -43.82862353346293,
+            -43.57686075436205,
+            -44.03425955753579
+          ],
+          "energy_mean_level_db": -43.80921374444127,
+          "repeat_spread_db": 0.4573988031737386
+        }
+      },
+      "model": {
+        "P01": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -30.616312109508574,
+              -30.616312109508574,
+              -30.616312109508574
+            ],
+            "energy_mean_level_db": -30.616312109508574,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 1.1172629395355358
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -32.02440604635117,
+              -32.02440604635117,
+              -32.02440604635117
+            ],
+            "energy_mean_level_db": -32.02440604635117,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 1.0585428427499721
+          }
+        },
+        "P02": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -31.73357504904411,
+              -31.73357504904411,
+              -31.73357504904411
+            ],
+            "energy_mean_level_db": -31.73357504904411,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.0
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -33.08017667271072,
+              -33.08017667271072,
+              -33.08017667271072
+            ],
+            "energy_mean_level_db": -33.08017667271072,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.0
+          }
+        },
+        "P03": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -32.29866533945072,
+              -32.29866533945072,
+              -32.29866533945072
+            ],
+            "energy_mean_level_db": -32.29866533945072,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": -0.5650902904066122
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -33.77245240836942,
+              -33.772452408369425,
+              -33.77245240836942
+            ],
+            "energy_mean_level_db": -33.772452408369425,
+            "repeat_spread_db": 7.105427357601002e-15,
+            "relative_to_P02_both_db": -0.6884591754588101
+          }
+        }
+      },
+      "correction": {
+        "D_meas_db": 3.8626161390310614,
+        "D_model_db": 0.08909623956539292,
+        "delta_db": 3.7735198994656685,
+        "right_amplitude_multiplier": 0.6476255960846105,
+        "post_correction_D_model_db": 3.8626161390310614
+      }
+    },
+    "2000-4000 Hz": {
+      "measured": {
+        "start_both": {
+          "per_repeat_level_db": [
+            -43.10055882103949,
+            -43.114252612681156,
+            -43.13925075881686
+          ],
+          "energy_mean_level_db": -43.11799119987966,
+          "repeat_spread_db": 0.038691937777365126
+        },
+        "left_only": {
+          "per_repeat_level_db": [
+            -44.922748615094534,
+            -44.90170295108581,
+            -44.912228484681116
+          ],
+          "energy_mean_level_db": -44.91221818478162,
+          "repeat_spread_db": 0.02104566400872443
+        },
+        "right_only": {
+          "per_repeat_level_db": [
+            -53.24838768639257,
+            -53.21832375775304,
+            -53.212850259648135
+          ],
+          "energy_mean_level_db": -53.22649248903748,
+          "repeat_spread_db": 0.035537426744433276
+        },
+        "end_both": {
+          "per_repeat_level_db": [
+            -43.232089383674904,
+            -43.17863586479872,
+            -43.23415465494233
+          ],
+          "energy_mean_level_db": -43.21488382766134,
+          "repeat_spread_db": 0.0555187901436085
+        }
+      },
+      "model": {
+        "P01": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -30.34478199754547,
+              -30.34478199754547,
+              -30.34478199754547
+            ],
+            "energy_mean_level_db": -30.34478199754547,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.55246481322515
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -32.654772713668706,
+              -32.654772713668706,
+              -32.654772713668706
+            ],
+            "energy_mean_level_db": -32.654772713668706,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.48748250302490703
+          }
+        },
+        "P02": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -30.89724681077062,
+              -30.89724681077062,
+              -30.89724681077062
+            ],
+            "energy_mean_level_db": -30.89724681077062,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.0
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -33.141619427885004,
+              -33.141619427885004,
+              -33.141619427885004
+            ],
+            "energy_mean_level_db": -33.141619427885004,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.0
+          }
+        },
+        "P03": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -30.369175948081338,
+              -30.369175948081338,
+              -30.369175948081338
+            ],
+            "energy_mean_level_db": -30.369175948081338,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.5280708626892832
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -32.92930615355507,
+              -32.92930615355507,
+              -32.92930615355507
+            ],
+            "energy_mean_level_db": -32.92930615355507,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.21901881177155502
+          }
+        }
+      },
+      "correction": {
+        "D_meas_db": 8.31427430425586,
+        "D_model_db": 0.1594695238622137,
+        "delta_db": 8.154804780393647,
+        "right_amplitude_multiplier": 0.3910747361628081,
+        "post_correction_D_model_db": 8.31427430425586
+      }
+    },
+    "250-4000 Hz": {
+      "measured": {
+        "start_both": {
+          "per_repeat_level_db": [
+            -33.596484039684334,
+            -33.61385249130025,
+            -33.610773707382215
+          ],
+          "energy_mean_level_db": -33.607030151491756,
+          "repeat_spread_db": 0.017368451615915603
+        },
+        "left_only": {
+          "per_repeat_level_db": [
+            -37.26206942008834,
+            -37.183323934849895,
+            -37.215455401856055
+          ],
+          "energy_mean_level_db": -37.22016266087116,
+          "repeat_spread_db": 0.07874548523844282
+        },
+        "right_only": {
+          "per_repeat_level_db": [
+            -38.982514991693876,
+            -39.03589199346445,
+            -39.00621451939722
+          ],
+          "energy_mean_level_db": -39.00815228310449,
+          "repeat_spread_db": 0.05337700177057769
+        },
+        "end_both": {
+          "per_repeat_level_db": [
+            -33.63870905593736,
+            -33.67554789575496,
+            -33.68603769865875
+          ],
+          "energy_mean_level_db": -33.66671741940773,
+          "repeat_spread_db": 0.04732864272138926
+        }
+      },
+      "model": {
+        "P01": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -24.248618458731556,
+              -24.24861845873156,
+              -24.24861845873156
+            ],
+            "energy_mean_level_db": -24.24861845873156,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": 0.7887939476506247
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -24.94998016670165,
+              -24.94998016670165,
+              -24.94998016670165
+            ],
+            "energy_mean_level_db": -24.94998016670165,
+            "repeat_spread_db": 0.0,
+            "relative_to_P02_both_db": 0.7767886923605829
+          }
+        },
+        "P02": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -25.037412406382185,
+              -25.037412406382185,
+              -25.03741240638218
+            ],
+            "energy_mean_level_db": -25.037412406382185,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": 0.0
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -25.714660114685874,
+              -25.71466011468587,
+              -25.714660114685874
+            ],
+            "energy_mean_level_db": -25.714660114685874,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": 0.0
+          }
+        },
+        "P03": {
+          "uncorrected": {
+            "per_repeat_level_db": [
+              -25.586954465008674,
+              -25.586954465008674,
+              -25.58695446500867
+            ],
+            "energy_mean_level_db": -25.586954465008674,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": -0.5495420586264892
+          },
+          "corrected": {
+            "per_repeat_level_db": [
+              -26.311205301820806,
+              -26.311205301820806,
+              -26.311205301820802
+            ],
+            "energy_mean_level_db": -26.311205301820806,
+            "repeat_spread_db": 3.552713678800501e-15,
+            "relative_to_P02_both_db": -0.5753261032673826
+          }
+        }
+      },
+      "correction": {
+        "D_meas_db": 1.7879896222333258,
+        "D_model_db": 0.7130493952093495,
+        "delta_db": 1.0749402270239763,
+        "right_amplitude_multiplier": 0.8835944689516247,
+        "post_correction_D_model_db": 1.7879896222333258
+      }
+    }
+  },
+  "spatial_comparison_basis": "P01/P02/P03 model both-speaker levels; P02 model both = 0 dB separately per band. Previous P01/P03 measured values are session-mismatched descriptive references only.",
+  "user_confirmed_conditions": "phone position/orientation fixed; amplifier knobs restored to same positions; electrical output and phone AGC not independently verified.",
+  "limitations": [
+    "correction is exploratory effective adjustment, not proof of speaker aging/failure.",
+    "No phase or delay correction; coherent waveform summation used.",
+    "No 20x20 grid recomputation."
+  ]
+}

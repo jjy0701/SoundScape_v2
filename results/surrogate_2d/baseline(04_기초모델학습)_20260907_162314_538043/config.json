@@ -1,0 +1,58 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "torch_version": "2.14.0+cpu",
+  "numpy_version": "2.5.2",
+  "epochs": 300,
+  "patience": 40,
+  "features": [
+    "speaker_x",
+    "speaker_y",
+    "obstacle_x",
+    "obstacle_y",
+    "obstacle_w",
+    "obstacle_l",
+    "receiver_x",
+    "receiver_y",
+    "log10_distance",
+    "log10_min_scene_distance"
+  ],
+  "hidden_sizes": [
+    64,
+    64
+  ],
+  "batch_size": 10,
+  "learning_rate": 0.001,
+  "split_manifest_sha256": "da90b6be74da24f5ef2f74347a162004a26c8f95dde315ba45aa86cc1fb7fe86",
+  "script_sha256": "7fa4146e40f59b119a052246f95e5012b1fb084f1816aefe6c83921f09c1a5d7",
+  "x_mean": [
+    3.698276996612549,
+    5.133345603942871,
+    3.1110241413116455,
+    5.509949207305908,
+    1.992659568786621,
+    1.117891550064087,
+    3.9977707862854004,
+    4.964085578918457,
+    0.559593677520752,
+    -0.815808117389679
+  ],
+  "x_std": [
+    1.897895097732544,
+    2.551933765411377,
+    1.2124488353729248,
+    1.4932996034622192,
+    0.3065722584724426,
+    0.20281295478343964,
+    2.1452722549438477,
+    2.754842519760132,
+    0.27707982063293457,
+    0.23025727272033691
+  ],
+  "y_mean": -23.390616195067466,
+  "y_std": 6.024198310421882,
+  "metric": "arithmetic mean of per-scene masked RMSE (dB)",
+  "postprocessing": "none: no clipping or per-prediction normalization",
+  "test_targets_loaded": false,
+  "limits": "pilot: 100 scenes, fixed room/material; ISM order convergence not established"
+}

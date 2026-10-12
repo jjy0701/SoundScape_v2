@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "assumptions_not_measured",
+  "receiver_id": "P02",
+  "sample_rate_hz": 48000,
+  "max_order": 32,
+  "comparison_order": 16,
+  "speed_of_sound_m_s": 343,
+  "energy_absorption": {
+    "walls": 0.2,
+    "floor": 0.2,
+    "ceiling": 0.2
+  },
+  "sources": {
+    "S_L": {
+      "relative_gain": 1.0,
+      "extra_delay_samples": 0
+    },
+    "S_R": {
+      "relative_gain": 1.0,
+      "extra_delay_samples": 0
+    }
+  }
+}

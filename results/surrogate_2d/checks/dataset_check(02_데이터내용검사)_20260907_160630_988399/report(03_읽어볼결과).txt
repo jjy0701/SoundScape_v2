@@ -1,0 +1,6 @@
+﻿전체 결과: REVIEW
+샘플: PASS 82 / REVIEW 18 / FAIL 0
+가장 가까운 음원-receiver 거리: 0.023714 m
+고정 metadata 변수: room_x, room_y, wall_alpha, obstacle_alpha
+REVIEW는 원인 확인이 필요하다는 뜻이며 데이터 삭제 지시가 아닙니다.
+원본 dataset은 수정하지 않았습니다.

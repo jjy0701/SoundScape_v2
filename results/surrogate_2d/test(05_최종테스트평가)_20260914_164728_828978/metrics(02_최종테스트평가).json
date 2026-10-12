@@ -1,0 +1,124 @@
+{
+  "test_evaluated": true,
+  "test_targets_loaded_for_evaluation_only": true,
+  "training_or_tuning_on_test": false,
+  "baseline_result": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\baseline(04_기초모델학습)_20260907_162314_538043",
+  "split_manifest_sha256": "da90b6be74da24f5ef2f74347a162004a26c8f95dde315ba45aa86cc1fb7fe86",
+  "sample_ids": [
+    "sample_0001",
+    "sample_0004",
+    "sample_0013",
+    "sample_0015",
+    "sample_0020",
+    "sample_0021",
+    "sample_0028",
+    "sample_0033",
+    "sample_0065",
+    "sample_0067",
+    "sample_0076",
+    "sample_0079",
+    "sample_0086",
+    "sample_0092",
+    "sample_0094"
+  ],
+  "model_results": {
+    "distance": {
+      "all": {
+        "n": 15,
+        "mae_db": 4.063272778193156,
+        "mean_scene_rmse_db": 4.5127768834431965,
+        "max_abs_error_db": 9.279422760009766
+      },
+      "near": {
+        "n": 2,
+        "mae_db": 3.786584973335266,
+        "mean_scene_rmse_db": 4.241637945175171,
+        "max_abs_error_db": 8.331565856933594
+      },
+      "non_near": {
+        "n": 13,
+        "mae_db": 4.105840132786677,
+        "mean_scene_rmse_db": 4.554490566253662,
+        "max_abs_error_db": 9.279422760009766
+      }
+    },
+    "ridge": {
+      "all": {
+        "n": 15,
+        "mae_db": 0.8724285244941712,
+        "mean_scene_rmse_db": 1.2744840621948241,
+        "max_abs_error_db": 8.333648681640625
+      },
+      "near": {
+        "n": 2,
+        "mae_db": 0.9168772399425507,
+        "mean_scene_rmse_db": 1.3997029066085815,
+        "max_abs_error_db": 7.130657196044922
+      },
+      "non_near": {
+        "n": 13,
+        "mae_db": 0.8655902605790359,
+        "mean_scene_rmse_db": 1.2552196245927076,
+        "max_abs_error_db": 8.333648681640625
+      }
+    },
+    "mlp": {
+      "all": {
+        "n": 15,
+        "mae_db": 0.8099363843599955,
+        "mean_scene_rmse_db": 1.0627281347910562,
+        "max_abs_error_db": 6.6799163818359375
+      },
+      "near": {
+        "n": 2,
+        "mae_db": 1.4105467200279236,
+        "mean_scene_rmse_db": 1.6098456978797913,
+        "max_abs_error_db": 4.14788818359375
+      },
+      "non_near": {
+        "n": 13,
+        "mae_db": 0.7175347942572373,
+        "mean_scene_rmse_db": 0.9785562020081741,
+        "max_abs_error_db": 6.6799163818359375
+      }
+    }
+  },
+  "timing": {
+    "device": "cpu",
+    "simulation_time_measured": false,
+    "simulation_time_note": "이 스크립트는 Pyroomacoustics를 다시 실행하지 않습니다. 아래 값은 15개 test 장면의 모델 추론 시간입니다.",
+    "scope": "메모리에 올라온 표준화 feature의 예측 계산만 측정; NPY 읽기·heatmap 저장·Pyroomacoustics 재계산 시간은 제외",
+    "distance": {
+      "repeats": 20,
+      "mean_total_ms": 0.008415000047534704,
+      "mean_per_scene_ms": 0.0005610000031689802,
+      "mean_per_receiver_us": 0.0014025000079224508
+    },
+    "ridge": {
+      "repeats": 20,
+      "mean_total_ms": 0.01978999935090542,
+      "mean_per_scene_ms": 0.0013193332900603612,
+      "mean_per_receiver_us": 0.003298333225150903
+    },
+    "mlp": {
+      "repeats": 20,
+      "mean_total_ms": 0.4271149984560907,
+      "mean_per_scene_ms": 0.028474333230406046,
+      "mean_per_receiver_us": 0.07118583307601511
+    }
+  },
+  "plot_scale": {
+    "selected_test_ids": [
+      "sample_0001",
+      "sample_0004",
+      "sample_0013"
+    ],
+    "level_vmin": -50.0,
+    "level_vmax": 0.0,
+    "error_vmin": -5.0,
+    "error_vmax": 5.0,
+    "note": "색상 범위는 시각화용 고정값이며 예측/정답을 clipping하지 않았습니다."
+  },
+  "metric_definition": "각 장면의 유효 receiver만 사용한 MAE/RMSE를 먼저 계산한 뒤 장면 평균",
+  "target_definition": "RIR energy -> 10 log10 -> 장면별 유효 receiver 최대값을 0 dB로 정규화; obstacle 내부는 NaN"
+}

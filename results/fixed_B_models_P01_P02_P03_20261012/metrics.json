@@ -1,0 +1,657 @@
+{
+  "fixed_conditions": {
+    "models": "B0 gain 1/polarity +1; B1 fixed right gains; B2 B1 with right polarity -1; all delays 0",
+    "right_gain_by_band": {
+      "250-500 Hz": 1.1969358634407834,
+      "500-1000 Hz": 0.9009453609884894,
+      "1000-2000 Hz": 0.6476255960846105,
+      "2000-4000 Hz": 0.3910747361628081
+    },
+    "left_gain": 1,
+    "excluded_delay_candidates": [
+      -1
+    ],
+    "geometry_m": [
+      7.5,
+      10.25,
+      2.67
+    ],
+    "order": 32,
+    "absorption": 0.2,
+    "speed_of_sound_m_s": 343,
+    "receiver_positions": {
+      "P01": [
+        3.75,
+        2.5,
+        0.706
+      ],
+      "P02": [
+        3.75,
+        5.0,
+        0.706
+      ],
+      "P03": [
+        3.75,
+        7.5,
+        0.706
+      ]
+    },
+    "source_mapping": {
+      "S_L": {
+        "position_m": [
+          0.52,
+          3.1,
+          2.5
+        ],
+        "gain": 1.0,
+        "delay_samples": 0
+      },
+      "S_R": {
+        "position_m": [
+          6.55,
+          3.1,
+          2.5
+        ],
+        "gain": 1.0,
+        "delay_samples": 0
+      }
+    },
+    "bands_hz": [
+      [
+        250,
+        500
+      ],
+      [
+        500,
+        1000
+      ],
+      [
+        1000,
+        2000
+      ],
+      [
+        2000,
+        4000
+      ]
+    ],
+    "filter": "Butterworth 4th order sosfiltfilt",
+    "windows_s": [
+      [
+        6,
+        14
+      ],
+      [
+        21,
+        29
+      ],
+      [
+        36,
+        44
+      ]
+    ],
+    "no_file_normalization": true,
+    "coherent_sum_before_energy": true
+  },
+  "input_identification": {
+    "reference": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\reference\\test_signal(06_예비녹음_50초).wav",
+    "reference_sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+    "files": {
+      "left_only": {
+        "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 왼쪽 스피커.wav",
+        "sha256": "2cb1dd7e8fba955a4e24abd4bdfe64d7d5aea1b1c756f97e4e401d59d0d55f4f"
+      },
+      "right_only": {
+        "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 오른쪽.wav",
+        "sha256": "15c036a70c23f5e5d51a802fb058d77b436cef419f895de85d53ae57ae903162"
+      },
+      "both": {
+        "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 양쪽 스피커.wav",
+        "sha256": "109d71da71c2b7b72a47932b8b865d701eb1d8764ddcab1b23877da5c9da353e"
+      },
+      "both_end": {
+        "path": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\recordings\\measurements\\20261009_P02_trial2\\2차실험 종료 양쪽스피커.wav",
+        "sha256": "fe0aae58fad093cac806aa1e9280588937549f4987c3d149cfa4403ca5852abc"
+      }
+    },
+    "cache": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\20261009_P02_trial2_delay_polarity_search_20261009_172020\\P02_B_order32_rir_cache.npz",
+    "cache_used_for": [
+      "P02",
+      "P01",
+      "P03"
+    ]
+  },
+  "data": {
+    "250-500 Hz": {
+      "models": {
+        "B0": {
+          "P01": {
+            "E_left": 0.000940746466927472,
+            "E_right": 0.0005890648510604365,
+            "E_both": 0.0013216286916089804,
+            "level_left_db": -30.265274040437443,
+            "level_right_db": -32.298368904297035,
+            "level_both_db": -28.78890541700297,
+            "left_minus_right_db": 2.033094863859592,
+            "I_db": -0.6352841133501597,
+            "relative_to_P02_both_db": 1.6519185823110973,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.0008558884790039458,
+            "E_right": 0.0004953218533872352,
+            "E_both": 0.0009034780379928984,
+            "level_left_db": -30.675828195616745,
+            "level_right_db": -33.05112510709006,
+            "level_both_db": -30.440823999314066,
+            "left_minus_right_db": 2.3752969114733133,
+            "I_db": -1.7480535745596195,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.0005626603382666364,
+            "E_right": 0.0003487546401235079,
+            "E_both": 0.0008663518379976787,
+            "level_left_db": -32.497536970354794,
+            "level_right_db": -34.57480005462779,
+            "level_both_db": -30.62305698895694,
+            "left_minus_right_db": 2.0772630842729924,
+            "I_db": -0.2202186048986879,
+            "relative_to_P02_both_db": -0.18223298964287338,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B1": {
+          "P01": {
+            "E_left": 0.000940746466927472,
+            "E_right": 0.00084392697586724,
+            "E_both": 0.0015354921911364778,
+            "level_left_db": -30.265274040437443,
+            "level_right_db": -30.736951308031987,
+            "level_both_db": -28.137523878532544,
+            "left_minus_right_db": 0.47167726759454354,
+            "I_db": -0.6531114893637269,
+            "relative_to_P02_both_db": 1.735760425356986,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.0008558884790039458,
+            "E_right": 0.0007096255583023386,
+            "E_both": 0.0010296071969203532,
+            "level_left_db": -30.675828195616745,
+            "level_right_db": -31.489707510825014,
+            "level_both_db": -29.87328430388953,
+            "left_minus_right_db": 0.8138793152082684,
+            "I_db": -1.8198539649540266,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.0005626603382666364,
+            "E_right": 0.0004996452397885521,
+            "E_both": 0.001008367889200179,
+            "level_left_db": -32.497536970354794,
+            "level_right_db": -33.01338245836275,
+            "level_both_db": -29.96380992592193,
+            "left_minus_right_db": 0.5158454880079546,
+            "I_db": -0.22630454510734452,
+            "relative_to_P02_both_db": -0.09052562203239845,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B2": {
+          "P01": {
+            "E_left": 0.000940746466927472,
+            "E_right": 0.00084392697586724,
+            "E_both": 0.002033854694452946,
+            "level_left_db": -30.265274040437443,
+            "level_right_db": -30.736951308031987,
+            "level_both_db": -26.91680077790587,
+            "left_minus_right_db": 0.47167726759454354,
+            "I_db": 0.5676116112629432,
+            "relative_to_P02_both_db": -0.14193120464871356,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.0008558884790039458,
+            "E_right": 0.0007096255583023386,
+            "E_both": 0.0021014208776922155,
+            "level_left_db": -30.675828195616745,
+            "level_right_db": -31.489707510825014,
+            "level_both_db": -26.774869573257156,
+            "left_minus_right_db": 0.8138793152082684,
+            "I_db": 1.2785607656783469,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.0005626603382666364,
+            "E_right": 0.0004996452397885521,
+            "E_both": 0.001116243266910198,
+            "level_left_db": -32.497536970354794,
+            "level_right_db": -33.01338245836275,
+            "level_both_db": -29.52241147724957,
+            "left_minus_right_db": 0.5158454880079546,
+            "I_db": 0.21509390356501323,
+            "relative_to_P02_both_db": -2.7475419039924134,
+            "relative_level_check_db": 0.0
+          }
+        }
+      },
+      "measured_energy_levels_db": {
+        "left_only": -46.50942585155566,
+        "right_only": -48.07825336852084,
+        "both": -42.41226175719098,
+        "both_end": -42.11555710564564
+      }
+    },
+    "500-1000 Hz": {
+      "models": {
+        "B0": {
+          "P01": {
+            "E_left": 0.0004897222771604267,
+            "E_right": 0.00047094227965028494,
+            "E_both": 0.000685649173245563,
+            "level_left_db": -33.10050139747779,
+            "level_right_db": -33.27032318275564,
+            "level_both_db": -31.63898043326112,
+            "left_minus_right_db": 0.16982178527784697,
+            "I_db": -1.4646981126782936,
+            "relative_to_P02_both_db": -0.005623960318303034,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.000449690568488209,
+            "E_right": 0.0004722809309226843,
+            "E_both": 0.000686537639877013,
+            "level_left_db": -33.47086220941021,
+            "level_right_db": -33.25799589384643,
+            "level_both_db": -31.63335647294282,
+            "left_minus_right_db": -0.21286631556377955,
+            "I_db": -1.280531433588752,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.00040211312456918565,
+            "E_right": 0.0003770309483115261,
+            "E_both": 0.0004350266444837216,
+            "level_left_db": -33.95651751729335,
+            "level_right_db": -34.2362299958394,
+            "level_both_db": -33.61484142590468,
+            "left_minus_right_db": 0.2797124785460525,
+            "I_db": -2.5310191383396856,
+            "relative_to_P02_both_db": -1.9814849529618606,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B1": {
+          "P01": {
+            "E_left": 0.0004897222771604267,
+            "E_right": 0.0003822650462275517,
+            "E_both": 0.0006242134893644879,
+            "level_left_db": -33.10050139747779,
+            "level_right_db": -34.176354114355995,
+            "level_both_db": -32.04666850388307,
+            "left_minus_right_db": 1.0758527168782024,
+            "I_db": -1.451770217627693,
+            "relative_to_P02_both_db": 0.022910955464546134,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.000449690568488209,
+            "E_right": 0.00038335163287019986,
+            "E_both": 0.0006209291577917435,
+            "level_left_db": -33.47086220941021,
+            "level_right_db": -34.16402682544679,
+            "level_both_db": -32.069579459347615,
+            "left_minus_right_db": 0.693164616036583,
+            "I_db": -1.2762494896560697,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.00040211312456918565,
+            "E_right": 0.0003060369797176606,
+            "E_both": 0.0003981191035372893,
+            "level_left_db": -33.95651751729335,
+            "level_right_db": -35.142260927439764,
+            "level_both_db": -33.999869825219726,
+            "left_minus_right_db": 1.185743410146415,
+            "I_db": -2.501123059659779,
+            "relative_to_P02_both_db": -1.9302903658721107,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B2": {
+          "P01": {
+            "E_left": 0.0004897222771604267,
+            "E_right": 0.0003822650462275517,
+            "E_both": 0.001119761157411469,
+            "level_left_db": -33.10050139747779,
+            "level_right_db": -34.176354114355995,
+            "level_both_db": -29.508746015083318,
+            "left_minus_right_db": 1.0758527168782024,
+            "I_db": 1.0861522711720606,
+            "relative_to_P02_both_db": 0.2994459416258479,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.000449690568488209,
+            "E_right": 0.00038335163287019986,
+            "E_both": 0.0010451552449250742,
+            "level_left_db": -33.47086220941021,
+            "level_right_db": -34.16402682544679,
+            "level_both_db": -29.808191956709166,
+            "left_minus_right_db": 0.693164616036583,
+            "I_db": 0.985138012982373,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.00040211312456918565,
+            "E_right": 0.0003060369797176606,
+            "E_both": 0.0010181811050364034,
+            "level_left_db": -33.95651751729335,
+            "level_right_db": -35.142260927439764,
+            "level_both_db": -29.921749666726413,
+            "left_minus_right_db": 1.185743410146415,
+            "I_db": 1.5769970988335336,
+            "relative_to_P02_both_db": -0.1135577100172469,
+            "relative_level_check_db": 0.0
+          }
+        }
+      },
+      "measured_energy_levels_db": {
+        "left_only": -48.179064006079216,
+        "right_only": -48.725067749580056,
+        "both": -44.84108500910786,
+        "both_end": -44.27159390304827
+      }
+    },
+    "1000-2000 Hz": {
+      "models": {
+        "B0": {
+          "P01": {
+            "E_left": 0.0005210817261468492,
+            "E_right": 0.0005034332536044285,
+            "E_both": 0.000867698384850897,
+            "level_left_db": -32.83094156871126,
+            "level_right_db": -32.9805810110405,
+            "level_both_db": -30.616312109508623,
+            "left_minus_right_db": 0.14963944232923865,
+            "I_db": -0.7214952368881776,
+            "relative_to_P02_both_db": 1.117262939535486,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.00046409934433813796,
+            "E_right": 0.00045467526742475365,
+            "E_both": 0.0006708763698836059,
+            "level_left_db": -33.333890451352254,
+            "level_right_db": -33.42298669091764,
+            "level_both_db": -31.73357504904411,
+            "left_minus_right_db": 0.08909623956538582,
+            "I_db": -1.3656649085750536,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.0003495242265949775,
+            "E_right": 0.0003629757192235334,
+            "E_both": 0.0005890246448000322,
+            "level_left_db": -34.56522716593929,
+            "level_right_db": -34.40122425542193,
+            "level_both_db": -32.29866533945072,
+            "left_minus_right_db": -0.16400291051736104,
+            "I_db": -0.8265136960004449,
+            "relative_to_P02_both_db": -0.5650902904066122,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B1": {
+          "P01": {
+            "E_left": 0.0005210817261468492,
+            "E_right": 0.00021114942784577985,
+            "E_both": 0.0006306727132443111,
+            "level_left_db": -32.83094156871126,
+            "level_right_db": -36.75410091050616,
+            "level_both_db": -32.001959588335126,
+            "left_minus_right_db": 3.9231593417949,
+            "I_db": -0.6484416155337029,
+            "relative_to_P02_both_db": 1.0585428427499508,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.00046409934433813796,
+            "E_right": 0.0001906994062966665,
+            "E_both": 0.000494253503969405,
+            "level_left_db": -33.333890451352254,
+            "level_right_db": -37.19650659038331,
+            "level_both_db": -33.06050243108508,
+            "left_minus_right_db": 3.8626161390310543,
+            "I_db": -1.2215808520924196,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.0003495242265949775,
+            "E_right": 0.00015223888149466753,
+            "E_both": 0.00042179734266582607,
+            "level_left_db": -34.56522716593929,
+            "level_right_db": -38.1747441548876,
+            "level_both_db": -33.74896160654388,
+            "left_minus_right_db": 3.6095169889483074,
+            "I_db": -0.7539488749730228,
+            "relative_to_P02_both_db": -0.688459175458803,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B2": {
+          "P01": {
+            "E_left": 0.0005210817261468492,
+            "E_right": 0.00021114942784577985,
+            "E_both": 0.0008337895947409468,
+            "level_left_db": -32.83094156871126,
+            "level_right_db": -36.75410091050616,
+            "level_both_db": -30.78943528944414,
+            "left_minus_right_db": 3.9231593417949,
+            "I_db": 0.5640826833572862,
+            "relative_to_P02_both_db": 0.09715592856240818,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.00046409934433813796,
+            "E_right": 0.0001906994062966665,
+            "E_both": 0.0008153439973002038,
+            "level_left_db": -33.333890451352254,
+            "level_right_db": -37.19650659038331,
+            "level_both_db": -30.886591218006547,
+            "left_minus_right_db": 3.8626161390310543,
+            "I_db": 0.9523303609861068,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.0003495242265949775,
+            "E_right": 0.00015223888149466753,
+            "E_both": 0.000581728873513464,
+            "level_left_db": -34.56522716593929,
+            "level_right_db": -38.1747441548876,
+            "level_both_db": -32.35279379907374,
+            "left_minus_right_db": 3.6095169889483074,
+            "I_db": 0.6422189324971239,
+            "relative_to_P02_both_db": -1.46620258106719,
+            "relative_level_check_db": 0.0
+          }
+        }
+      },
+      "measured_energy_levels_db": {
+        "left_only": -51.7575532371287,
+        "right_only": -55.042207101814284,
+        "both": -49.77490981885869,
+        "both_end": -49.113199356388016
+      }
+    },
+    "2000-4000 Hz": {
+      "models": {
+        "B0": {
+          "P01": {
+            "E_left": 0.0004966681249078184,
+            "E_right": 0.00049874390768924,
+            "E_both": 0.0009236805531749539,
+            "level_left_db": -33.03933711196337,
+            "level_right_db": -33.02122396313927,
+            "level_both_db": -30.34478199754549,
+            "left_minus_right_db": -0.018113148824099312,
+            "I_db": -0.32481085970591433,
+            "relative_to_P02_both_db": 0.5524648132251322,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.0004453619420757495,
+            "E_right": 0.0004293052007775311,
+            "E_both": 0.0008133459695744255,
+            "level_left_db": -33.51286897882763,
+            "level_right_db": -33.67233850268984,
+            "level_both_db": -30.89724681077062,
+            "left_minus_right_db": 0.15946952386220659,
+            "I_db": -0.31567493499851634,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.00042341619685869913,
+            "E_right": 0.00044010056483546406,
+            "E_both": 0.000918506862003703,
+            "level_left_db": -33.73232533015198,
+            "level_right_db": -33.56448074052897,
+            "level_both_db": -30.369175948081338,
+            "left_minus_right_db": -0.16784458962300874,
+            "I_db": 0.2681163313131777,
+            "relative_to_P02_both_db": 0.5280708626892832,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B1": {
+          "P01": {
+            "E_left": 0.0004966681249078184,
+            "E_right": 7.627761856617158e-05,
+            "E_both": 0.0005448933740844226,
+            "level_left_db": -33.03933711196337,
+            "level_right_db": -41.17602874353292,
+            "level_both_db": -32.63688473094365,
+            "left_minus_right_db": 8.136691631569548,
+            "I_db": -0.21801970409903032,
+            "relative_to_P02_both_db": 0.48748250302490703,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.0004453619420757495,
+            "E_right": 6.565770097343426e-05,
+            "E_both": 0.00048703848138796163,
+            "level_left_db": -33.51286897882763,
+            "level_right_db": -41.827143283083494,
+            "level_both_db": -33.124367233968556,
+            "left_minus_right_db": 8.31427430425586,
+            "I_db": -0.208743176683733,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.00042341619685869913,
+            "E_right": 6.730873800706765e-05,
+            "E_both": 0.0005122301738358865,
+            "level_left_db": -33.73232533015198,
+            "level_right_db": -41.71928552092262,
+            "level_both_db": -32.905348422197,
+            "left_minus_right_db": 7.986960190770638,
+            "I_db": 0.18627031734416558,
+            "relative_to_P02_both_db": 0.21901881177155502,
+            "relative_level_check_db": 0.0
+          }
+        },
+        "B2": {
+          "P01": {
+            "E_left": 0.0004966681249078184,
+            "E_right": 7.627761856617158e-05,
+            "E_both": 0.0006009981128635574,
+            "level_left_db": -33.03933711196337,
+            "level_right_db": -41.17602874353292,
+            "level_both_db": -32.211268916815044,
+            "left_minus_right_db": 8.136691631569548,
+            "I_db": 0.20759611002958314,
+            "relative_to_P02_both_db": 0.5051867306170479,
+            "relative_level_check_db": 0.0
+          },
+          "P02": {
+            "E_left": 0.0004453619420757495,
+            "E_right": 6.565770097343426e-05,
+            "E_both": 0.000535000804710406,
+            "level_left_db": -33.51286897882763,
+            "level_right_db": -41.827143283083494,
+            "level_both_db": -32.71645564743209,
+            "left_minus_right_db": 8.31427430425586,
+            "I_db": 0.19916840985273215,
+            "relative_to_P02_both_db": 0.0,
+            "relative_level_check_db": 0.0
+          },
+          "P03": {
+            "E_left": 0.00042341619685869913,
+            "E_right": 6.730873800706765e-05,
+            "E_both": 0.00046921969589564715,
+            "level_left_db": -33.73232533015198,
+            "level_right_db": -41.71928552092262,
+            "level_both_db": -33.28623766293792,
+            "left_minus_right_db": 7.986960190770638,
+            "I_db": -0.19461892339675807,
+            "relative_to_P02_both_db": -0.5697820155058295,
+            "relative_level_check_db": 0.0
+          }
+        }
+      },
+      "measured_energy_levels_db": {
+        "left_only": -50.58108062443543,
+        "right_only": -58.47419869394986,
+        "both": -49.232859280283876,
+        "both_end": -48.42019436983823
+      }
+    }
+  },
+  "validation": {
+    "250-500 Hz": {
+      "B1_B2_single_energy_max_abs_db": 0.0,
+      "polarity_identity_max_abs_relative": 0.0
+    },
+    "500-1000 Hz": {
+      "B1_B2_single_energy_max_abs_db": 0.0,
+      "polarity_identity_max_abs_relative": 1.531034403472082e-16
+    },
+    "1000-2000 Hz": {
+      "B1_B2_single_energy_max_abs_db": 0.0,
+      "polarity_identity_max_abs_relative": 1.655779232068492e-16
+    },
+    "2000-4000 Hz": {
+      "B1_B2_single_energy_max_abs_db": 0.0,
+      "polarity_identity_max_abs_relative": 2.2093887949306625e-16
+    }
+  },
+  "prior_P02_B2_I_db_expected": [
+    1.27856,
+    0.98514,
+    0.95233,
+    0.19917
+  ],
+  "prior_P02_B2_I_db_actual": [
+    1.2785607656783469,
+    0.985138012982373,
+    0.9523303609861068,
+    0.19916840985273215
+  ],
+  "notes": [
+    "Fixed prediction only; no new-measurement optimization.",
+    "Previous P01/P03 recordings were not used for model selection or correction.",
+    "This is not confirmation of actual wiring polarity or an independent validation.",
+    "Each band is independent; no broadband result is formed by combining bands."
+  ]
+}

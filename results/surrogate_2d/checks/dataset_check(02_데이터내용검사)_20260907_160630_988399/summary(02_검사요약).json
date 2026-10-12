@@ -1,0 +1,81 @@
+{
+  "outcome": "REVIEW",
+  "metadata_rows": 100,
+  "npy_files": 100,
+  "sample_counts": {
+    "PASS": 82,
+    "REVIEW": 18,
+    "FAIL": 0
+  },
+  "global_errors": [],
+  "notes": [],
+  "metadata_ranges": {
+    "room_x": {
+      "min": 8.0,
+      "max": 8.0,
+      "unique_count": 1
+    },
+    "room_y": {
+      "min": 10.0,
+      "max": 10.0,
+      "unique_count": 1
+    },
+    "speaker_x": {
+      "min": 0.7037745144444271,
+      "max": 7.295264291523996,
+      "unique_count": 100
+    },
+    "speaker_y": {
+      "min": 0.9319114863841841,
+      "max": 9.266429451553813,
+      "unique_count": 100
+    },
+    "obstacle_x": {
+      "min": 0.8158720085355051,
+      "max": 5.3967227540383975,
+      "unique_count": 100
+    },
+    "obstacle_y": {
+      "min": 2.5316270864169885,
+      "max": 8.272880393594578,
+      "unique_count": 100
+    },
+    "obstacle_w": {
+      "min": 1.5004059396972875,
+      "max": 2.499907828509209,
+      "unique_count": 100
+    },
+    "obstacle_l": {
+      "min": 0.8038813726966223,
+      "max": 1.4753045411238612,
+      "unique_count": 100
+    },
+    "wall_alpha": {
+      "min": 0.2,
+      "max": 0.2,
+      "unique_count": 1
+    },
+    "obstacle_alpha": {
+      "min": 0.1,
+      "max": 0.1,
+      "unique_count": 1
+    }
+  },
+  "min_source_receiver_distance_m": 0.0237140236254061,
+  "near_distance_review_threshold_m": 0.1,
+  "max_zero_tolerance_db": 1e-05,
+  "grid": {
+    "shape": [
+      20,
+      20
+    ],
+    "wall_offset_m": 0.5,
+    "array_order": "y,x"
+  },
+  "limitations": [
+    "정규화 전 에너지의 하한 적용/빈 RIR 여부는 상대 NPY만으로 판정 불가",
+    "물리적 정확성 및 반사 차수 수렴은 별도 검증 필요",
+    "PNG 내용과 좌표 방향의 시각 검증은 포함하지 않음",
+    "근접 거리 0.1m 기본값은 검토용이며 자동 삭제 기준이 아님"
+  ]
+}

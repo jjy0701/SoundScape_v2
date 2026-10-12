@@ -1,0 +1,92 @@
+{
+  "direct_path_pass": true,
+  "checks": {
+    "empty_both_nonzero": true,
+    "blocked_direct_removed": true,
+    "clear_probe_unchanged": true,
+    "moved_direct_restored": true,
+    "visibility_empty": true,
+    "visibility_blocked": true,
+    "visibility_moved": true
+  },
+  "diagnostics": {
+    "empty": [
+      {
+        "visible_paths": 1,
+        "visibility": [
+          [
+            true
+          ]
+        ],
+        "image_orders": [
+          0
+        ],
+        "rir_origin": "pra_compute_rir"
+      },
+      {
+        "visible_paths": 1,
+        "visibility": [
+          [
+            true
+          ]
+        ],
+        "image_orders": [
+          0
+        ],
+        "rir_origin": "pra_compute_rir"
+      }
+    ],
+    "blocked": [
+      {
+        "visible_paths": 0,
+        "visibility": [
+          [
+            0
+          ]
+        ],
+        "image_orders": [
+          0
+        ],
+        "rir_origin": "zero_response_from_no_visible_paths"
+      },
+      {
+        "visible_paths": 1,
+        "visibility": [
+          [
+            true
+          ]
+        ],
+        "image_orders": [
+          0
+        ],
+        "rir_origin": "pra_compute_rir"
+      }
+    ],
+    "moved": [
+      {
+        "visible_paths": 1,
+        "visibility": [
+          [
+            true
+          ]
+        ],
+        "image_orders": [
+          0
+        ],
+        "rir_origin": "pra_compute_rir"
+      },
+      {
+        "visible_paths": 1,
+        "visibility": [
+          [
+            true
+          ]
+        ],
+        "image_orders": [
+          0
+        ],
+        "rir_origin": "pra_compute_rir"
+      }
+    ]
+  }
+}

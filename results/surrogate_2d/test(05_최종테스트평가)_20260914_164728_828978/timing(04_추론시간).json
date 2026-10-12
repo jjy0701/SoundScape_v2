@@ -1,0 +1,24 @@
+{
+  "device": "cpu",
+  "simulation_time_measured": false,
+  "simulation_time_note": "이 스크립트는 Pyroomacoustics를 다시 실행하지 않습니다. 아래 값은 15개 test 장면의 모델 추론 시간입니다.",
+  "scope": "메모리에 올라온 표준화 feature의 예측 계산만 측정; NPY 읽기·heatmap 저장·Pyroomacoustics 재계산 시간은 제외",
+  "distance": {
+    "repeats": 20,
+    "mean_total_ms": 0.008415000047534704,
+    "mean_per_scene_ms": 0.0005610000031689802,
+    "mean_per_receiver_us": 0.0014025000079224508
+  },
+  "ridge": {
+    "repeats": 20,
+    "mean_total_ms": 0.01978999935090542,
+    "mean_per_scene_ms": 0.0013193332900603612,
+    "mean_per_receiver_us": 0.003298333225150903
+  },
+  "mlp": {
+    "repeats": 20,
+    "mean_total_ms": 0.4271149984560907,
+    "mean_per_scene_ms": 0.028474333230406046,
+    "mean_per_receiver_us": 0.07118583307601511
+  }
+}

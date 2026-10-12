@@ -1,0 +1,2716 @@
+{
+  "pyroomacoustics": "0.10.1",
+  "analysis": "09-compatible 250-4000 Hz, Butterworth 4 sosfiltfilt, three 8 s windows",
+  "absorption": 0.2,
+  "orders": [
+    5,
+    6
+  ],
+  "models": {
+    "A": "2.63 m ShoeBox",
+    "B": "2.67 m ShoeBox",
+    "C": "2.67 m extruded air polygon with four wall-connected recess boundaries"
+  },
+  "control_B_height_general_Room": {
+    "5:P01": {
+      "rir_samples_all_sources": [
+        7922,
+        7919
+      ],
+      "paths": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7922,
+          "nonzero_samples": 7922,
+          "peak_sample": 564,
+          "peak_abs": 0.25237571476134013,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            5,
+            5,
+            3,
+            2,
+            3,
+            5,
+            4,
+            5,
+            5,
+            3,
+            4,
+            4,
+            5,
+            3,
+            4
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7919,
+          "nonzero_samples": 7919,
+          "peak_sample": 513,
+          "peak_abs": 0.2870920366842257,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            4,
+            5,
+            5,
+            2,
+            3,
+            4,
+            5,
+            5,
+            5,
+            3,
+            4,
+            4,
+            5,
+            3,
+            4
+          ]
+        }
+      ],
+      "seconds": 0.010553200030699372
+    },
+    "5:P02": {
+      "rir_samples_all_sources": [
+        7573,
+        7570
+      ],
+      "paths": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7573,
+          "nonzero_samples": 7573,
+          "peak_sample": 621,
+          "peak_abs": 0.1782221398676696,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            4,
+            5,
+            3,
+            5,
+            3,
+            4,
+            2,
+            3,
+            5,
+            4,
+            5,
+            5,
+            4,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7570,
+          "nonzero_samples": 7570,
+          "peak_sample": 576,
+          "peak_abs": 0.2579055606112902,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            4,
+            5,
+            5,
+            2,
+            3,
+            4,
+            5,
+            5,
+            5,
+            4,
+            5,
+            3,
+            4,
+            2,
+            5
+          ]
+        }
+      ],
+      "seconds": 0.010991399991326034
+    },
+    "5:P03": {
+      "rir_samples_all_sources": [
+        7322,
+        7318
+      ],
+      "paths": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7322,
+          "nonzero_samples": 7322,
+          "peak_sample": 844,
+          "peak_abs": 0.1726353652196851,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            3,
+            4,
+            5,
+            3,
+            4,
+            4,
+            5,
+            2,
+            3,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7318,
+          "nonzero_samples": 7318,
+          "peak_sample": 812,
+          "peak_abs": 0.1716221616327021,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            2,
+            3,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            5,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "seconds": 0.012315899948589504
+    },
+    "6:P01": {
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "paths": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 564,
+          "peak_abs": 0.2523254148023343,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            5,
+            6,
+            5,
+            6,
+            6,
+            3,
+            2,
+            3,
+            5,
+            6,
+            6,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.2870500441401907,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            4,
+            5,
+            5,
+            6,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            5
+          ]
+        }
+      ],
+      "seconds": 0.016630399972200394
+    },
+    "6:P02": {
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "paths": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 621,
+          "peak_abs": 0.17816891092996243,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            4,
+            5,
+            6,
+            3,
+            6,
+            5,
+            6,
+            3,
+            4,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.25786010496199185,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            6,
+            4,
+            5,
+            5,
+            6,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6
+          ]
+        }
+      ],
+      "seconds": 0.015094500035047531
+    },
+    "6:P03": {
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "paths": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 844,
+          "peak_abs": 0.1725442491128977,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            6,
+            3,
+            6,
+            4,
+            5,
+            6,
+            3,
+            4,
+            4,
+            5,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.17153856297201137,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            5,
+            6,
+            4,
+            6,
+            5,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            4
+          ]
+        }
+      ],
+      "seconds": 0.020790499984286726
+    }
+  },
+  "control_B_vs_ShoeBox_rir_differences": {
+    "5:P01": [
+      {
+        "max_abs": 0.00015260973819015283,
+        "rms": 1.336066346011641e-05,
+        "relative_rms": 0.0014559117978247948
+      },
+      {
+        "max_abs": 0.00014618483956715098,
+        "rms": 1.3398974945464717e-05,
+        "relative_rms": 0.0014482581985844714
+      }
+    ],
+    "5:P02": [
+      {
+        "max_abs": 0.0001384803130202476,
+        "rms": 1.3258920012277325e-05,
+        "relative_rms": 0.001498558870999874
+      },
+      {
+        "max_abs": 0.00014450211087151804,
+        "rms": 1.3646222934955907e-05,
+        "relative_rms": 0.001535772852352534
+      }
+    ],
+    "5:P03": [
+      {
+        "max_abs": 0.00014506430443486304,
+        "rms": 1.3339662652192869e-05,
+        "relative_rms": 0.0016579989329389858
+      },
+      {
+        "max_abs": 0.00015932873784353868,
+        "rms": 1.3425302229537012e-05,
+        "relative_rms": 0.0016422963168231301
+      }
+    ],
+    "6:P01": [
+      {
+        "max_abs": 0.00020695777397258808,
+        "rms": 1.708296201193399e-05,
+        "relative_rms": 0.0018846780452488059
+      },
+      {
+        "max_abs": 0.0001902475592701052,
+        "rms": 1.7197757017184614e-05,
+        "relative_rms": 0.0018726944553815778
+      }
+    ],
+    "6:P02": [
+      {
+        "max_abs": 0.00017695414130065173,
+        "rms": 1.693546031377824e-05,
+        "relative_rms": 0.001994252733166317
+      },
+      {
+        "max_abs": 0.00015854232310909266,
+        "rms": 1.6879367590857383e-05,
+        "relative_rms": 0.0019811277906246977
+      }
+    ],
+    "6:P03": [
+      {
+        "max_abs": 0.00017082788089401411,
+        "rms": 1.6384557720997624e-05,
+        "relative_rms": 0.0021651283065032404
+      },
+      {
+        "max_abs": 0.00016038105494998144,
+        "rms": 1.6235858748065818e-05,
+        "relative_rms": 0.0021275835867533397
+      }
+    ]
+  },
+  "polygon_area_check": {
+    "computed_m2": 74.887,
+    "expected_m2": 74.887,
+    "absolute_difference_m2": 0.0,
+    "status": "PASS"
+  },
+  "custom_geometry_diagnostics": {
+    "method": "single_air_floor_polygon_then_extrude",
+    "polygon_xy_m": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        7.5,
+        0.0
+      ],
+      [
+        7.5,
+        2.74
+      ],
+      [
+        6.8,
+        2.74
+      ],
+      [
+        6.8,
+        3.465
+      ],
+      [
+        7.5,
+        3.465
+      ],
+      [
+        7.5,
+        9.2
+      ],
+      [
+        6.8,
+        9.2
+      ],
+      [
+        6.8,
+        10.25
+      ],
+      [
+        0.42,
+        10.25
+      ],
+      [
+        0.42,
+        9.2
+      ],
+      [
+        0.0,
+        9.2
+      ],
+      [
+        0.0,
+        3.465
+      ],
+      [
+        0.42,
+        3.465
+      ],
+      [
+        0.42,
+        2.74
+      ],
+      [
+        0.0,
+        2.74
+      ]
+    ],
+    "coincident_outer_faces_retained": false,
+    "right_front_exposed_x_m": 6.8,
+    "right_back_exposed_x_m": 6.8,
+    "visualization": "polygon_acoustic_floorplan.png"
+  },
+  "rows": [
+    {
+      "order": 5,
+      "model": "A",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.883292081685365,
+      "seconds": 0.4875420000171289,
+      "rir_samples_first_source": 7922,
+      "rir_samples_all_sources": [
+        7922,
+        7919
+      ],
+      "synthesized_samples": 2407921,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7922,
+          "nonzero_samples": 7922,
+          "peak_sample": 708,
+          "peak_abs": 0.2731823345585314,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7919,
+          "nonzero_samples": 7919,
+          "peak_sample": 513,
+          "peak_abs": 0.2875104007430697,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.8833927849271959,
+      "relative_level_change_vs_previous_order_db": 0.11871322267985818
+    },
+    {
+      "order": 5,
+      "model": "A",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.76668486661256,
+      "seconds": 0.4564329000422731,
+      "rir_samples_first_source": 7573,
+      "rir_samples_all_sources": [
+        7573,
+        7570
+      ],
+      "synthesized_samples": 2407572,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7573,
+          "nonzero_samples": 7573,
+          "peak_sample": 754,
+          "peak_abs": 0.24027977297996567,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7570,
+          "nonzero_samples": 7570,
+          "peak_sample": 576,
+          "peak_abs": 0.2580305432341558,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0,
+      "relative_level_change_vs_previous_order_db": 0.0
+    },
+    {
+      "order": 5,
+      "model": "A",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.89893144996961,
+      "seconds": 0.4668762000510469,
+      "rir_samples_first_source": 7322,
+      "rir_samples_all_sources": [
+        7322,
+        7318
+      ],
+      "synthesized_samples": 2407321,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7322,
+          "nonzero_samples": 7322,
+          "peak_sample": 945,
+          "peak_abs": 0.23640717788756327,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7318,
+          "nonzero_samples": 7318,
+          "peak_sample": 812,
+          "peak_abs": 0.17279850790700993,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": -1.1322465833570483,
+      "relative_level_change_vs_previous_order_db": 0.3801578642555796
+    },
+    {
+      "order": 5,
+      "model": "B",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.135002746772425,
+      "seconds": 0.4207201999379322,
+      "rir_samples_first_source": 7922,
+      "rir_samples_all_sources": [
+        7922,
+        7919
+      ],
+      "synthesized_samples": 2407921,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7922,
+          "nonzero_samples": 7922,
+          "peak_sample": 564,
+          "peak_abs": 0.25237571395556363,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7919,
+          "nonzero_samples": 7919,
+          "peak_sample": 513,
+          "peak_abs": 0.2870920361761997,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.9819736880823129,
+      "relative_level_change_vs_previous_order_db": 0.05936452552288429
+    },
+    {
+      "order": 5,
+      "model": "B",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.116976434854738,
+      "seconds": 0.3361600999487564,
+      "rir_samples_first_source": 7573,
+      "rir_samples_all_sources": [
+        7573,
+        7570
+      ],
+      "synthesized_samples": 2407572,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7573,
+          "nonzero_samples": 7573,
+          "peak_sample": 621,
+          "peak_abs": 0.17822213963153968,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7570,
+          "nonzero_samples": 7570,
+          "peak_sample": 576,
+          "peak_abs": 0.2579055597985655,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0,
+      "relative_level_change_vs_previous_order_db": 0.0
+    },
+    {
+      "order": 5,
+      "model": "B",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -28.068320219116806,
+      "seconds": 0.3502194000175223,
+      "rir_samples_first_source": 7322,
+      "rir_samples_all_sources": [
+        7322,
+        7318
+      ],
+      "synthesized_samples": 2407321,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7322,
+          "nonzero_samples": 7322,
+          "peak_sample": 844,
+          "peak_abs": 0.17263536416629505,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7318,
+          "nonzero_samples": 7318,
+          "peak_sample": 812,
+          "peak_abs": 0.17162216158656032,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102
+          },
+          "visible_path_count": 231,
+          "orders_head": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.9513437842620682,
+      "relative_level_change_vs_previous_order_db": 0.26679853172306167
+    },
+    {
+      "order": 5,
+      "model": "C",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.048108027690766,
+      "seconds": 0.6283417999511585,
+      "rir_samples_first_source": 7922,
+      "rir_samples_all_sources": [
+        7922,
+        7919
+      ],
+      "synthesized_samples": 2407921,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7922,
+          "nonzero_samples": 7922,
+          "peak_sample": 588,
+          "peak_abs": 0.42655111399853973,
+          "image_order_counts": {
+            "0": 1,
+            "1": 5,
+            "2": 14,
+            "3": 31,
+            "4": 55,
+            "5": 84
+          },
+          "visible_path_count": 190,
+          "orders_head": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            3,
+            4,
+            2,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            3,
+            4,
+            3,
+            4,
+            4
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7919,
+          "nonzero_samples": 7919,
+          "peak_sample": 513,
+          "peak_abs": 0.2872189361041615,
+          "image_order_counts": {
+            "0": 1,
+            "1": 5,
+            "2": 15,
+            "3": 34,
+            "4": 59,
+            "5": 88
+          },
+          "visible_path_count": 202,
+          "orders_head": [
+            0,
+            1,
+            5,
+            2,
+            3,
+            4,
+            5,
+            5,
+            5,
+            3,
+            4,
+            4,
+            5,
+            3,
+            4,
+            4,
+            5,
+            3,
+            4,
+            2
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.3252920147074825,
+      "relative_level_change_vs_previous_order_db": 0.12848605732845542
+    },
+    {
+      "order": 5,
+      "model": "C",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.37340004239825,
+      "seconds": 0.6054612000007182,
+      "rir_samples_first_source": 7573,
+      "rir_samples_all_sources": [
+        7573,
+        7570
+      ],
+      "synthesized_samples": 2407572,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7573,
+          "nonzero_samples": 7573,
+          "peak_sample": 643,
+          "peak_abs": 0.2816007842630832,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 36,
+            "4": 54,
+            "5": 74
+          },
+          "visible_path_count": 189,
+          "orders_head": [
+            0,
+            1,
+            2,
+            5,
+            3,
+            3,
+            4,
+            5,
+            3,
+            4,
+            2,
+            3,
+            4,
+            5,
+            5,
+            5,
+            3,
+            4,
+            2,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7570,
+          "nonzero_samples": 7570,
+          "peak_sample": 576,
+          "peak_abs": 0.25779365770072976,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 34,
+            "4": 55,
+            "5": 86
+          },
+          "visible_path_count": 200,
+          "orders_head": [
+            0,
+            1,
+            5,
+            2,
+            3,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            3,
+            4,
+            5,
+            4,
+            5,
+            2,
+            5,
+            3,
+            2
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0,
+      "relative_level_change_vs_previous_order_db": 0.0
+    },
+    {
+      "order": 5,
+      "model": "C",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.395729694238927,
+      "seconds": 0.6174323000013828,
+      "rir_samples_first_source": 7322,
+      "rir_samples_all_sources": [
+        7322,
+        7318
+      ],
+      "synthesized_samples": 2407321,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7322,
+          "nonzero_samples": 7322,
+          "peak_sample": 860,
+          "peak_abs": 0.2946211451013583,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 17,
+            "3": 35,
+            "4": 61,
+            "5": 98
+          },
+          "visible_path_count": 218,
+          "orders_head": [
+            0,
+            1,
+            3,
+            5,
+            5,
+            4,
+            5,
+            4,
+            5,
+            3,
+            4,
+            2,
+            3,
+            5,
+            4,
+            5,
+            4,
+            5,
+            5,
+            2
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 7318,
+          "nonzero_samples": 7318,
+          "peak_sample": 812,
+          "peak_abs": 0.17155515436433255,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 17,
+            "3": 36,
+            "4": 63,
+            "5": 96
+          },
+          "visible_path_count": 219,
+          "orders_head": [
+            0,
+            1,
+            5,
+            3,
+            4,
+            5,
+            2,
+            3,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            5,
+            3,
+            5,
+            4,
+            4,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": -1.0223296518406784,
+      "relative_level_change_vs_previous_order_db": 0.6043967744107874
+    },
+    {
+      "order": 6,
+      "model": "A",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.565649127820155,
+      "seconds": 0.39409929991234094,
+      "rir_samples_first_source": 8788,
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "synthesized_samples": 2408787,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 708,
+          "peak_abs": 0.2731054829700069,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.28746532654255347,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.7962509724940112,
+      "relative_level_change_vs_previous_order_db": -0.08714181243318464
+    },
+    {
+      "order": 6,
+      "model": "A",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.361900100314166,
+      "seconds": 0.38337870000395924,
+      "rir_samples_first_source": 8970,
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "synthesized_samples": 2408969,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 754,
+          "peak_abs": 0.24020075525709408,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.25798202226052847,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0,
+      "relative_level_change_vs_previous_order_db": 0.0
+    },
+    {
+      "order": 6,
+      "model": "A",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.222661545382117,
+      "seconds": 0.4443483999930322,
+      "rir_samples_first_source": 9319,
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "synthesized_samples": 2409318,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 945,
+          "peak_abs": 0.23629060360437176,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.17271120618943714,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.8607614450679506,
+      "relative_level_change_vs_previous_order_db": 0.2714851382890977
+    },
+    {
+      "order": 6,
+      "model": "B",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.86245334508027,
+      "seconds": 0.39801380003336817,
+      "rir_samples_first_source": 8788,
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "synthesized_samples": 2408787,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 564,
+          "peak_abs": 0.2523254135547076,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.2870500428464931,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.7713949326915994,
+      "relative_level_change_vs_previous_order_db": -0.21057875539071347
+    },
+    {
+      "order": 6,
+      "model": "B",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.633848277771868,
+      "seconds": 0.34459710004739463,
+      "rir_samples_first_source": 8970,
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "synthesized_samples": 2408969,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 621,
+          "peak_abs": 0.17816891017177852,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.2578601039519873,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0,
+      "relative_level_change_vs_previous_order_db": 0.0
+    },
+    {
+      "order": 6,
+      "model": "B",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -27.445019249783968,
+      "seconds": 0.32541809999383986,
+      "rir_samples_first_source": 9319,
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "synthesized_samples": 2409318,
+      "wall_count": 6,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 844,
+          "peak_abs": 0.1725442476525587,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.17153856195121836,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 38,
+            "4": 66,
+            "5": 102,
+            "6": 146
+          },
+          "visible_path_count": 377,
+          "orders_head": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.8111709720120999,
+      "relative_level_change_vs_previous_order_db": 0.14017281224996836
+    },
+    {
+      "order": 6,
+      "model": "C",
+      "receiver": "P01",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -25.704586316399535,
+      "seconds": 2.994259800063446,
+      "rir_samples_first_source": 8788,
+      "rir_samples_all_sources": [
+        8788,
+        8785
+      ],
+      "synthesized_samples": 2408787,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8788,
+          "nonzero_samples": 8788,
+          "peak_sample": 588,
+          "peak_abs": 0.42650097156645733,
+          "image_order_counts": {
+            "0": 1,
+            "1": 5,
+            "2": 14,
+            "3": 31,
+            "4": 55,
+            "5": 84,
+            "6": 119
+          },
+          "visible_path_count": 309,
+          "orders_head": [
+            0,
+            1,
+            2,
+            6,
+            6,
+            3,
+            4,
+            5,
+            3,
+            4,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            5,
+            4,
+            6,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8785,
+          "nonzero_samples": 8785,
+          "peak_sample": 513,
+          "peak_abs": 0.28718384842198996,
+          "image_order_counts": {
+            "0": 1,
+            "1": 5,
+            "2": 15,
+            "3": 34,
+            "4": 59,
+            "5": 88,
+            "6": 126
+          },
+          "visible_path_count": 328,
+          "orders_head": [
+            0,
+            1,
+            5,
+            6,
+            6,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            5,
+            6,
+            5,
+            3,
+            4,
+            4,
+            6
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.40872927165840167,
+      "relative_level_change_vs_previous_order_db": 0.08343725695091919
+    },
+    {
+      "order": 6,
+      "model": "C",
+      "receiver": "P02",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.113315588057937,
+      "seconds": 2.8101964000379667,
+      "rir_samples_first_source": 8970,
+      "rir_samples_all_sources": [
+        8970,
+        8967
+      ],
+      "synthesized_samples": 2408969,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8970,
+          "nonzero_samples": 8970,
+          "peak_sample": 643,
+          "peak_abs": 0.28153190691437324,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 36,
+            "4": 54,
+            "5": 74,
+            "6": 105
+          },
+          "visible_path_count": 294,
+          "orders_head": [
+            0,
+            1,
+            2,
+            6,
+            5,
+            6,
+            3,
+            3,
+            4,
+            6,
+            5,
+            6,
+            3,
+            4,
+            2,
+            3,
+            6,
+            6,
+            4,
+            5
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 8967,
+          "nonzero_samples": 8967,
+          "peak_sample": 576,
+          "peak_abs": 0.2577425769006656,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 18,
+            "3": 34,
+            "4": 55,
+            "5": 86,
+            "6": 122
+          },
+          "visible_path_count": 322,
+          "orders_head": [
+            0,
+            1,
+            5,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            5,
+            6,
+            4,
+            5,
+            5,
+            6,
+            3,
+            4,
+            6,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": 0.0,
+      "relative_level_change_vs_previous_order_db": 0.0
+    },
+    {
+      "order": 6,
+      "model": "C",
+      "receiver": "P03",
+      "band_hz": [
+        250,
+        4000
+      ],
+      "level_db": -26.9228240226848,
+      "seconds": 2.8522895999485627,
+      "rir_samples_first_source": 9319,
+      "rir_samples_all_sources": [
+        9319,
+        9316
+      ],
+      "synthesized_samples": 2409318,
+      "wall_count": 18,
+      "path_diagnostics": [
+        {
+          "source_index": 0,
+          "source_position_m": [
+            0.52,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9319,
+          "nonzero_samples": 9319,
+          "peak_sample": 860,
+          "peak_abs": 0.294521961294089,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 17,
+            "3": 35,
+            "4": 61,
+            "5": 98,
+            "6": 145
+          },
+          "visible_path_count": 363,
+          "orders_head": [
+            0,
+            1,
+            3,
+            5,
+            5,
+            6,
+            6,
+            4,
+            5,
+            6,
+            4,
+            6,
+            5,
+            3,
+            4,
+            6,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "source_index": 1,
+          "source_position_m": [
+            6.55,
+            3.1,
+            2.5
+          ],
+          "rir_samples": 9316,
+          "nonzero_samples": 9316,
+          "peak_sample": 812,
+          "peak_abs": 0.1714657213976171,
+          "image_order_counts": {
+            "0": 1,
+            "1": 6,
+            "2": 17,
+            "3": 36,
+            "4": 63,
+            "5": 96,
+            "6": 139
+          },
+          "visible_path_count": 358,
+          "orders_head": [
+            0,
+            1,
+            5,
+            6,
+            3,
+            4,
+            5,
+            6,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            4,
+            5,
+            4,
+            5
+          ]
+        }
+      ],
+      "relative_to_P02_db": -0.8095084346268635,
+      "relative_level_change_vs_previous_order_db": 0.21282121721381486
+    }
+  ],
+  "limitations": [
+    "C uses general 3-D Room, not ShoeBox fast ISM; compare order and runtime explicitly.",
+    "The four measured blocks are represented as air-domain recess boundaries by one closed plan polygon and extrusion.",
+    "High-order calculation remains on hold until the order-0/1/2 control, numerical RIR comparison and area checks pass."
+  ],
+  "source_config": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\support\\classroom_config(07_강의실측정조건).json",
+  "settings": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\configs\\simulation\\simulation_settings(08_음향가정).json"
+}

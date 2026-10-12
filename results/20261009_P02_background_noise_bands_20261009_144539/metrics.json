@@ -1,0 +1,416 @@
+{
+  "analysis": "P02 pre-playback background noise vs central playback bands",
+  "bands_hz": [
+    [
+      250,
+      500
+    ],
+    [
+      500,
+      1000
+    ],
+    [
+      1000,
+      2000
+    ],
+    [
+      2000,
+      4000
+    ]
+  ],
+  "filter": "4th-order Butterworth bandpass + sosfiltfilt",
+  "alignment_source": "C:\\Users\\space\\OneDrive\\바탕 화면\\sound_scape\\results\\20261009_P02_three_speaker_frequency_bands_B_order32_20261009_144154\\metrics.json",
+  "no_noise_removal": true,
+  "no_volume_normalization": true,
+  "no_model_correction": true,
+  "background_selection_method": "Waveform inspection; excluded handling/talk transients and playback onset; selected quiet pre-playback intervals.",
+  "background_windows_s": {
+    "왼쪽 한쪽만": [
+      10.0,
+      12.0
+    ],
+    "오른쪽 스피커": [
+      8.0,
+      10.0
+    ],
+    "두 스피커": [
+      8.0,
+      10.0
+    ]
+  },
+  "playback_windows_preserved_from_existing_analysis": true,
+  "data": {
+    "왼쪽 한쪽만": {
+      "background_window_s": [
+        10.0,
+        12.0
+      ],
+      "bands": {
+        "250-500 Hz": {
+          "background_noise_level_db": -69.46584174716055,
+          "playback_central_level_db": -43.104803404984445,
+          "difference_playback_minus_background_db": 26.36103834217611,
+          "background_window_s": [
+            10.0,
+            12.0
+          ],
+          "playback_windows_s": [
+            [
+              15.352083333333333,
+              23.352083333333333
+            ],
+            [
+              30.3526875,
+              38.3526875
+            ],
+            [
+              45.353208333333335,
+              53.353208333333335
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -43.10002387905615,
+            -43.210113739391986,
+            -43.00665914362537
+          ],
+          "playback_repeat_spread_db": 0.2034545957666154
+        },
+        "500-1000 Hz": {
+          "background_noise_level_db": -88.66496832068002,
+          "playback_central_level_db": -44.69098200693816,
+          "difference_playback_minus_background_db": 43.97398631374186,
+          "background_window_s": [
+            10.0,
+            12.0
+          ],
+          "playback_windows_s": [
+            [
+              15.352083333333333,
+              23.352083333333333
+            ],
+            [
+              30.3526875,
+              38.3526875
+            ],
+            [
+              45.353208333333335,
+              53.353208333333335
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -44.671578131781445,
+            -44.78558464217663,
+            -44.61747518247748
+          ],
+          "playback_repeat_spread_db": 0.1681094596991528
+        },
+        "1000-2000 Hz": {
+          "background_noise_level_db": -84.97362803619734,
+          "playback_central_level_db": -48.222935864778556,
+          "difference_playback_minus_background_db": 36.750692171418784,
+          "background_window_s": [
+            10.0,
+            12.0
+          ],
+          "playback_windows_s": [
+            [
+              15.352083333333333,
+              23.352083333333333
+            ],
+            [
+              30.3526875,
+              38.3526875
+            ],
+            [
+              45.353208333333335,
+              53.353208333333335
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -48.2226298495252,
+            -48.359792233885344,
+            -48.090557563921934
+          ],
+          "playback_repeat_spread_db": 0.26923466996341006
+        },
+        "2000-4000 Hz": {
+          "background_noise_level_db": -82.3765476101545,
+          "playback_central_level_db": -47.10788987501145,
+          "difference_playback_minus_background_db": 35.26865773514305,
+          "background_window_s": [
+            10.0,
+            12.0
+          ],
+          "playback_windows_s": [
+            [
+              15.352083333333333,
+              23.352083333333333
+            ],
+            [
+              30.3526875,
+              38.3526875
+            ],
+            [
+              45.353208333333335,
+              53.353208333333335
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -47.014860389876894,
+            -47.29840461373884,
+            -47.016494896499026
+          ],
+          "playback_repeat_spread_db": 0.283544223861945
+        }
+      }
+    },
+    "오른쪽 스피커": {
+      "background_window_s": [
+        8.0,
+        10.0
+      ],
+      "bands": {
+        "250-500 Hz": {
+          "background_noise_level_db": -69.60528260934512,
+          "playback_central_level_db": -44.96486922903999,
+          "difference_playback_minus_background_db": 24.640413380305134,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              13.412083333333333,
+              21.41208333333333
+            ],
+            [
+              28.427,
+              36.427
+            ],
+            [
+              43.4275625,
+              51.4275625
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -44.97766917842771,
+            -44.9937705254801,
+            -44.92348062639088
+          ],
+          "playback_repeat_spread_db": 0.07028989908922512
+        },
+        "500-1000 Hz": {
+          "background_noise_level_db": -83.36335549805631,
+          "playback_central_level_db": -46.04344029130417,
+          "difference_playback_minus_background_db": 37.319915206752135,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              13.412083333333333,
+              21.41208333333333
+            ],
+            [
+              28.427,
+              36.427
+            ],
+            [
+              43.4275625,
+              51.4275625
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -46.0306680075479,
+            -46.077765355131305,
+            -46.0220941462233
+          ],
+          "playback_repeat_spread_db": 0.055671208908002257
+        },
+        "1000-2000 Hz": {
+          "background_noise_level_db": -80.22285501324828,
+          "playback_central_level_db": -52.71514062065595,
+          "difference_playback_minus_background_db": 27.507714392592327,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              13.412083333333333,
+              21.41208333333333
+            ],
+            [
+              28.427,
+              36.427
+            ],
+            [
+              43.4275625,
+              51.4275625
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -52.675602959855496,
+            -52.752828012145244,
+            -52.71733501541788
+          ],
+          "playback_repeat_spread_db": 0.07722505228974796
+        },
+        "2000-4000 Hz": {
+          "background_noise_level_db": -82.4772598614544,
+          "playback_central_level_db": -56.209103906195246,
+          "difference_playback_minus_background_db": 26.268155955259154,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              13.412083333333333,
+              21.41208333333333
+            ],
+            [
+              28.427,
+              36.427
+            ],
+            [
+              43.4275625,
+              51.4275625
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -56.19403935812319,
+            -56.22098410020975,
+            -56.21233185172179
+          ],
+          "playback_repeat_spread_db": 0.02694474208655606
+        }
+      }
+    },
+    "두 스피커": {
+      "background_window_s": [
+        8.0,
+        10.0
+      ],
+      "bands": {
+        "250-500 Hz": {
+          "background_noise_level_db": -71.41389674533667,
+          "playback_central_level_db": -39.17243530950665,
+          "difference_playback_minus_background_db": 32.24146143583002,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              14.211416666666667,
+              22.21141666666667
+            ],
+            [
+              29.211979166666666,
+              37.211979166666666
+            ],
+            [
+              44.212520833333336,
+              52.212520833333336
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -39.16488422935424,
+            -39.1508955987358,
+            -39.2016844461716
+          ],
+          "playback_repeat_spread_db": 0.050788847435796924
+        },
+        "500-1000 Hz": {
+          "background_noise_level_db": -87.43721628139495,
+          "playback_central_level_db": -41.441624624886806,
+          "difference_playback_minus_background_db": 45.99559165650815,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              14.211416666666667,
+              22.21141666666667
+            ],
+            [
+              29.211979166666666,
+              37.211979166666666
+            ],
+            [
+              44.212520833333336,
+              52.212520833333336
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -41.433530730464526,
+            -41.426290845015686,
+            -41.46515055335129
+          ],
+          "playback_repeat_spread_db": 0.03885970833560748
+        },
+        "1000-2000 Hz": {
+          "background_noise_level_db": -86.09936294784487,
+          "playback_central_level_db": -46.26338159758448,
+          "difference_playback_minus_background_db": 39.83598135026039,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              14.211416666666667,
+              22.21141666666667
+            ],
+            [
+              29.211979166666666,
+              37.211979166666666
+            ],
+            [
+              44.212520833333336,
+              52.212520833333336
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -46.26854526972995,
+            -46.183019540845116,
+            -46.340003119628214
+          ],
+          "playback_repeat_spread_db": 0.1569835787830982
+        },
+        "2000-4000 Hz": {
+          "background_noise_level_db": -87.693557591981,
+          "playback_central_level_db": -45.49077572566453,
+          "difference_playback_minus_background_db": 42.20278186631648,
+          "background_window_s": [
+            8.0,
+            10.0
+          ],
+          "playback_windows_s": [
+            [
+              14.211416666666667,
+              22.21141666666667
+            ],
+            [
+              29.211979166666666,
+              37.211979166666666
+            ],
+            [
+              44.212520833333336,
+              52.212520833333336
+            ]
+          ],
+          "playback_per_repeat_level_db": [
+            -45.461501575824116,
+            -45.50263522894747,
+            -45.50834090885899
+          ],
+          "playback_repeat_spread_db": 0.04683933303487464
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,478 @@
+{
+  "definition": "Compare FFT length 2N with 4N; N is the prior base power-of-two FFT length used in the pilot",
+  "criterion": {
+    "threshold_db": 0.05,
+    "meaning": "temporary calculation-setting selection criterion, not a universal accuracy standard",
+    "automatic_followup": false
+  },
+  "scenes": {
+    "sample_0000": {
+      "max_actual_rir_length": 4096,
+      "N": 4096,
+      "fft_lengths": [
+        4096,
+        8192,
+        16384
+      ],
+      "frequency_spacing_hz": [
+        3.90625,
+        1.953125,
+        0.9765625
+      ],
+      "bands": {
+        "250-500 Hz": {
+          "individual_energy_relative_change_max": 0.013867867013185327,
+          "individual_energy_max_location": {
+            "receiver_index": 42,
+            "grid_index_yx": [
+              2,
+              2
+            ],
+            "receiver_xy_m": [
+              1.236842105263158,
+              1.4473684210526314
+            ],
+            "E_2N": 0.0014414149474245715,
+            "E_4N": 0.001461404298226273
+          },
+          "relative_map_change": {
+            "rmse_db": 0.011229150906646314,
+            "abs_diff_p95_db": 0.023910725138136253,
+            "abs_diff_max_db": 0.05989886680205103,
+            "max_location": {
+              "receiver_index": 42,
+              "grid_index_yx": [
+                2,
+                2
+              ],
+              "receiver_xy_m": [
+                1.236842105263158,
+                1.4473684210526314
+              ],
+              "map_2N_db": -28.777586209807687,
+              "map_4N_db": -28.717687343005636
+            },
+            "criterion_pass": false
+          }
+        },
+        "500-1000 Hz": {
+          "individual_energy_relative_change_max": 0.006721084181099717,
+          "individual_energy_max_location": {
+            "receiver_index": 9,
+            "grid_index_yx": [
+              0,
+              9
+            ],
+            "receiver_xy_m": [
+              3.81578947368421,
+              0.5
+            ],
+            "E_2N": 0.0058519101640289815,
+            "E_4N": 0.005891241344861653
+          },
+          "relative_map_change": {
+            "rmse_db": 0.005914754344097965,
+            "abs_diff_p95_db": 0.012496421773241548,
+            "abs_diff_max_db": 0.029574998491117555,
+            "max_location": {
+              "receiver_index": 9,
+              "grid_index_yx": [
+                0,
+                9
+              ],
+              "receiver_xy_m": [
+                3.81578947368421,
+                0.5
+              ],
+              "map_2N_db": -25.75524968451206,
+              "map_4N_db": -25.72567468602094
+            },
+            "criterion_pass": true
+          }
+        },
+        "1000-2000 Hz": {
+          "individual_energy_relative_change_max": 0.002310996726487746,
+          "individual_energy_max_location": {
+            "receiver_index": 369,
+            "grid_index_yx": [
+              19,
+              1
+            ],
+            "receiver_xy_m": [
+              0.868421052631579,
+              9.5
+            ],
+            "E_2N": 0.02011955315683643,
+            "E_4N": 0.020073056935352586
+          },
+          "relative_map_change": {
+            "rmse_db": 0.0025801004138140174,
+            "abs_diff_p95_db": 0.005195145357182084,
+            "abs_diff_max_db": 0.010132716518455709,
+            "max_location": {
+              "receiver_index": 369,
+              "grid_index_yx": [
+                19,
+                1
+              ],
+              "receiver_xy_m": [
+                0.868421052631579,
+                9.5
+              ],
+              "map_2N_db": -23.370922296022986,
+              "map_4N_db": -23.38105501254144
+            },
+            "criterion_pass": true
+          }
+        },
+        "2000-4000 Hz": {
+          "individual_energy_relative_change_max": 0.001023621742581977,
+          "individual_energy_max_location": {
+            "receiver_index": 347,
+            "grid_index_yx": [
+              17,
+              19
+            ],
+            "receiver_xy_m": [
+              7.5,
+              8.552631578947368
+            ],
+            "E_2N": 0.07471773105692933,
+            "E_4N": 0.0747942137509956
+          },
+          "relative_map_change": {
+            "rmse_db": 0.0012350505270001693,
+            "abs_diff_p95_db": 0.00254123866242537,
+            "abs_diff_max_db": 0.00435117584204292,
+            "max_location": {
+              "receiver_index": 347,
+              "grid_index_yx": [
+                17,
+                19
+              ],
+              "receiver_xy_m": [
+                7.5,
+                8.552631578947368
+              ],
+              "map_2N_db": -20.6893211786439,
+              "map_4N_db": -20.684970002801858
+            },
+            "criterion_pass": true
+          }
+        }
+      }
+    },
+    "sample_0002": {
+      "max_actual_rir_length": 4061,
+      "N": 4096,
+      "fft_lengths": [
+        4096,
+        8192,
+        16384
+      ],
+      "frequency_spacing_hz": [
+        3.90625,
+        1.953125,
+        0.9765625
+      ],
+      "bands": {
+        "250-500 Hz": {
+          "individual_energy_relative_change_max": 0.011368794512652734,
+          "individual_energy_max_location": {
+            "receiver_index": 266,
+            "grid_index_yx": [
+              13,
+              14
+            ],
+            "receiver_xy_m": [
+              5.657894736842105,
+              6.657894736842105
+            ],
+            "E_2N": 0.001975575467548573,
+            "E_4N": 0.0019531155560137754
+          },
+          "relative_map_change": {
+            "rmse_db": 0.009937981683921805,
+            "abs_diff_p95_db": 0.02258344186215311,
+            "abs_diff_max_db": 0.04901521667964204,
+            "max_location": {
+              "receiver_index": 266,
+              "grid_index_yx": [
+                13,
+                14
+              ],
+              "receiver_xy_m": [
+                5.657894736842105,
+                6.657894736842105
+              ],
+              "map_2N_db": -26.45797233807044,
+              "map_4N_db": -26.506987554750083
+            },
+            "criterion_pass": true
+          }
+        },
+        "500-1000 Hz": {
+          "individual_energy_relative_change_max": 0.004796045482095457,
+          "individual_energy_max_location": {
+            "receiver_index": 246,
+            "grid_index_yx": [
+              12,
+              14
+            ],
+            "receiver_xy_m": [
+              5.657894736842105,
+              6.184210526315789
+            ],
+            "E_2N": 0.001510163453640398,
+            "E_4N": 0.0015174062662494556
+          },
+          "relative_map_change": {
+            "rmse_db": 0.004637089055836338,
+            "abs_diff_p95_db": 0.009471224915495922,
+            "abs_diff_max_db": 0.0203925894435244,
+            "max_location": {
+              "receiver_index": 246,
+              "grid_index_yx": [
+                12,
+                14
+              ],
+              "receiver_xy_m": [
+                5.657894736842105,
+                6.184210526315789
+              ],
+              "map_2N_db": -30.619735464277063,
+              "map_4N_db": -30.59934287483354
+            },
+            "criterion_pass": true
+          }
+        },
+        "1000-2000 Hz": {
+          "individual_energy_relative_change_max": 0.002379278504413904,
+          "individual_energy_max_location": {
+            "receiver_index": 230,
+            "grid_index_yx": [
+              11,
+              14
+            ],
+            "receiver_xy_m": [
+              5.657894736842105,
+              5.7105263157894735
+            ],
+            "E_2N": 0.007640072628891701,
+            "E_4N": 0.007658250489469784
+          },
+          "relative_map_change": {
+            "rmse_db": 0.002422718260307585,
+            "abs_diff_p95_db": 0.005085916501696451,
+            "abs_diff_max_db": 0.00960616745739884,
+            "max_location": {
+              "receiver_index": 230,
+              "grid_index_yx": [
+                11,
+                14
+              ],
+              "receiver_xy_m": [
+                5.657894736842105,
+                5.7105263157894735
+              ],
+              "map_2N_db": -26.583538833979237,
+              "map_4N_db": -26.573932666521838
+            },
+            "criterion_pass": true
+          }
+        },
+        "2000-4000 Hz": {
+          "individual_energy_relative_change_max": 0.0016974339703154072,
+          "individual_energy_max_location": {
+            "receiver_index": 230,
+            "grid_index_yx": [
+              11,
+              14
+            ],
+            "receiver_xy_m": [
+              5.657894736842105,
+              5.7105263157894735
+            ],
+            "E_2N": 0.010352376609314111,
+            "E_4N": 0.010334804133583963
+          },
+          "relative_map_change": {
+            "rmse_db": 0.0013508252372651892,
+            "abs_diff_p95_db": 0.002614645391977532,
+            "abs_diff_max_db": 0.0072216256122636935,
+            "max_location": {
+              "receiver_index": 230,
+              "grid_index_yx": [
+                11,
+                14
+              ],
+              "receiver_xy_m": [
+                5.657894736842105,
+                5.7105263157894735
+              ],
+              "map_2N_db": -28.274106017143904,
+              "map_4N_db": -28.281327642756168
+            },
+            "criterion_pass": true
+          }
+        }
+      }
+    },
+    "sample_0005": {
+      "max_actual_rir_length": 4047,
+      "N": 4096,
+      "fft_lengths": [
+        4096,
+        8192,
+        16384
+      ],
+      "frequency_spacing_hz": [
+        3.90625,
+        1.953125,
+        0.9765625
+      ],
+      "bands": {
+        "250-500 Hz": {
+          "individual_energy_relative_change_max": 0.00978387392525498,
+          "individual_energy_max_location": {
+            "receiver_index": 96,
+            "grid_index_yx": [
+              4,
+              16
+            ],
+            "receiver_xy_m": [
+              6.394736842105263,
+              2.394736842105263
+            ],
+            "E_2N": 0.0056809087466535655,
+            "E_4N": 0.005625327451695429
+          },
+          "relative_map_change": {
+            "rmse_db": 0.009900577677265102,
+            "abs_diff_p95_db": 0.021374490978421076,
+            "abs_diff_max_db": 0.04296353407029585,
+            "max_location": {
+              "receiver_index": 96,
+              "grid_index_yx": [
+                4,
+                16
+              ],
+              "receiver_xy_m": [
+                6.394736842105263,
+                2.394736842105263
+              ],
+              "map_2N_db": -19.69162489934743,
+              "map_4N_db": -19.734588433417727
+            },
+            "criterion_pass": true
+          }
+        },
+        "500-1000 Hz": {
+          "individual_energy_relative_change_max": 0.006727035370622998,
+          "individual_energy_max_location": {
+            "receiver_index": 307,
+            "grid_index_yx": [
+              15,
+              7
+            ],
+            "receiver_xy_m": [
+              3.0789473684210527,
+              7.605263157894736
+            ],
+            "E_2N": 0.014823686756833404,
+            "E_4N": 0.014923406221969658
+          },
+          "relative_map_change": {
+            "rmse_db": 0.0050781980948362065,
+            "abs_diff_p95_db": 0.011182589180103614,
+            "abs_diff_max_db": 0.0297308506772076,
+            "max_location": {
+              "receiver_index": 307,
+              "grid_index_yx": [
+                15,
+                7
+              ],
+              "receiver_xy_m": [
+                3.0789473684210527,
+                7.605263157894736
+              ],
+              "map_2N_db": -18.623828822391726,
+              "map_4N_db": -18.59409797171452
+            },
+            "criterion_pass": true
+          }
+        },
+        "1000-2000 Hz": {
+          "individual_energy_relative_change_max": 0.0026447002076146193,
+          "individual_energy_max_location": {
+            "receiver_index": 102,
+            "grid_index_yx": [
+              5,
+              2
+            ],
+            "receiver_xy_m": [
+              1.236842105263158,
+              2.8684210526315788
+            ],
+            "E_2N": 0.027726374054499917,
+            "E_4N": 0.027799702001718253
+          },
+          "relative_map_change": {
+            "rmse_db": 0.0025615661937871694,
+            "abs_diff_p95_db": 0.005076171492520131,
+            "abs_diff_max_db": 0.011205861110592963,
+            "max_location": {
+              "receiver_index": 102,
+              "grid_index_yx": [
+                5,
+                2
+              ],
+              "receiver_xy_m": [
+                1.236842105263158,
+                2.8684210526315788
+              ],
+              "map_2N_db": -18.88800439725574,
+              "map_4N_db": -18.87679853614515
+            },
+            "criterion_pass": true
+          }
+        },
+        "2000-4000 Hz": {
+          "individual_energy_relative_change_max": 0.0011550804123489778,
+          "individual_energy_max_location": {
+            "receiver_index": 102,
+            "grid_index_yx": [
+              5,
+              2
+            ],
+            "receiver_xy_m": [
+              1.236842105263158,
+              2.8684210526315788
+            ],
+            "E_2N": 0.05440201305701843,
+            "E_4N": 0.054339174357343915
+          },
+          "relative_map_change": {
+            "rmse_db": 0.0011974180881095676,
+            "abs_diff_p95_db": 0.0025815752814114744,
+            "abs_diff_max_db": 0.0048583672346040885,
+            "max_location": {
+              "receiver_index": 102,
+              "grid_index_yx": [
+                5,
+                2
+              ],
+              "receiver_xy_m": [
+                1.236842105263158,
+                2.8684210526315788
+              ],
+              "map_2N_db": -18.978479092257828,
+              "map_4N_db": -18.983337459492432
+            },
+            "criterion_pass": true
+          }
+        }
+      }
+    }
+  }
+}

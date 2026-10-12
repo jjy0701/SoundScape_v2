@@ -1,0 +1,846 @@
+{
+  "checker_sha256": "a38bdda1395df4c79b217e8aee14ad101bbaedb5669fd7b709acf5c11bb1bea7",
+  "grid": {
+    "array_order": "y,x",
+    "offset_m": 0.5,
+    "shape": [
+      20,
+      20
+    ]
+  },
+  "metadata_sha256": "69df4d84f01fa3e432cbdcd72c4e29c34b2adde339cded1d60487d5c2a6aed68",
+  "method": "sha256(seed:sample_id) ranked within near/non-near strata",
+  "near_sizes": {
+    "test": 2,
+    "train": 13,
+    "validation": 3
+  },
+  "near_threshold_m": 0.1,
+  "notes": [
+    "장면 단위 분할; 같은 장면의 receiver는 분리하지 않음",
+    "정규화/표준화 통계와 학습은 train만 사용",
+    "validation은 모델 선택, test는 선택 완료 후 최종 평가",
+    "근접 test 2개로 모집단 성능을 단정하지 않음",
+    "근접 0.1m는 검토용 기준; 8차 반사의 수렴 검증은 별도 필요"
+  ],
+  "npy_sha256": {
+    "sample_0000": "a3728c559e0da06e4e96b5bbdb6f824c71f710bd73c5712dc6aa908911ffe21b",
+    "sample_0001": "ff1f6edffba3afa54e71e5f13447b8575ecbeb59d202f062163a96e5d2bfda78",
+    "sample_0002": "4540f2ccfcfd50a197c52ac2de2c98e4c5e79cb465346e58d5dfde3f698a99a5",
+    "sample_0003": "baf2a59f540d43183fd3090267353a7f15fa5c602004c689164dee60af5fc8e0",
+    "sample_0004": "0dd81d9bf121ac72a79aec42f4aa49059a05ba8c1c4016af18eaab337f588317",
+    "sample_0005": "e4b9fe98666796c217e0f7d5711a3797cd2a24a2b3c5230d987ab049adc53ba0",
+    "sample_0006": "d6dc47edc973c7994a703282b0fb881479f5099747eb6c7051faf7c97a222701",
+    "sample_0007": "5ee051125c330b4f9a6eeb2f2577cce2330a327243647e2fcd0bb6d653b58efa",
+    "sample_0008": "fd1568855e333e79059c2f409cc29397cd5cdab56c183f96d9fb9a5e912460ba",
+    "sample_0009": "6237b5bbcd7804e967263970b333607bf00bf620b6d20f7ae08730bb6371e2ae",
+    "sample_0010": "0787b1a70f2b43a9a5d3e2171b92679b60f782eda151ee9213bb8128b025fbd6",
+    "sample_0011": "89ab9bc31f5228f96ef7aa04e50ae731623cef769d75d58b5aec02d6c1cdbafa",
+    "sample_0012": "ea7a7d11ff200fa25dff93c45e3efcdb37ad175f69990059d0877f2a79a8b46a",
+    "sample_0013": "b9ac6228b5dc1bdf957705d173caf300bbc4856562845fc65483fea2cead1231",
+    "sample_0014": "49e7f11764f1a7731ea17078e0eb266b4f0d20238ba89ab192d86f5e864f1af6",
+    "sample_0015": "2e78ceae486d2663f84d1528ace27033b49fab1a1676d0586a098adb7ef1511d",
+    "sample_0016": "c0796eef72a38340ce489e703b4000316d38d53165cb99493d266676ec494983",
+    "sample_0017": "32707317422e912bd40dbd9e8d37c89fc54b40f0709722c34875ad4f8f10411c",
+    "sample_0018": "7e0bdffe7e50b8dff6a43d1c46ba9af5499602e053ab1798d38d26518ba03c0d",
+    "sample_0019": "f13aceca2c116e8faaf815691f35fd913cc17d5c271c4e87d4c57f302b2009e3",
+    "sample_0020": "02c0b0dd8546931632de29e8a8b01e8dc765f72d8dbcf823ec8b046f99249781",
+    "sample_0021": "07fd5e907053091bcf783d73cc8957edf2534b7b14aea03b031bc1bece616967",
+    "sample_0022": "34df384367d8dc493cd3860479ae0ae8bb274537eca396b6bb77c62315172562",
+    "sample_0023": "a8e8d6e4a56a14368a8ccfbdbfabd406cf83f85a52c6e1b843a0f226be173640",
+    "sample_0024": "b1c68774aa7a16168a66efba86fb75a087991f2d3cfacceb80cf302176e5ec09",
+    "sample_0025": "d5fb4962e50815981324ecdcbe53d525a38af9adea3adadbfbfde9c3a21c7540",
+    "sample_0026": "bac4229e2539ec5fcac39168aa5ba9a5b6449899dab2a01c9c0cf70e26fedd2b",
+    "sample_0027": "21b0432e5dd34970b837e71bc9523362eeac9cb57f1fa8ef098a12ec18695b76",
+    "sample_0028": "c7dfdcdfaa56dc07c3ce482a3da4d08abd0d71ce9536581e41a2b92860ffb698",
+    "sample_0029": "b5ec821dcbdb99cf1e6c0c0cd2275c376ac8b1324b01a256cb24fa3905f8856d",
+    "sample_0030": "9847fe7a7caff81548fc9ddaae0acea25c1209b64a1cd81be70ff0a27a89e90a",
+    "sample_0031": "3834475ebbf4faeaa5c9731401430115ca333654338f1161653f5a1171bdbb67",
+    "sample_0032": "fc0ba7dc1b4eb132d708eacb2c9310ace97760cb163381fd12627a29e101adde",
+    "sample_0033": "fefa596010c7d159b0b62ab21b7289e5b3da4f94fde07b62ebf87942f54ee3ce",
+    "sample_0034": "cd3a1210bcac4cddea661456b775f0cfa91d226d75ac293f6cdad3a9cd2b1357",
+    "sample_0035": "215c6f55a147fc8e7dead9c793720a197512d1841eec0d57d3a87a40dc966372",
+    "sample_0036": "b245e778d0524bf3cc7e0b80ee0f3a909c35c9d091bd09b36eaed5e7bd86d4bc",
+    "sample_0037": "3e1cb461ea08b4b6b170ad78e44df4925229f24f03ef9b9932e95dd231953903",
+    "sample_0038": "641e76dce09ffcf95b2bd9a88c71ae86af33aa2f24ea91304f4a13b7916031e2",
+    "sample_0039": "591f3f5bb8baf5b7a76353cc4efb9e68dfdb726dad9d699437ccd1b4c8df9c52",
+    "sample_0040": "0577bf76a313b3954efe3d88e0a6bd6fb5f9a1d46662057090de23ef82bab747",
+    "sample_0041": "7c724ef56759beb3b041b40029b85b67e8c154ab99fc9c7bed85b21ddaf25f38",
+    "sample_0042": "4389ec370c2d012733a94b6eae6530b87cbc08bbfcf3fd2f0f04fee4a7cae957",
+    "sample_0043": "0e447e838dd934e44491a508f9e70ef7cdf21b25fe209c2cfb8f485c052088ce",
+    "sample_0044": "2a7919c0f4b19b3d55abe79c3e2ba51438c30fcc99341f09e7981e554080de75",
+    "sample_0045": "81f6152e9b1f055ac282f8cc671c1dfbbcfd702d720811162d59212d9e6abdfe",
+    "sample_0046": "e5f124fabc18ce514f923eb50083e7b106308c3f5fbeffd28afe72128231368c",
+    "sample_0047": "d98a7f6c490cc187fe5e96c7511fce2bd3f0009a6bd488d2a600cef6dfaca6a9",
+    "sample_0048": "426b82a934f004bfbb16dddb4a0905bbbb7937783499f21b701d5cfa2f6cd4a3",
+    "sample_0049": "8013e312a6b0a3d89289a38d88a9e488dc66984758bdcade44d127d29c7ff84c",
+    "sample_0050": "eee961dbf48e0a5491cef3463a29c7396fe73c5641c24297b84d498ce876d6f9",
+    "sample_0051": "8befab548666bc512838e15851950e5dd3bce275e56b239306a95f3815e0cc6a",
+    "sample_0052": "7c2c6468249fdf81056d9207f4789f3dc1229b26a04ed5fae5c6a5cbe4185703",
+    "sample_0053": "7a3baa0fab3748d4f22530076a864344c49643b32d7d97dc0cb298d70c4c75d6",
+    "sample_0054": "28b4eb41795ea910809f23f5457490425784c3de6777d9cd52a0a03f74590fcd",
+    "sample_0055": "173db898b2b9760b7d8e527fae8d942ded4c022cc5b97d6a127be06731c19abc",
+    "sample_0056": "978c0fd50928aeac64e6f21afa68e66ad42fa3944abb297dfe25f2fe642ea382",
+    "sample_0057": "6e2849c59f9b035e3b49e347530511237ec1d71dc25d2bc15dc2e3c02b3aa210",
+    "sample_0058": "ac525741070a8512f82efb5539409bd475bbcd5e56fca68df54afcca239d3389",
+    "sample_0059": "3c5c673e771e0e1fce5b39363c4823ee66ff42da7e8ee2f74d2f2244b7954cd3",
+    "sample_0060": "90bef7efc97d11ce5db0896bcfef8d1ab6338c14fe3defa472371ac8ba16f297",
+    "sample_0061": "96cf907c3a4ea55300a40332e0875a07331d57595c4482918020deb855e95457",
+    "sample_0062": "9ce0d138459642d83aeb5427a4bde4b6a00708f5b7f8ff2b993496c2057c9b6c",
+    "sample_0063": "03e3f34d93dcacc9457f263161c55bdcae95de1c012e08682b75d6a2089d51fb",
+    "sample_0064": "8faaeada6e964973085c6694692a750210658d404532a330aa2f2f659471baa0",
+    "sample_0065": "3f68aedbcccbf9987751de0b33b646c7b75797b4c9a72a9ee05146d3a328f0ff",
+    "sample_0066": "9178d856446d659bbdbfb11322082b421cf398948909c6489eed2cc597efb381",
+    "sample_0067": "7ba97705b0978381edffb17c5e1da78135af8e932c64c941bb5fa0e821140bb8",
+    "sample_0068": "9a1f7f436a674f5cfbc5bfe3946c79258cd3f51876df60ac148ca144961143a1",
+    "sample_0069": "d85a550176cea3f65167a64d80a1d1e962ee942c78406032b884ac27f29c198a",
+    "sample_0070": "1f7cf74ddd5d0f9b7e441bc4b1caed7e4d38c3d6a2e721cc2b12a99f5e190291",
+    "sample_0071": "e1e0f22ecc213444e91bd0d3f7541c549f3dd3f41daaa7582f281aab78d08abb",
+    "sample_0072": "c0cb34cceb60655b11441dc7519d48e4f1ddcd34fb9db8247384eb177f5f14ef",
+    "sample_0073": "2ea54dfcd357c07f000a965689d2338da13af98ea42bef86ebc5e93960f4ec4b",
+    "sample_0074": "ea3e5ae469fce7167dea0308241af51c06fe72f0857e80fea390846b1c0c4a86",
+    "sample_0075": "acb9f0ab784fc0432c15e23b8ccab09b9a00179b6e2ac32c6f652fe2368e5525",
+    "sample_0076": "beeea6a6956c3976f08608900e3251fb54f9a3a3b7e5f40f3f518ec6252c9501",
+    "sample_0077": "5b591a40772f79a473ff375706f9d4550ebeb29b4ad1399fb4d868ffb95e783e",
+    "sample_0078": "29ed5a4fbeb26f7d4a05d1c19fe647fbd91b3c7ef1d9e2bab4edee8c32e9c658",
+    "sample_0079": "c5f1e698e3726e646619eb976572dad4bc0c9c267c58e4d5a0edd70bfee97320",
+    "sample_0080": "1ab65ba21409f2ecfd0ff1ce7a0ea7cc398ef501f9c8fb5c8d8634e5cf27d149",
+    "sample_0081": "75710abfb7c3bd3c43013ccd9bf6b689e4a8cb1e3e0d28c74b883323e9142d2b",
+    "sample_0082": "c3b866faaeb68b2436d28727520ec3160a53f6590d97c4ce88c6c2ae968f13ff",
+    "sample_0083": "95d3a27b8e5b6ec71ef38741e8e3076fc694c4a59cd02c20125f57e7d2c7b547",
+    "sample_0084": "45fb4c1db73c27225a0d6ce380fb08312cefd591abda2c9959c7709f1189004b",
+    "sample_0085": "888562d656ed9f26c7a2b2f9da684291b36a6c61790dec7b7cfbd61f6d47d30f",
+    "sample_0086": "b508e71130db4519c259adb2c5109d971d191481c7d716d0973a8e646c8ac16d",
+    "sample_0087": "982e13797c533bc7f8265bafd18c7b82406bde2c14fc56a39dba06f3d4d72aac",
+    "sample_0088": "cd22203802ddf05039a14cfa9e9cddb493ae1af77af5d202ab3975a1ab797588",
+    "sample_0089": "affef9a0f02c7c41e71810d45c56a164fe22d0c7b52916dcd95a4a9f0a9915f1",
+    "sample_0090": "60e396cd8b68fdbf1a181ac26c7c61a8302a70fa5efaf30f4e6ad798db380fc5",
+    "sample_0091": "3c63505131d7260221698ea31c6fa4b180730cd766de153b2bf83d4000b9d804",
+    "sample_0092": "5f962ed96b9a3a6e244efe7f54e461abcadb89dcd94b92beed157de622d75397",
+    "sample_0093": "516a96bd84127e3a4b4fd9e28b325ebc72428bf46bd22c35db4b455060bddab2",
+    "sample_0094": "f5cabbfb07ddb7d03874734949a1a747438f7aa0cf8bead02002cb28eb22b7e5",
+    "sample_0095": "89ad8dec8e1662fe5950f089a760f64f4a370039673893a415a861633eb0eae3",
+    "sample_0096": "5f46b216e4b2ca7e83c96d68c2fe4c31115bcd1dda4d514b1b3dfdb77be200bf",
+    "sample_0097": "cd4e8260d2bc9fee6fd8ab6724da18cda53962c206230d8328ec9b585ba72dfa",
+    "sample_0098": "cdecd0e8896f96a2568c8aabd90ea69c4d45a50ca3e41c74d0f741add949a7b1",
+    "sample_0099": "1ffbbcf88194ffbab1ad19c62814d3871b48176cc15d7caaaff61b24ca5c3130"
+  },
+  "samples": [
+    {
+      "min_source_receiver_distance_m": 0.16901476976234633,
+      "near_source": false,
+      "sample_id": "sample_0000",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2550901308307049,
+      "near_source": false,
+      "sample_id": "sample_0001",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.19002421349139684,
+      "near_source": false,
+      "sample_id": "sample_0002",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1767477642341904,
+      "near_source": false,
+      "sample_id": "sample_0003",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2078582458740145,
+      "near_source": false,
+      "sample_id": "sample_0004",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.24217565180287076,
+      "near_source": false,
+      "sample_id": "sample_0005",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.13484073770973515,
+      "near_source": false,
+      "sample_id": "sample_0006",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2572761968501412,
+      "near_source": false,
+      "sample_id": "sample_0007",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.23544321766164467,
+      "near_source": false,
+      "sample_id": "sample_0008",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.22750874980404961,
+      "near_source": false,
+      "sample_id": "sample_0009",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.26658867028398314,
+      "near_source": false,
+      "sample_id": "sample_0010",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.24764888014904826,
+      "near_source": false,
+      "sample_id": "sample_0011",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.12013852943391673,
+      "near_source": false,
+      "sample_id": "sample_0012",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1314756335824964,
+      "near_source": false,
+      "sample_id": "sample_0013",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1458965672961564,
+      "near_source": false,
+      "sample_id": "sample_0014",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.20352266747883074,
+      "near_source": false,
+      "sample_id": "sample_0015",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2510886345909312,
+      "near_source": false,
+      "sample_id": "sample_0016",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.22565425524915525,
+      "near_source": false,
+      "sample_id": "sample_0017",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2399831303912426,
+      "near_source": false,
+      "sample_id": "sample_0018",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1909534180033897,
+      "near_source": false,
+      "sample_id": "sample_0019",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.21981484922454964,
+      "near_source": false,
+      "sample_id": "sample_0020",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.22528054792675856,
+      "near_source": false,
+      "sample_id": "sample_0021",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1357144332968682,
+      "near_source": false,
+      "sample_id": "sample_0022",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.163941366598032,
+      "near_source": false,
+      "sample_id": "sample_0023",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.06633843276829729,
+      "near_source": true,
+      "sample_id": "sample_0024",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.25899503734278534,
+      "near_source": false,
+      "sample_id": "sample_0025",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.08877472260068178,
+      "near_source": true,
+      "sample_id": "sample_0026",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.21674033775873028,
+      "near_source": false,
+      "sample_id": "sample_0027",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1575828856866682,
+      "near_source": false,
+      "sample_id": "sample_0028",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.22178774583604394,
+      "near_source": false,
+      "sample_id": "sample_0029",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.030949251697025806,
+      "near_source": true,
+      "sample_id": "sample_0030",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.08770257355747764,
+      "near_source": true,
+      "sample_id": "sample_0031",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2501110467505955,
+      "near_source": false,
+      "sample_id": "sample_0032",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.16908348082501737,
+      "near_source": false,
+      "sample_id": "sample_0033",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.19504307598740744,
+      "near_source": false,
+      "sample_id": "sample_0034",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2870331907890466,
+      "near_source": false,
+      "sample_id": "sample_0035",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.09428322201846123,
+      "near_source": true,
+      "sample_id": "sample_0036",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.14814748267782998,
+      "near_source": false,
+      "sample_id": "sample_0037",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.210160234848342,
+      "near_source": false,
+      "sample_id": "sample_0038",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.18889890014937863,
+      "near_source": false,
+      "sample_id": "sample_0039",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.16821286320055695,
+      "near_source": false,
+      "sample_id": "sample_0040",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2821150193424426,
+      "near_source": false,
+      "sample_id": "sample_0041",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.21808348165732278,
+      "near_source": false,
+      "sample_id": "sample_0042",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.24638967270340964,
+      "near_source": false,
+      "sample_id": "sample_0043",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.27222284644779376,
+      "near_source": false,
+      "sample_id": "sample_0044",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.15715891354596656,
+      "near_source": false,
+      "sample_id": "sample_0045",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.11980204424988052,
+      "near_source": false,
+      "sample_id": "sample_0046",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.08591700374009102,
+      "near_source": true,
+      "sample_id": "sample_0047",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.21948650904399508,
+      "near_source": false,
+      "sample_id": "sample_0048",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.14434942062449826,
+      "near_source": false,
+      "sample_id": "sample_0049",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.17173479127140373,
+      "near_source": false,
+      "sample_id": "sample_0050",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.16040490250013,
+      "near_source": false,
+      "sample_id": "sample_0051",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.09724456689962334,
+      "near_source": true,
+      "sample_id": "sample_0052",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.12849070924691097,
+      "near_source": false,
+      "sample_id": "sample_0053",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2099269462419935,
+      "near_source": false,
+      "sample_id": "sample_0054",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.03596597852710736,
+      "near_source": true,
+      "sample_id": "sample_0055",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2663393137900462,
+      "near_source": false,
+      "sample_id": "sample_0056",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.23182009703458714,
+      "near_source": false,
+      "sample_id": "sample_0057",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.14309387988689895,
+      "near_source": false,
+      "sample_id": "sample_0058",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2000256059233702,
+      "near_source": false,
+      "sample_id": "sample_0059",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.10563386532817126,
+      "near_source": false,
+      "sample_id": "sample_0060",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.13517162745150038,
+      "near_source": false,
+      "sample_id": "sample_0061",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.17708714910545148,
+      "near_source": false,
+      "sample_id": "sample_0062",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1188704126919439,
+      "near_source": false,
+      "sample_id": "sample_0063",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.24631827354873043,
+      "near_source": false,
+      "sample_id": "sample_0064",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.08039085169805119,
+      "near_source": true,
+      "sample_id": "sample_0065",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.03483113921323764,
+      "near_source": true,
+      "sample_id": "sample_0066",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.16297260369299035,
+      "near_source": false,
+      "sample_id": "sample_0067",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1795186741152038,
+      "near_source": false,
+      "sample_id": "sample_0068",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.0832954752256938,
+      "near_source": true,
+      "sample_id": "sample_0069",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.28054643765579285,
+      "near_source": false,
+      "sample_id": "sample_0070",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.06298134045210314,
+      "near_source": true,
+      "sample_id": "sample_0071",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2107999299182349,
+      "near_source": false,
+      "sample_id": "sample_0072",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.08655003329356817,
+      "near_source": true,
+      "sample_id": "sample_0073",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.14167918505306687,
+      "near_source": false,
+      "sample_id": "sample_0074",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.0237140236254061,
+      "near_source": true,
+      "sample_id": "sample_0075",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.07497580012072254,
+      "near_source": true,
+      "sample_id": "sample_0076",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2143599453656565,
+      "near_source": false,
+      "sample_id": "sample_0077",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.19877403853656211,
+      "near_source": false,
+      "sample_id": "sample_0078",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1215594922660162,
+      "near_source": false,
+      "sample_id": "sample_0079",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.09305264340938141,
+      "near_source": true,
+      "sample_id": "sample_0080",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.15912948161798562,
+      "near_source": false,
+      "sample_id": "sample_0081",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.10989342305900618,
+      "near_source": false,
+      "sample_id": "sample_0082",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.16532722715856385,
+      "near_source": false,
+      "sample_id": "sample_0083",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.22209369374641086,
+      "near_source": false,
+      "sample_id": "sample_0084",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.23705473303350091,
+      "near_source": false,
+      "sample_id": "sample_0085",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.14125568599858287,
+      "near_source": false,
+      "sample_id": "sample_0086",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.0952564771019427,
+      "near_source": true,
+      "sample_id": "sample_0087",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.17162755615023811,
+      "near_source": false,
+      "sample_id": "sample_0088",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.23199365231344193,
+      "near_source": false,
+      "sample_id": "sample_0089",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.2231619674692492,
+      "near_source": false,
+      "sample_id": "sample_0090",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1475485034701438,
+      "near_source": false,
+      "sample_id": "sample_0091",
+      "split": "validation"
+    },
+    {
+      "min_source_receiver_distance_m": 0.15652259052874162,
+      "near_source": false,
+      "sample_id": "sample_0092",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.12529585094746182,
+      "near_source": false,
+      "sample_id": "sample_0093",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.21100105282477424,
+      "near_source": false,
+      "sample_id": "sample_0094",
+      "split": "test"
+    },
+    {
+      "min_source_receiver_distance_m": 0.14035406044574297,
+      "near_source": false,
+      "sample_id": "sample_0095",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.22470991674989252,
+      "near_source": false,
+      "sample_id": "sample_0096",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.07263111695161989,
+      "near_source": true,
+      "sample_id": "sample_0097",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.18421292394210262,
+      "near_source": false,
+      "sample_id": "sample_0098",
+      "split": "train"
+    },
+    {
+      "min_source_receiver_distance_m": 0.1740264933338706,
+      "near_source": false,
+      "sample_id": "sample_0099",
+      "split": "train"
+    }
+  ],
+  "script_sha256": "32dfecf461260eb03ce2656c160afac24e6ae5d53ac2eac7293014b1f2f06584",
+  "seed": 42,
+  "sizes": {
+    "test": 15,
+    "train": 70,
+    "validation": 15
+  },
+  "splits": {
+    "test": [
+      "sample_0001",
+      "sample_0004",
+      "sample_0013",
+      "sample_0015",
+      "sample_0020",
+      "sample_0021",
+      "sample_0028",
+      "sample_0033",
+      "sample_0065",
+      "sample_0067",
+      "sample_0076",
+      "sample_0079",
+      "sample_0086",
+      "sample_0092",
+      "sample_0094"
+    ],
+    "train": [
+      "sample_0000",
+      "sample_0002",
+      "sample_0005",
+      "sample_0006",
+      "sample_0007",
+      "sample_0008",
+      "sample_0009",
+      "sample_0010",
+      "sample_0011",
+      "sample_0012",
+      "sample_0014",
+      "sample_0016",
+      "sample_0017",
+      "sample_0018",
+      "sample_0019",
+      "sample_0022",
+      "sample_0023",
+      "sample_0024",
+      "sample_0026",
+      "sample_0027",
+      "sample_0030",
+      "sample_0031",
+      "sample_0032",
+      "sample_0036",
+      "sample_0037",
+      "sample_0038",
+      "sample_0039",
+      "sample_0040",
+      "sample_0041",
+      "sample_0042",
+      "sample_0043",
+      "sample_0044",
+      "sample_0046",
+      "sample_0047",
+      "sample_0048",
+      "sample_0049",
+      "sample_0050",
+      "sample_0051",
+      "sample_0053",
+      "sample_0054",
+      "sample_0055",
+      "sample_0056",
+      "sample_0058",
+      "sample_0059",
+      "sample_0060",
+      "sample_0061",
+      "sample_0062",
+      "sample_0063",
+      "sample_0066",
+      "sample_0068",
+      "sample_0070",
+      "sample_0072",
+      "sample_0073",
+      "sample_0074",
+      "sample_0075",
+      "sample_0077",
+      "sample_0078",
+      "sample_0080",
+      "sample_0083",
+      "sample_0084",
+      "sample_0085",
+      "sample_0087",
+      "sample_0088",
+      "sample_0090",
+      "sample_0093",
+      "sample_0095",
+      "sample_0096",
+      "sample_0097",
+      "sample_0098",
+      "sample_0099"
+    ],
+    "validation": [
+      "sample_0003",
+      "sample_0025",
+      "sample_0029",
+      "sample_0034",
+      "sample_0035",
+      "sample_0045",
+      "sample_0052",
+      "sample_0057",
+      "sample_0064",
+      "sample_0069",
+      "sample_0071",
+      "sample_0081",
+      "sample_0082",
+      "sample_0089",
+      "sample_0091"
+    ]
+  },
+  "version": 1
+}

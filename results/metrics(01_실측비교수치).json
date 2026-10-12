@@ -1,0 +1,950 @@
+{
+  "version": "1.0",
+  "created_at": "2026-09-19T16:25:53.552541+00:00",
+  "purpose": "Unfitted stage-08 model vs three recordings; relative level pilot",
+  "primary_analysis_band_hz": [
+    250,
+    4000
+  ],
+  "filter_method": "scipy butter(4, [250,4000], bandpass, output=sos), sosfiltfilt on whole waveform, crop afterward; identical operation for measured/model",
+  "level_reference": "P02 independently subtracted once from each 3-position level vector; no per-position fitting",
+  "model_level_unit": "10log10(mean-square) in arbitrary model amplitude units; not dBFS/SPL",
+  "measured_level_unit": "dBFS of digital PCM; includes background, uncalibrated",
+  "reference": {
+    "filename": "test_signal(06_예비녹음_50초).wav",
+    "sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "pcm_bits": 16,
+    "duration_s": 50.0,
+    "channel_rule": "mono or exactly identical L/R; use channel 1",
+    "matches_original_06_reference": true
+  },
+  "assumptions_snapshot": {
+    "schema_version": 1,
+    "status": "assumptions_not_measured",
+    "receiver_id": "P02",
+    "sample_rate_hz": 48000,
+    "speed_of_sound_m_s": 343.0,
+    "max_order": 32,
+    "comparison_order": 16,
+    "energy_absorption": {
+      "walls": 0.2,
+      "floor": 0.2,
+      "ceiling": 0.2
+    },
+    "sources": {
+      "S_L": {
+        "relative_gain": 1.0,
+        "extra_delay_samples": 0
+      },
+      "S_R": {
+        "relative_gain": 1.0,
+        "extra_delay_samples": 0
+      }
+    },
+    "note_ko": "흡음률은 주파수에 무관한 임시값입니다. 좌우 스피커는 동일 신호, 같은 극성, 동일 상대 출력, 추가 지연 0으로 가정합니다. 스피커와 수음점은 무지향성입니다. 가구, 회절, 공기 흡음, 배경 소음 및 휴대폰 처리는 포함하지 않습니다. 실제 공간의 검증된 값이 아닙니다."
+  },
+  "config_snapshot": {
+    "schema_version": 1,
+    "units": "m",
+    "coordinate_system_ko": "x: 왼쪽 벽에서의 거리, y: 칠판 쪽 앞벽에서의 거리, z: 바닥에서의 높이",
+    "room": {
+      "width_m": 7.5,
+      "length_m": 10.25,
+      "height_m": 2.63,
+      "status": "provisional",
+      "note_ko": "이전에 보낸 치수 메모를 옮긴 값입니다. 세로와 천장 높이 등을 현장에서 재확인했는지는 미확인입니다."
+    },
+    "sources": [
+      {
+        "id": "S_L",
+        "label_ko": "왼쪽 스피커",
+        "side_wall": "left",
+        "side_wall_distance_m": 0.52,
+        "front_wall_distance_m": 3.1,
+        "height_m": 2.5,
+        "active": true,
+        "position_status": "user_reported",
+        "note_ko": "스피커 중앙·유닛 중심·외곽 중 어느 점에서 잰 거리인지는 미확인입니다."
+      },
+      {
+        "id": "S_R",
+        "label_ko": "오른쪽 스피커",
+        "side_wall": "right",
+        "side_wall_distance_m": 0.95,
+        "front_wall_distance_m": 3.1,
+        "height_m": 2.5,
+        "active": true,
+        "position_status": "user_reported",
+        "note_ko": "x는 방 가로 - 오른쪽 벽에서의 거리로 계산합니다. 측정 기준점은 미확인입니다."
+      }
+    ],
+    "receivers": [
+      {
+        "id": "P01",
+        "label_ko": "앞쪽 예정 지점",
+        "position_m": [
+          3.75,
+          2.5,
+          0.706
+        ],
+        "measurement_status": "planned",
+        "recording_file": null,
+        "note_ko": "아직 녹음하지 않은 제안 위치입니다. 현장에서 실제 사용한 좌표로 수정합니다."
+      },
+      {
+        "id": "P02",
+        "label_ko": "중간 녹음 지점",
+        "position_m": [
+          3.75,
+          5.0,
+          0.706
+        ],
+        "measurement_status": "recorded",
+        "recording_file": "테스트 녹음 2.wav",
+        "recording_sha256": "0b4fe7221359b86f6aa7ffbad74be140894223c9ce0312b817f281d6a3ded7ab",
+        "note_ko": "x/y는 타일로 맞춘 약값이며 줄눈 간격이 포함되지 않았습니다. 높이 70.6 cm는 사용자 보고값입니다. 녹음과의 대응은 대화에 근거합니다."
+      },
+      {
+        "id": "P03",
+        "label_ko": "뒤쪽 예정 지점",
+        "position_m": [
+          3.75,
+          7.5,
+          0.706
+        ],
+        "measurement_status": "planned",
+        "recording_file": null,
+        "note_ko": "아직 녹음하지 않은 제안 위치입니다. 현장에서 실제 사용한 좌표로 수정합니다."
+      }
+    ],
+    "display_plane_receiver_id": "P02",
+    "measurement_conditions": {
+      "phone": "Samsung Galaxy S24",
+      "recorder": "Super Recorder",
+      "phone_placement_ko": "안내한 기준: 화면 위, 충전 단자 쪽은 앞벽, 휴대폰 위쪽은 뒷벽. 현장 배치 사진은 미제공입니다.",
+      "sample_rate_hz": 48000,
+      "recording_channels": 1,
+      "recording_pcm_bits": 16,
+      "playback_reference_file": "test_signal(06_예비녹음_50초).wav",
+      "windows_volume_in_photo": 100,
+      "output_device_in_photo": "스피커(2- Realtek(R) Audio)",
+      "player_volume": null,
+      "amplifier_model": "e STATION SOUND JPM-PA200",
+      "amplifier_settings_ko": "AUX/MASTER/TONE 사진 기록을 사용합니다. 정확한 수치와 PC 연결 AUX 번호, 녹음 이후 설정 변경 여부는 미확인입니다.",
+      "microphone_selection": null,
+      "agc_status": "unknown",
+      "room_occupancy": null,
+      "hvac_state": null,
+      "doors_windows_state": null
+    },
+    "acoustic_parameters": {
+      "wall_absorption": null,
+      "floor_absorption": null,
+      "ceiling_absorption": null,
+      "source_relative_gains": null,
+      "source_relative_delays_s": null,
+      "source_directivity": null,
+      "note_ko": "미확인 값입니다. 07번에서는 임의의 흡음률이나 음량을 넣어 SPL을 계산하지 않습니다."
+    },
+    "furniture": {
+      "status": "not_measured",
+      "objects": [],
+      "note_ko": "배치도에서 책상·의자·교탁은 생략했습니다. 실제 방이 비어 있다는 뜻은 아닙니다."
+    }
+  },
+  "measurement_conditions_confirmation": {
+    "date_recorded": "2026-09-19",
+    "basis": "explicit user report in conversation; no independent equipment verification",
+    "user_statement_ko": "위치만 옮긴거야 다 유지했어",
+    "only_position_changed_user_reported": true,
+    "speaker_count": 2,
+    "same_playback_file_and_gain": true,
+    "same_phone_app_settings": true,
+    "same_receiver_x_m": 3.75,
+    "same_receiver_height_m": 0.706,
+    "same_phone_orientation": true,
+    "agc_off_confirmed": false,
+    "note_ko": "고정한 앱 설정은 AGC 해제나 실제 시간 불변 gain의 증명이 아닙니다. 날짜는 확인 기록일이며 녹음일은 아닙니다."
+  },
+  "agc_status": "unknown; unchanged app setting is not proof of fixed gain",
+  "room_geometry_status": "provisional; source acoustic centers/directivity and furniture not modeled",
+  "fitted_acoustic_parameters": false,
+  "calibrated_absolute_spl": false,
+  "ai_evaluated": false,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pyroomacoustics": "0.10.1"
+  },
+  "input_hashes": {
+    "config": "d5d18f11d582768020f2b7c79b34cf349de3c11d06eba34e474389a436b7a183",
+    "settings": "ec1378b186792fd54e711c960eeac14b72f28898803fac5a12a1a5b27a55b999",
+    "stage08_script": "4ef7a61b3edbb43f1d6983d728bc87b336b246af43ae2c8e122d24a3ee0e57b8",
+    "measurement_metrics": "b8b3e513426225df7bd168f48dbf790526cdb53f72852c3a33b0c8622dfdcd07"
+  },
+  "script_sha256": "80556b88d651856bf2b80a32db359cb267f4c15d3391fab3e807f6aca6dc05f6",
+  "recordings": [
+    {
+      "id": "P01",
+      "position_m": [
+        3.75,
+        2.5,
+        0.706
+      ],
+      "position_basis": "user-reported maintained center/height, front-wall position; not a new precision survey",
+      "recording_filename": "앞쪽 2.5m.wav",
+      "recording_sha256": "ebe77bdac27b0636e30dac694563f324a4d8b49aba350a7fa0cf51fe00a0993c",
+      "resolved_scene": {
+        "dimensions_m": [
+          7.5,
+          10.25,
+          2.63
+        ],
+        "receiver": {
+          "id": "P01",
+          "label_ko": "앞쪽 예정 지점",
+          "position_m": [
+            3.75,
+            2.5,
+            0.706
+          ],
+          "measurement_status": "planned",
+          "recording_file": null,
+          "note_ko": "아직 녹음하지 않은 제안 위치입니다. 현장에서 실제 사용한 좌표로 수정합니다."
+        },
+        "sources": [
+          {
+            "id": "S_L",
+            "position_m": [
+              0.52,
+              3.1,
+              2.5
+            ],
+            "relative_gain": 1.0,
+            "extra_delay_samples": 0
+          },
+          {
+            "id": "S_R",
+            "position_m": [
+              6.55,
+              3.1,
+              2.5
+            ],
+            "relative_gain": 1.0,
+            "extra_delay_samples": 0
+          }
+        ],
+        "fs": 48000,
+        "speed": 343.0,
+        "order": 32,
+        "comparison_order": 16,
+        "alpha": {
+          "walls": 0.2,
+          "floor": 0.2,
+          "ceiling": 0.2
+        }
+      },
+      "timing_checks": [
+        {
+          "source": "S_L",
+          "distance_m": 3.743171916970953,
+          "error_samples": 0.17419237724277536
+        },
+        {
+          "source": "S_R",
+          "distance_m": 3.379117636306851,
+          "error_samples": 0.12056401536773365
+        }
+      ],
+      "sum_linearity_max_abs_error": 1.6653345369377348e-16,
+      "premix_max_abs_errors": [
+        1.1102230246251565e-16,
+        1.1102230246251565e-16
+      ],
+      "unfiltered": {
+        "measured": {
+          "per_repeat_level_db": [
+            -34.013919910961555,
+            -33.996388704565426,
+            -34.0095556473372
+          ],
+          "pooled_mean_square": 0.00039750124880972887,
+          "pooled_level_db": -34.00661502604184,
+          "repeat_spread_db": 0.017531206396128596,
+          "windows_s": [
+            [
+              8.588791666666667,
+              16.588791666666665
+            ],
+            [
+              23.589375,
+              31.589375
+            ],
+            [
+              38.589958333333335,
+              46.589958333333335
+            ]
+          ]
+        },
+        "model_main": {
+          "per_repeat_level_db": [
+            -23.541107490689672,
+            -23.541107490689672,
+            -23.541107490689672
+          ],
+          "pooled_mean_square": 0.00442475522665124,
+          "pooled_level_db": -23.541107490689672,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_lower": {
+          "per_repeat_level_db": [
+            -23.682769797164582,
+            -23.682769797164582,
+            -23.682769797164582
+          ],
+          "pooled_mean_square": 0.004282752924166887,
+          "pooled_level_db": -23.682769797164582,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_order_change_db": 0.14166230647490963
+      },
+      "band_250_4000_hz": {
+        "measured": {
+          "per_repeat_level_db": [
+            -34.699461327670484,
+            -34.69456633813299,
+            -34.70432269850772
+          ],
+          "pooled_mean_square": 0.0003388872038656651,
+          "pooled_level_db": -34.6994482949679,
+          "repeat_spread_db": 0.009756360374730377,
+          "windows_s": [
+            [
+              8.588791666666667,
+              16.588791666666665
+            ],
+            [
+              23.589375,
+              31.589375
+            ],
+            [
+              38.589958333333335,
+              46.589958333333335
+            ]
+          ]
+        },
+        "model_main": {
+          "per_repeat_level_db": [
+            -24.098576079038402,
+            -24.0985760790384,
+            -24.098576079038402
+          ],
+          "pooled_mean_square": 0.0038917272210726543,
+          "pooled_level_db": -24.098576079038402,
+          "repeat_spread_db": 3.552713678800501e-15,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_lower": {
+          "per_repeat_level_db": [
+            -24.24495676567529,
+            -24.244956765675283,
+            -24.244956765675283
+          ],
+          "pooled_mean_square": 0.00376274098084542,
+          "pooled_level_db": -24.244956765675283,
+          "repeat_spread_db": 7.105427357601002e-15,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_order_change_db": 0.1463806866368813
+      }
+    },
+    {
+      "id": "P02",
+      "position_m": [
+        3.75,
+        5.0,
+        0.706
+      ],
+      "position_basis": "user-reported maintained center/height, front-wall position; not a new precision survey",
+      "recording_filename": "테스트 녹음 2.wav",
+      "recording_sha256": "0b4fe7221359b86f6aa7ffbad74be140894223c9ce0312b817f281d6a3ded7ab",
+      "resolved_scene": {
+        "dimensions_m": [
+          7.5,
+          10.25,
+          2.63
+        ],
+        "receiver": {
+          "id": "P02",
+          "label_ko": "중간 녹음 지점",
+          "position_m": [
+            3.75,
+            5.0,
+            0.706
+          ],
+          "measurement_status": "recorded",
+          "recording_file": "테스트 녹음 2.wav",
+          "recording_sha256": "0b4fe7221359b86f6aa7ffbad74be140894223c9ce0312b817f281d6a3ded7ab",
+          "note_ko": "x/y는 타일로 맞춘 약값이며 줄눈 간격이 포함되지 않았습니다. 높이 70.6 cm는 사용자 보고값입니다. 녹음과의 대응은 대화에 근거합니다."
+        },
+        "sources": [
+          {
+            "id": "S_L",
+            "position_m": [
+              0.52,
+              3.1,
+              2.5
+            ],
+            "relative_gain": 1.0,
+            "extra_delay_samples": 0
+          },
+          {
+            "id": "S_R",
+            "position_m": [
+              6.55,
+              3.1,
+              2.5
+            ],
+            "relative_gain": 1.0,
+            "extra_delay_samples": 0
+          }
+        ],
+        "fs": 48000,
+        "speed": 343.0,
+        "order": 32,
+        "comparison_order": 16,
+        "alpha": {
+          "walls": 0.2,
+          "floor": 0.2,
+          "ceiling": 0.2
+        }
+      },
+      "timing_checks": [
+        {
+          "source": "S_L",
+          "distance_m": 4.1546764013578725,
+          "error_samples": -0.4124410063495816
+        },
+        {
+          "source": "S_R",
+          "distance_m": 3.829939425108444,
+          "error_samples": 0.0318005679145017
+        }
+      ],
+      "sum_linearity_max_abs_error": 1.8041124150158794e-16,
+      "premix_max_abs_errors": [
+        1.1102230246251565e-16,
+        1.1102230246251565e-16
+      ],
+      "unfiltered": {
+        "measured": {
+          "per_repeat_level_db": [
+            -36.48398262124886,
+            -36.42489165388951,
+            -36.50811281998773
+          ],
+          "pooled_mean_square": 0.00022531037233178115,
+          "pooled_level_db": -36.472188147441315,
+          "repeat_spread_db": 0.08322116609821961,
+          "windows_s": [
+            [
+              13.739708333333333,
+              21.739708333333333
+            ],
+            [
+              28.740270833333334,
+              36.740270833333334
+            ],
+            [
+              43.740833333333335,
+              51.740833333333335
+            ]
+          ]
+        },
+        "model_main": {
+          "per_repeat_level_db": [
+            -24.097524614779907,
+            -24.097524614779907,
+            -24.097524614779907
+          ],
+          "pooled_mean_square": 0.003892669555742546,
+          "pooled_level_db": -24.097524614779907,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_lower": {
+          "per_repeat_level_db": [
+            -24.258488502113572,
+            -24.258488502113572,
+            -24.258488502113572
+          ],
+          "pooled_mean_square": 0.003751035287807154,
+          "pooled_level_db": -24.258488502113572,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_order_change_db": 0.16096388733366496
+      },
+      "band_250_4000_hz": {
+        "measured": {
+          "per_repeat_level_db": [
+            -37.049214580848606,
+            -37.04156784814887,
+            -37.0739557898286
+          ],
+          "pooled_mean_square": 0.00019702027660828967,
+          "pooled_level_db": -37.0548907553417,
+          "repeat_spread_db": 0.03238794167972969,
+          "windows_s": [
+            [
+              13.739708333333333,
+              21.739708333333333
+            ],
+            [
+              28.740270833333334,
+              36.740270833333334
+            ],
+            [
+              43.740833333333335,
+              51.740833333333335
+            ]
+          ]
+        },
+        "model_main": {
+          "per_repeat_level_db": [
+            -24.639467345733912,
+            -24.639467345733912,
+            -24.639467345733912
+          ],
+          "pooled_mean_square": 0.0034360008724007877,
+          "pooled_level_db": -24.639467345733912,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_lower": {
+          "per_repeat_level_db": [
+            -24.80452205923077,
+            -24.80452205923077,
+            -24.80452205923077
+          ],
+          "pooled_mean_square": 0.003307865130885506,
+          "pooled_level_db": -24.80452205923077,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_order_change_db": 0.16505471349685763
+      }
+    },
+    {
+      "id": "P03",
+      "position_m": [
+        3.75,
+        7.5,
+        0.706
+      ],
+      "position_basis": "user-reported maintained center/height, front-wall position; not a new precision survey",
+      "recording_filename": "앞쪽벽 7.5m.wav",
+      "recording_sha256": "6bc8288676270999dbc9023414b82b49a948ec083118d8bd8a45c4dde6c6b2aa",
+      "resolved_scene": {
+        "dimensions_m": [
+          7.5,
+          10.25,
+          2.63
+        ],
+        "receiver": {
+          "id": "P03",
+          "label_ko": "뒤쪽 예정 지점",
+          "position_m": [
+            3.75,
+            7.5,
+            0.706
+          ],
+          "measurement_status": "planned",
+          "recording_file": null,
+          "note_ko": "아직 녹음하지 않은 제안 위치입니다. 현장에서 실제 사용한 좌표로 수정합니다."
+        },
+        "sources": [
+          {
+            "id": "S_L",
+            "position_m": [
+              0.52,
+              3.1,
+              2.5
+            ],
+            "relative_gain": 1.0,
+            "extra_delay_samples": 0
+          },
+          {
+            "id": "S_R",
+            "position_m": [
+              6.55,
+              3.1,
+              2.5
+            ],
+            "relative_gain": 1.0,
+            "extra_delay_samples": 0
+          }
+        ],
+        "fs": 48000,
+        "speed": 343.0,
+        "order": 32,
+        "comparison_order": 16,
+        "alpha": {
+          "walls": 0.2,
+          "floor": 0.2,
+          "ceiling": 0.2
+        }
+      },
+      "timing_checks": [
+        {
+          "source": "S_L",
+          "distance_m": 5.745549233972328,
+          "error_samples": -0.04187530808098927
+        },
+        {
+          "source": "S_R",
+          "distance_m": 5.515291107457521,
+          "error_samples": 0.180836274166154
+        }
+      ],
+      "sum_linearity_max_abs_error": 1.5265566588595902e-16,
+      "premix_max_abs_errors": [
+        8.326672684688674e-17,
+        8.326672684688674e-17
+      ],
+      "unfiltered": {
+        "measured": {
+          "per_repeat_level_db": [
+            -38.54853975766647,
+            -38.66478534678029,
+            -38.697712692817774
+          ],
+          "pooled_mean_square": 0.00013688189513211708,
+          "pooled_level_db": -38.636539906109995,
+          "repeat_spread_db": 0.1491729351513058,
+          "windows_s": [
+            [
+              14.351625,
+              22.351625
+            ],
+            [
+              29.352208333333333,
+              37.35220833333333
+            ],
+            [
+              44.35277083333333,
+              52.35277083333333
+            ]
+          ]
+        },
+        "model_main": {
+          "per_repeat_level_db": [
+            -24.79286802262886,
+            -24.79286802262886,
+            -24.79286802262886
+          ],
+          "pooled_mean_square": 0.0033167535125059495,
+          "pooled_level_db": -24.79286802262886,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_lower": {
+          "per_repeat_level_db": [
+            -25.047905842026672,
+            -25.047905842026672,
+            -25.047905842026672
+          ],
+          "pooled_mean_square": 0.003127587118871457,
+          "pooled_level_db": -25.047905842026672,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_order_change_db": 0.25503781939781334
+      },
+      "band_250_4000_hz": {
+        "measured": {
+          "per_repeat_level_db": [
+            -39.093061638474836,
+            -39.20462266955339,
+            -39.25647467434758
+          ],
+          "pooled_mean_square": 0.00012066509748264748,
+          "pooled_level_db": -39.18418331913501,
+          "repeat_spread_db": 0.16341303587274325,
+          "windows_s": [
+            [
+              14.351625,
+              22.351625
+            ],
+            [
+              29.352208333333333,
+              37.35220833333333
+            ],
+            [
+              44.35277083333333,
+              52.35277083333333
+            ]
+          ]
+        },
+        "model_main": {
+          "per_repeat_level_db": [
+            -25.264885074944026,
+            -25.26488507494403,
+            -25.264885074944026
+          ],
+          "pooled_mean_square": 0.0029751679881389733,
+          "pooled_level_db": -25.264885074944026,
+          "repeat_spread_db": 3.552713678800501e-15,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_lower": {
+          "per_repeat_level_db": [
+            -25.498741301831306,
+            -25.498741301831306,
+            -25.498741301831306
+          ],
+          "pooled_mean_square": 0.0028191998901966136,
+          "pooled_level_db": -25.498741301831306,
+          "repeat_spread_db": 0.0,
+          "windows_s": [
+            [
+              6.0,
+              14.0
+            ],
+            [
+              21.0,
+              29.0
+            ],
+            [
+              36.0,
+              44.0
+            ]
+          ]
+        },
+        "model_order_change_db": 0.23385622688727992
+      }
+    }
+  ],
+  "primary_comparison": {
+    "anchor": "P02",
+    "points": [
+      {
+        "id": "P01",
+        "measured_relative_db": 2.3554424603738013,
+        "model_relative_db": 0.5408912666955104,
+        "model_minus_measured_db": -1.814551193678291,
+        "lower_order_relative_db": 0.5595652935554867,
+        "relative_order_change_db": -0.018674026859976323
+      },
+      {
+        "id": "P02",
+        "measured_relative_db": 0.0,
+        "model_relative_db": 0.0,
+        "model_minus_measured_db": 0.0,
+        "lower_order_relative_db": 0.0,
+        "relative_order_change_db": 0.0
+      },
+      {
+        "id": "P03",
+        "measured_relative_db": -2.1292925637933067,
+        "model_relative_db": -0.6254177292101133,
+        "model_minus_measured_db": 1.5038748345831934,
+        "lower_order_relative_db": -0.6942192426005356,
+        "relative_order_change_db": 0.06880151339042229
+      }
+    ],
+    "non_anchor_count": 2,
+    "non_anchor_mae_db": 1.6592130141307422,
+    "non_anchor_rmse_db": 1.6664686544564733,
+    "scope": "Two relative contrasts sharing P02. Descriptive pilot; not absolute SPL error, independent validation or AI test performance."
+  },
+  "unfiltered_secondary_comparison": {
+    "anchor": "P02",
+    "points": [
+      {
+        "id": "P01",
+        "measured_relative_db": 2.4655731213994727,
+        "model_relative_db": 0.5564171240902347,
+        "model_minus_measured_db": -1.909155997309238,
+        "lower_order_relative_db": 0.57571870494899,
+        "relative_order_change_db": -0.01930158085875533
+      },
+      {
+        "id": "P02",
+        "measured_relative_db": 0.0,
+        "model_relative_db": 0.0,
+        "model_minus_measured_db": 0.0,
+        "lower_order_relative_db": 0.0,
+        "relative_order_change_db": 0.0
+      },
+      {
+        "id": "P03",
+        "measured_relative_db": -2.16435175866868,
+        "model_relative_db": -0.6953434078489522,
+        "model_minus_measured_db": 1.4690083508197276,
+        "lower_order_relative_db": -0.7894173399131006,
+        "relative_order_change_db": 0.09407393206414838
+      }
+    ],
+    "non_anchor_count": 2,
+    "non_anchor_mae_db": 1.6890821740644828,
+    "non_anchor_rmse_db": 1.7033587638603804,
+    "scope": "Two relative contrasts sharing P02. Descriptive pilot; not absolute SPL error, independent validation or AI test performance."
+  },
+  "convergence_claim": false,
+  "notes": [
+    "No sample-by-sample waveform error is reported; recording onset and clocks have not been synchronized.",
+    "P02 is the common reference, so its zero error is structural and is excluded from error aggregation.",
+    "Repeated bursts within one recording do not provide independent re-placement or session uncertainty.",
+    "Keep all parameters fixed for this baseline. If tuned later using these measurements, obtain fresh evaluation measurements."
+  ],
+  "stage08_P02_reproduction_passed": true
+}

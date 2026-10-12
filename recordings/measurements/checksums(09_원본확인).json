@@ -1,0 +1,31 @@
+{
+  "recordings": [
+    {
+      "point": "P01",
+      "file_name": "앞쪽 2.5m.wav",
+      "sha256": "ebe77bdac27b0636e30dac694563f324a4d8b49aba350a7fa0cf51fe00a0993c",
+      "bytes": 6082604,
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "duration_s": 63.36
+    },
+    {
+      "point": "P02",
+      "file_name": "테스트 녹음 2.wav",
+      "sha256": "0b4fe7221359b86f6aa7ffbad74be140894223c9ce0312b817f281d6a3ded7ab",
+      "bytes": 6443564,
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "duration_s": 67.12
+    },
+    {
+      "point": "P03",
+      "file_name": "앞쪽벽 7.5m.wav",
+      "sha256": "6bc8288676270999dbc9023414b82b49a948ec083118d8bd8a45c4dde6c6b2aa",
+      "bytes": 7057964,
+      "sample_rate_hz": 48000,
+      "channels": 1,
+      "duration_s": 73.52
+    }
+  ]
+}
