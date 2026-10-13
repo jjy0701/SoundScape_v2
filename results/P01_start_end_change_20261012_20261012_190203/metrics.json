@@ -1,0 +1,257 @@
+{
+  "inputs": {
+    "both_start": {
+      "path": "recordings\\measurements\\P01\\p01 양쪽 시작.wav",
+      "sha256": "3e2c577caa469289afe34b63d58a4ebf872c698aab5140640ba88377499acb97"
+    },
+    "both_end": {
+      "path": "recordings\\measurements\\P01\\p01 양쪽 종료.wav",
+      "sha256": "fb112e26a674404d0d7a70411cc0bd720e4bc18dcef8d5081804b9b5d8b6dbe0"
+    }
+  },
+  "alignment": {
+    "both_start": {
+      "matched_starts_s": [
+        9.697291666666667,
+        24.697854166666666,
+        39.69841666666667
+      ],
+      "correlation_scores": [
+        0.17546539271078612,
+        0.1730764482209493,
+        0.1728077948730454
+      ],
+      "existing_windows_s": [
+        [
+          10.697291666666667,
+          18.69729166666667
+        ],
+        [
+          25.697854166666666,
+          33.697854166666666
+        ],
+        [
+          40.69841666666667,
+          48.69841666666667
+        ]
+      ]
+    },
+    "both_end": {
+      "matched_starts_s": [
+        8.5314375,
+        23.532,
+        38.532583333333335
+      ],
+      "correlation_scores": [
+        0.17449877100973882,
+        0.175483583819499,
+        0.17596851917514425
+      ],
+      "existing_windows_s": [
+        [
+          9.5314375,
+          17.5314375
+        ],
+        [
+          24.532,
+          32.532
+        ],
+        [
+          39.532583333333335,
+          47.532583333333335
+        ]
+      ]
+    }
+  },
+  "bands_hz": [
+    [
+      250,
+      4000
+    ],
+    [
+      250,
+      500
+    ],
+    [
+      500,
+      1000
+    ],
+    [
+      1000,
+      2000
+    ],
+    [
+      2000,
+      4000
+    ]
+  ],
+  "method": "full-file 4th-order Butterworth sosfiltfilt, then same-relative-position 1-second bins inside each existing central 8-second window",
+  "user_observation": "현장에서 왼쪽 스피커가 오른쪽보다 크게 들렸음. This is a listening observation and does not establish an output-level difference of the speakers.",
+  "summary_by_band": [
+    {
+      "band_hz": "250-4000",
+      "mean_end_minus_start_db": 1.164261558274501,
+      "min_db": 0.9004771661350475,
+      "max_db": 1.3301655238501553,
+      "std_db": 0.10491539156519276,
+      "repeat_means_db": [
+        1.2296032119955163,
+        1.1443687148463342,
+        1.1188127479816528
+      ]
+    },
+    {
+      "band_hz": "250-500",
+      "mean_end_minus_start_db": 1.2213209259282483,
+      "min_db": 0.8842599255612242,
+      "max_db": 1.518256304221957,
+      "std_db": 0.16069601460190713,
+      "repeat_means_db": [
+        1.2483894930603254,
+        1.2479788530711264,
+        1.167594431653293
+      ]
+    },
+    {
+      "band_hz": "500-1000",
+      "mean_end_minus_start_db": 1.3050554276578252,
+      "min_db": 1.0824004438390347,
+      "max_db": 1.7294943450450972,
+      "std_db": 0.13718945735433297,
+      "repeat_means_db": [
+        1.3777265728424908,
+        1.2543236772372302,
+        1.283116032893755
+      ]
+    },
+    {
+      "band_hz": "1000-2000",
+      "mean_end_minus_start_db": 0.3330267034669922,
+      "min_db": -0.2601855043706536,
+      "max_db": 0.9734625438276296,
+      "std_db": 0.28869599235239435,
+      "repeat_means_db": [
+        0.5449099717345165,
+        0.22733431214058797,
+        0.2268358265258721
+      ]
+    },
+    {
+      "band_hz": "2000-4000",
+      "mean_end_minus_start_db": 1.089537519104816,
+      "min_db": 0.7317437824957906,
+      "max_db": 1.59397664630945,
+      "std_db": 0.24514463450471569,
+      "repeat_means_db": [
+        1.112449041545851,
+        1.048929646231202,
+        1.1072338695373949
+      ]
+    }
+  ],
+  "background": {
+    "both_start": {
+      "status": "selected",
+      "window_s": [
+        3.5,
+        5.5
+      ],
+      "selection": "lowest raw 2-second RMS among pre-playback candidates ending at least 2 s before first detected playback; no speech/handling detector was available",
+      "raw_rms_dbfs": -73.35676844204201,
+      "bands": {
+        "250-4000": {
+          "background_db": -78.21457965672033,
+          "playback_minus_background_db": null,
+          "playback_start_db": -34.000189948652206,
+          "playback_end_db": -34.13677614817022,
+          "playback_start_minus_background_db": 44.214389708068126,
+          "playback_end_minus_background_db": 44.07780350855011
+        },
+        "250-500": {
+          "background_db": -79.67297683073019,
+          "playback_minus_background_db": null,
+          "playback_start_db": -36.90351439345966,
+          "playback_end_db": -37.004905627499575,
+          "playback_start_minus_background_db": 42.76946243727053,
+          "playback_end_minus_background_db": 42.66807120323062
+        },
+        "500-1000": {
+          "background_db": -86.95034473824606,
+          "playback_minus_background_db": null,
+          "playback_start_db": -38.30543110146453,
+          "playback_end_db": -38.494153411052785,
+          "playback_start_minus_background_db": 48.64491363678153,
+          "playback_end_minus_background_db": 48.456191327193274
+        },
+        "1000-2000": {
+          "background_db": -88.32206761750298,
+          "playback_minus_background_db": null,
+          "playback_start_db": -44.32033900809117,
+          "playback_end_db": -44.46878877554044,
+          "playback_start_minus_background_db": 44.00172860941181,
+          "playback_end_minus_background_db": 43.85327884196254
+        },
+        "2000-4000": {
+          "background_db": -87.88960232415846,
+          "playback_minus_background_db": null,
+          "playback_start_db": -47.220011594681374,
+          "playback_end_db": -47.3224600960774,
+          "playback_start_minus_background_db": 40.669590729477086,
+          "playback_end_minus_background_db": 40.56714222808106
+        }
+      }
+    },
+    "both_end": {
+      "status": "selected",
+      "window_s": [
+        3.5,
+        5.5
+      ],
+      "selection": "lowest raw 2-second RMS among pre-playback candidates ending at least 2 s before first detected playback; no speech/handling detector was available",
+      "raw_rms_dbfs": -68.85102528010779,
+      "bands": {
+        "250-4000": {
+          "background_db": -74.20487656789979,
+          "playback_minus_background_db": null,
+          "playback_start_db": -32.993018735776424,
+          "playback_end_db": -32.834628172628726,
+          "playback_start_minus_background_db": 41.211857832123364,
+          "playback_end_minus_background_db": 41.37024839527106
+        },
+        "250-500": {
+          "background_db": -75.86897025824557,
+          "playback_minus_background_db": null,
+          "playback_start_db": -35.813660469014216,
+          "playback_end_db": -35.68096036354865,
+          "playback_start_minus_background_db": 40.05530978923135,
+          "playback_end_minus_background_db": 40.18800989469692
+        },
+        "500-1000": {
+          "background_db": -81.41952168959679,
+          "playback_minus_background_db": null,
+          "playback_start_db": -37.17812176439508,
+          "playback_end_db": -36.99905349729769,
+          "playback_start_minus_background_db": 44.24139992520171,
+          "playback_end_minus_background_db": 44.420468192299104
+        },
+        "1000-2000": {
+          "background_db": -84.1175696518618,
+          "playback_minus_background_db": null,
+          "playback_start_db": -44.1287449932357,
+          "playback_end_db": -43.987755695626895,
+          "playback_start_minus_background_db": 39.9888246586261,
+          "playback_end_minus_background_db": 40.129813956234905
+        },
+        "2000-4000": {
+          "background_db": -84.38478453162416,
+          "playback_minus_background_db": null,
+          "playback_start_db": -46.221906414813304,
+          "playback_end_db": -46.125892914729825,
+          "playback_start_minus_background_db": 38.16287811681086,
+          "playback_end_minus_background_db": 38.25889161689434
+        }
+      }
+    }
+  },
+  "interpretation": "Observed: P01 both_end is higher than both_start by the reported aggregate amount, with time/band distribution in the CSV. Possible explanations remain unresolved; AGC, amplifier adjustment, position change, and environmental noise are not identifiable as causes from these recordings alone."
+}

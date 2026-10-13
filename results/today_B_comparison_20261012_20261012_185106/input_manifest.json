@@ -1,0 +1,122 @@
+{
+  "recordings": [
+    {
+      "point": "P01",
+      "role": "both_start",
+      "path": "recordings\\measurements\\P01\\p01 양쪽 시작.wav",
+      "sha256": "3e2c577caa469289afe34b63d58a4ebf872c698aab5140640ba88377499acb97",
+      "duration_s": 65.2,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P01",
+      "role": "both_end",
+      "path": "recordings\\measurements\\P01\\p01 양쪽 종료.wav",
+      "sha256": "fb112e26a674404d0d7a70411cc0bd720e4bc18dcef8d5081804b9b5d8b6dbe0",
+      "duration_s": 59.2,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P01",
+      "role": "right",
+      "path": "recordings\\measurements\\P01\\p01 오른쪽.wav",
+      "sha256": "d23869c8296fde041825f43e735ac62a7bbbaa08ddb3369cbbe34f20683a2999",
+      "duration_s": 61.36,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P01",
+      "role": "left",
+      "path": "recordings\\measurements\\P01\\p01 왼쪽.wav",
+      "sha256": "03c6e7143c78d5047117c584adbeda576cf1d8cead1cb810fe336d31ffe3ee58",
+      "duration_s": 69.44,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P02",
+      "role": "both_end",
+      "path": "recordings\\measurements\\P02\\p02 양쪽 종료.wav",
+      "sha256": "1fa506d2e947ada90adb8fa93afe78935c93b1bf4562ba2286e6a1c104bff315",
+      "duration_s": 72.88,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P02",
+      "role": "both_start",
+      "path": "recordings\\measurements\\P02\\p02 양쪽.wav",
+      "sha256": "dcfcb729587ca0e2d6689e0173ad086b5fb6949ccff36f55e3e35b3460065582",
+      "duration_s": 74.48,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P02",
+      "role": "right",
+      "path": "recordings\\measurements\\P02\\p02 오른쪽.wav",
+      "sha256": "1a88d18a771ca0a97cf0335b09c8baac6036733ab14d778ff7dc315592fa9ee1",
+      "duration_s": 68.88,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P02",
+      "role": "left",
+      "path": "recordings\\measurements\\P02\\p02 왼쪽.wav",
+      "sha256": "9419000f2ea014fcd9e14b09bbb6693771b3222c87ad51a74678327f4f7f800c",
+      "duration_s": 68.0,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P03",
+      "role": "both_start",
+      "path": "recordings\\measurements\\P03\\p03 양쪽 시작.wav",
+      "sha256": "45ebbf66607daf2984e767957e649e2652becb7a35b4811605d79833a7cd507e",
+      "duration_s": 70.4,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P03",
+      "role": "both_end",
+      "path": "recordings\\measurements\\P03\\p03 양쪽 종료.wav",
+      "sha256": "3ba114aafa994b37bfa66e842f1228b5072bd3cc1ef75b8a9e6ef67cfa3440d1",
+      "duration_s": 72.64,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P03",
+      "role": "right",
+      "path": "recordings\\measurements\\P03\\p03 오른쪽.wav",
+      "sha256": "d66cbce91a3c2d9778fa6d754ce19d3037df17b7054e9b080aa10a84648685d7",
+      "duration_s": 77.28,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "point": "P03",
+      "role": "left",
+      "path": "recordings\\measurements\\P03\\p03 왼쪽.wav",
+      "sha256": "1ac8c8a985659414c8a7441925fb5855456cae009126bd94182648f2c1cccd76",
+      "duration_s": 80.88,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    },
+    {
+      "role": "reference",
+      "path": "recordings\\reference\\test_signal(06_예비녹음_50초).wav",
+      "sha256": "a131e473eebba2a1803d7605e535b2335f1d5d8ac5b37f1931b652fba37ca329",
+      "duration_s": 50.0,
+      "sample_rate_hz": 48000,
+      "channels": 1
+    }
+  ],
+  "mapping_note": "left/right are from the direction facing away from the blackboard",
+  "old_P02_note": "The previous P02 was one tile toward the front; no previous recording was mixed. Today P02 uses y=5.0 m."
+}
