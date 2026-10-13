@@ -1,0 +1,248 @@
+{
+  "input_directory": "results\\today_B_comparison_20261012_20261012_185129",
+  "models": {
+    "models": {
+      "B0": "no correction",
+      "B1": "common right amplitude gain 0.8244864582651538",
+      "B2": "fixed P02-derived bandwise right gains"
+    },
+    "gains": {
+      "B0": {
+        "250-500": 1.0,
+        "500-1000": 1.0,
+        "1000-2000": 1.0,
+        "2000-4000": 1.0
+      },
+      "B1": {
+        "250-500": 0.8244864582651538,
+        "500-1000": 0.8244864582651538,
+        "1000-2000": 0.8244864582651538,
+        "2000-4000": 0.8244864582651538
+      },
+      "B2": {
+        "250-500": 1.0341988002217954,
+        "500-1000": 0.8959451672634878,
+        "1000-2000": 0.5295266382074468,
+        "2000-4000": 0.36270931879043056
+      }
+    },
+    "left_gain": 1.0,
+    "polarity": 1,
+    "additional_delay_samples": 0,
+    "room": {
+      "dimensions_m": [
+        7.5,
+        10.25,
+        2.67
+      ],
+      "absorption": 0.2,
+      "max_order": 32,
+      "speed_m_s": 343,
+      "sources": {
+        "S_L": [
+          0.52,
+          3.1,
+          2.5
+        ],
+        "S_R": [
+          6.55,
+          3.1,
+          2.5
+        ]
+      }
+    },
+    "input_cache_found": false,
+    "cache_note": "No compatible waveform/RIR cache was used; B RIR/model convolution was calculated with the existing B settings."
+  },
+  "metrics": {
+    "start": {
+      "B0": {
+        "P01": {
+          "MAE_db": 1.6746687691344424,
+          "RMSE_db": 1.8226202986330804
+        },
+        "P03": {
+          "MAE_db": 1.994457255910092,
+          "RMSE_db": 2.3733699403767825
+        },
+        "P01_P03_8": {
+          "MAE_db": 1.8345630125222672,
+          "RMSE_db": 2.11599026780293
+        }
+      },
+      "B1": {
+        "P01": {
+          "MAE_db": 2.309230297587889,
+          "RMSE_db": 2.4306974487570785
+        },
+        "P03": {
+          "MAE_db": 2.7243818479707818,
+          "RMSE_db": 2.97513453077371
+        },
+        "P01_P03_8": {
+          "MAE_db": 2.5168060727793353,
+          "RMSE_db": 2.7165893656933386
+        }
+      },
+      "B2": {
+        "P01": {
+          "MAE_db": 2.6726178837744254,
+          "RMSE_db": 2.7865283602540907
+        },
+        "P03": {
+          "MAE_db": 3.356823803371295,
+          "RMSE_db": 3.5307066753797143
+        },
+        "P01_P03_8": {
+          "MAE_db": 3.0147208435728605,
+          "RMSE_db": 3.180458294811553
+        }
+      }
+    },
+    "end": {
+      "B0": {
+        "P01": {
+          "MAE_db": 2.6626807085310755,
+          "RMSE_db": 2.7860931244556357
+        },
+        "P03": {
+          "MAE_db": 1.5615624767042955,
+          "RMSE_db": 2.0285579360330797
+        },
+        "P01_P03_8": {
+          "MAE_db": 2.1121215926176857,
+          "RMSE_db": 2.4369409305502003
+        }
+      },
+      "B1": {
+        "P01": {
+          "MAE_db": 3.2972422369845225,
+          "RMSE_db": 3.4007441259894873
+        },
+        "P03": {
+          "MAE_db": 2.2914870687649853,
+          "RMSE_db": 2.587941471425334
+        },
+        "P01_P03_8": {
+          "MAE_db": 2.794364652874754,
+          "RMSE_db": 3.021795961839178
+        }
+      },
+      "B2": {
+        "P01": {
+          "MAE_db": 3.660629823171059,
+          "RMSE_db": 3.7084079678468624
+        },
+        "P03": {
+          "MAE_db": 2.923929024165499,
+          "RMSE_db": 3.1190370571062846
+        },
+        "P01_P03_8": {
+          "MAE_db": 3.292279423668279,
+          "RMSE_db": 3.4264180874195964
+        }
+      }
+    }
+  },
+  "improvement_vs_B0": {
+    "start": {
+      "B1": {
+        "improved": [],
+        "worsened": [
+          "P01 250-500",
+          "P01 500-1000",
+          "P01 1000-2000",
+          "P01 2000-4000",
+          "P03 250-500",
+          "P03 500-1000",
+          "P03 1000-2000",
+          "P03 2000-4000"
+        ],
+        "unchanged": []
+      },
+      "B2": {
+        "improved": [
+          "P01 250-500",
+          "P03 250-500"
+        ],
+        "worsened": [
+          "P01 500-1000",
+          "P01 1000-2000",
+          "P01 2000-4000",
+          "P03 500-1000",
+          "P03 1000-2000",
+          "P03 2000-4000"
+        ],
+        "unchanged": []
+      }
+    },
+    "end": {
+      "B1": {
+        "improved": [],
+        "worsened": [
+          "P01 250-500",
+          "P01 500-1000",
+          "P01 1000-2000",
+          "P01 2000-4000",
+          "P03 250-500",
+          "P03 500-1000",
+          "P03 1000-2000",
+          "P03 2000-4000"
+        ],
+        "unchanged": []
+      },
+      "B2": {
+        "improved": [
+          "P01 250-500",
+          "P03 250-500"
+        ],
+        "worsened": [
+          "P01 500-1000",
+          "P01 1000-2000",
+          "P01 2000-4000",
+          "P03 500-1000",
+          "P03 1000-2000",
+          "P03 2000-4000"
+        ],
+        "unchanged": []
+      }
+    }
+  },
+  "limitations": [
+    "Start/end are sensitivity checks for the choice of comparison segment, not confidence intervals or upper/lower error bounds.",
+    "Separate playback/recording files may have condition changes.",
+    "No polarity/delay search and no P01/P03 re-calibration were performed.",
+    "B2 is bandwise analysis only; no broadband EQ or listening WAV was synthesized.",
+    "P02 is the calibration location and is reported separately; P01/P03 are not fully independent blind validation."
+  ],
+  "P02_separate_report": {
+    "start": {
+      "B0": {
+        "MAE_db": 2.14608226847932,
+        "RMSE_db": 2.3898337928105673
+      },
+      "B1": {
+        "MAE_db": 2.825921284905677,
+        "RMSE_db": 2.9818057715571333
+      },
+      "B2": {
+        "MAE_db": 3.3042311512059475,
+        "RMSE_db": 3.3218536283800177
+      }
+    },
+    "end": {
+      "B0": {
+        "MAE_db": 1.594236660405506,
+        "RMSE_db": 1.8482137810473778
+      },
+      "B1": {
+        "MAE_db": 2.2389984534995233,
+        "RMSE_db": 2.4091555877532573
+      },
+      "B2": {
+        "MAE_db": 2.717308319799794,
+        "RMSE_db": 2.744229417532544
+      }
+    }
+  }
+}

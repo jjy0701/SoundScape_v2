@@ -1,0 +1,54 @@
+{
+  "models": {
+    "B0": "no correction",
+    "B1": "common right amplitude gain 0.8244864582651538",
+    "B2": "fixed P02-derived bandwise right gains"
+  },
+  "gains": {
+    "B0": {
+      "250-500": 1.0,
+      "500-1000": 1.0,
+      "1000-2000": 1.0,
+      "2000-4000": 1.0
+    },
+    "B1": {
+      "250-500": 0.8244864582651538,
+      "500-1000": 0.8244864582651538,
+      "1000-2000": 0.8244864582651538,
+      "2000-4000": 0.8244864582651538
+    },
+    "B2": {
+      "250-500": 1.0341988002217954,
+      "500-1000": 0.8959451672634878,
+      "1000-2000": 0.5295266382074468,
+      "2000-4000": 0.36270931879043056
+    }
+  },
+  "left_gain": 1.0,
+  "polarity": 1,
+  "additional_delay_samples": 0,
+  "room": {
+    "dimensions_m": [
+      7.5,
+      10.25,
+      2.67
+    ],
+    "absorption": 0.2,
+    "max_order": 32,
+    "speed_m_s": 343,
+    "sources": {
+      "S_L": [
+        0.52,
+        3.1,
+        2.5
+      ],
+      "S_R": [
+        6.55,
+        3.1,
+        2.5
+      ]
+    }
+  },
+  "input_cache_found": false,
+  "cache_note": "No compatible waveform/RIR cache was used; B RIR/model convolution was calculated with the existing B settings."
+}

@@ -1,0 +1,159 @@
+{
+  "input_directory": "results\\today_B_comparison_20261012_20261012_185129",
+  "calibration_point": "P02",
+  "calibration_uses": "P02 left/right single-speaker recordings only",
+  "excluded_from_calibration": [
+    "both-sided playback",
+    "previous dates",
+    "P01/P03 data"
+  ],
+  "formula": {
+    "D_meas": "measured left - measured right",
+    "D_model": "uncorrected B model left - right",
+    "delta": "D_meas - D_model",
+    "right_amplitude_gain": "10**(-delta/20)",
+    "corrected_model_difference": "D_model - 20*log10(gain)"
+  },
+  "corrections": [
+    {
+      "band_hz": "250-500",
+      "P02_D_meas_db": 2.0832162857004164,
+      "P02_D_model_db": 2.3752968778916355,
+      "delta_db": -0.29208059219121907,
+      "left_amplitude_gain": 1.0,
+      "right_amplitude_gain": 1.0341988002217954,
+      "right_gain_db": 0.2920805921912187,
+      "calibration_role": "P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate"
+    },
+    {
+      "band_hz": "500-1000",
+      "P02_D_meas_db": 0.7415049831996114,
+      "P02_D_model_db": -0.21286639238794436,
+      "delta_db": 0.9543713755875558,
+      "left_amplitude_gain": 1.0,
+      "right_amplitude_gain": 0.8959451672634878,
+      "right_gain_db": -0.9543713755875555,
+      "calibration_role": "P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate"
+    },
+    {
+      "band_hz": "1000-2000",
+      "P02_D_meas_db": 5.6113399318821635,
+      "P02_D_model_db": 0.08909618148909004,
+      "delta_db": 5.5222437503930735,
+      "left_amplitude_gain": 1.0,
+      "right_amplitude_gain": 0.5295266382074468,
+      "right_gain_db": -5.5222437503930735,
+      "calibration_role": "P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate"
+    },
+    {
+      "band_hz": "2000-4000",
+      "P02_D_meas_db": 8.968295255935857,
+      "P02_D_model_db": 0.15946952978728746,
+      "delta_db": 8.80882572614857,
+      "left_amplitude_gain": 1.0,
+      "right_amplitude_gain": 0.36270931879043056,
+      "right_gain_db": -8.80882572614857,
+      "calibration_role": "P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate"
+    }
+  ],
+  "P02_calibration_check": {
+    "n_bands": 4,
+    "before": {
+      "MAE_db": 3.8943803610801044,
+      "RMSE_db": 5.2222294689932935
+    },
+    "after": {
+      "MAE_db": 1.942890293094024e-16,
+      "RMSE_db": 2.7755575615628914e-16
+    },
+    "MAE_change_db": -3.8943803610801044,
+    "RMSE_change_db": -5.2222294689932935,
+    "improved_items": [
+      "250-500",
+      "500-1000",
+      "1000-2000",
+      "2000-4000"
+    ],
+    "worsened_items": [],
+    "unchanged_items": []
+  },
+  "other_location_application_evaluation": {
+    "P01": {
+      "n_bands": 4,
+      "before": {
+        "MAE_db": 3.3622828596759504,
+        "RMSE_db": 3.9668169600878835
+      },
+      "after": {
+        "MAE_db": 1.7706358595188352,
+        "RMSE_db": 2.045073365387308
+      },
+      "MAE_change_db": -1.5916470001571152,
+      "RMSE_change_db": -1.9217435947005757,
+      "improved_items": [
+        "500-1000",
+        "1000-2000",
+        "2000-4000"
+      ],
+      "worsened_items": [
+        "250-500"
+      ],
+      "unchanged_items": []
+    },
+    "P03": {
+      "n_bands": 4,
+      "before": {
+        "MAE_db": 3.877039021976353,
+        "RMSE_db": 4.91233169015778
+      },
+      "after": {
+        "MAE_db": 1.3663114744310931,
+        "RMSE_db": 1.595586217518585
+      },
+      "MAE_change_db": -2.51072754754526,
+      "RMSE_change_db": -3.3167454726391945,
+      "improved_items": [
+        "500-1000",
+        "1000-2000",
+        "2000-4000"
+      ],
+      "worsened_items": [
+        "250-500"
+      ],
+      "unchanged_items": []
+    }
+  },
+  "all_8_items_P01_P03": {
+    "n_bands": 8,
+    "before": {
+      "MAE_db": 3.6196609408261518,
+      "RMSE_db": 4.46467464822294
+    },
+    "after": {
+      "MAE_db": 1.5684736669749642,
+      "RMSE_db": 1.8341510907435945
+    },
+    "MAE_change_db": -2.0511872738511876,
+    "RMSE_change_db": -2.6305235574793455,
+    "improved_items": [
+      "500-1000",
+      "1000-2000",
+      "2000-4000",
+      "500-1000",
+      "1000-2000",
+      "2000-4000"
+    ],
+    "worsened_items": [
+      "250-500",
+      "250-500"
+    ],
+    "unchanged_items": []
+  },
+  "limitations": [
+    "P01/P03 are previously observed points; this is other-location application evaluation, not a fully independent blind validation.",
+    "Separate single-speaker recordings may have condition changes.",
+    "No polarity, delay, absorption, or coordinates were changed.",
+    "The gains are empirical P02-based left/right corrections, not speaker-specific characteristics or amplifier gain estimates.",
+    "P02 agreement is calibration confirmation and excluded from validation performance."
+  ]
+}

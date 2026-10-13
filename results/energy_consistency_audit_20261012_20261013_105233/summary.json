@@ -1,0 +1,9 @@
+{
+  "input": "results\\today_B_comparison_20261012_20261012_185129",
+  "b0_comparison": "Direct convolution/filter/analysis windows versus old stored model pooled energies.",
+  "gain_comparison": "A direct waveform sum versus B energy identity; denominator is E_left + g^2 E_right for both.",
+  "max_abs_direct_vs_formula_energy": 2.168404344971009e-19,
+  "max_abs_direct_vs_formula_I_db": 2.220446049250313e-15,
+  "max_abs_measured_recheck_db": 0.0,
+  "note": "No physical interpretation, delay/polarity search, or new gain estimation performed."
+}

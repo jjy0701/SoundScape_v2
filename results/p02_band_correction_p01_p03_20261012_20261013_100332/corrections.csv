@@ -1,0 +1,5 @@
+﻿band_hz,P02_D_meas_db,P02_D_model_db,delta_db,left_amplitude_gain,right_amplitude_gain,right_gain_db,calibration_role
+250-500,2.0832162857004164,2.3752968778916355,-0.29208059219121907,1.0,1.0341988002217954,0.2920805921912187,P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate
+500-1000,0.7415049831996114,-0.21286639238794436,0.9543713755875558,1.0,0.8959451672634878,-0.9543713755875555,P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate
+1000-2000,5.6113399318821635,0.08909618148909004,5.5222437503930735,1.0,0.5295266382074468,-5.5222437503930735,P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate
+2000-4000,8.968295255935857,0.15946952978728746,8.80882572614857,1.0,0.36270931879043056,-8.80882572614857,P02 empirical bandwise left/right correction; not speaker or amplifier gain estimate
